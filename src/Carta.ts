@@ -15,6 +15,7 @@ export class Carta {
     constructor(localMenus: Menu[] = [], dishes: Dish[] = []) {
         this.localMenus = localMenus;
         this.dishes = dishes;
+        this.generateCarta();
     }
 
     /**
@@ -31,6 +32,40 @@ export class Carta {
         return this.dishes;
     }
 
+    findMenuByName(menu: string){
+        const deletion: number = this.localMenus.findIndex(element => element.getName() === menu);
+        if(deletion !== -1) {
+            return this.localMenus [deletion];
+        }
+        else {
+            console.log("El menú no está en la carta");
+        }
+    }
+
+    findDishByName(menu: string){
+        const deletion: number = this.dishes.findIndex(element => element.getName() === menu);
+        if(deletion !== -1) {
+            return this.dishes [deletion];
+        }
+        else {
+            console.log("El menú no está en la carta");
+        }
+    }
+
+    generateCarta(){
+        let egg: Ingredient = new Ingredient("EGG", "SPAIN", "CARNES-HUEVOS-LEGUMBRES", {carbohydrates: 5, proteins: 50, lipids: 25}, 5);
+        let potato: Ingredient = new Ingredient("POTATO", "SPAIN", "VERDURAS-HORTALIZAS", {carbohydrates: 45, proteins: 10, lipids: 30}, 1.5);
+        let tortilla: Dish = new Dish("TORTILLA", "SECONDCOURSE", [{ingredient: egg, amountInGrams: 50}, {ingredient: potato, amountInGrams: 200}]);
+
+        let milk: Ingredient = new Ingredient("MILK", "SPAIN", "LACTEOS", {carbohydrates: 4.7, proteins: 3.1, lipids: 3.5}, 7);
+        let limon: Ingredient = new Ingredient("LEMON", "PORTUGAL", "FRUTAS", {carbohydrates: 12.7, proteins: 0.1, lipids: 0.06}, 8);
+        let natilla: Dish = new Dish("NATILLA", "DESSERT", [{ingredient: milk, amountInGrams: 50}, {ingredient: limon, amountInGrams: 200}]);
+
+        let menu1: Menu = new Menu("MENU-CHEF", 9, [tortilla, natilla]);
+        this.addNewMenu(menu1);
+        this.addNewDish(tortilla);
+        this.addNewDish(natilla);
+    }
     /**
      * Imprime la carta en un formato fácil de leer y entender para el usuario
      */

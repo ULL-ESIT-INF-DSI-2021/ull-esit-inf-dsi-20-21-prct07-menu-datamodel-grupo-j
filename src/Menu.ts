@@ -6,6 +6,7 @@ export class Menu {
     name: string;
     menuPrice: number;
     dishes: Dish []; 
+    menuAmount: number;
 
     /**
      * Contructor del Menú
@@ -16,6 +17,7 @@ export class Menu {
     constructor(name: string, menuPrice: number, dishes: Dish []) {
         this.name = name;
         this.menuPrice = menuPrice;
+        this.menuAmount = 1;
         this.dishes = dishes;
     }
 
@@ -32,6 +34,13 @@ export class Menu {
     getMenuPrice() {
         return this.menuPrice;
     }
+
+     /**
+     * @returns menuAmount, cantidad de menus
+     */
+      getMenuAmount(){
+        return this.menuAmount; 
+     }
 
     /**
      * @returns platos, platos que lo componen

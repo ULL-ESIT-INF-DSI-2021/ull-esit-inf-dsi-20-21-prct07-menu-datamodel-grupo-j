@@ -9,7 +9,8 @@
   },
   "scripts": {
     "test": "nyc mocha",
-    "doc": "typedoc;"
+    "doc": "typedoc;",
+    "build": "tsc" 
   },
   "keywords": [],
   "author": "Adrian González",
