@@ -62,24 +62,25 @@ import { Command } from './Command';
 /*54*/let butter: Ingredient = new Ingredient("BUTTER", "FRANCE", "LACTEOS", {carbohydrates: 99, proteins: 0.6, lipids: 83}, 2.15);
 
 
-
-
 // List of dishes (5-10 per type of dish)
 /*1*/let croquetas: Dish = new Dish("CROQUETAS DE ATÚN", "STARTER", [{ingredient: milk, amountInGrams: 500}, {ingredient: tuna, amountInGrams: 100}, {ingredient: cornmeal, amountInGrams: 20}, {ingredient: oliveOil, amountInGrams: 100}, {ingredient: egg, amountInGrams: 150}, {ingredient:liquidCream, amountInGrams: 140}, {ingredient: breadCrumbs, amountInGrams: 30}]);
 /*2*/let surtido: Dish = new Dish("SURTIDO DE CHACINA", "STARTER", [{ingredient: cheese, amountInGrams: 50}, {ingredient: serranoHam, amountInGrams: 50}, {ingredient: chorizo, amountInGrams: 20}, {ingredient: bloodSausage, amountInGrams: 100}]);
 /*3*/let ensaladilla: Dish = new Dish("ENSALADILLA RUSA", "STARTER", [{ingredient: egg, amountInGrams: 100}, {ingredient: potato, amountInGrams: 250}, {ingredient: carrot, amountInGrams: 80}, {ingredient: tuna, amountInGrams: 160}, {ingredient: mayonnaise, amountInGrams: 600}, {ingredient: olives, amountInGrams: 30}, {ingredient: redPepper, amountInGrams: 30}]);
 /*4*/let sardinas: Dish = new Dish("SARDINAS", "STARTER", [{ingredient: sardines, amountInGrams: 300}, {ingredient: oliveOil, amountInGrams: 25}, {ingredient: limon, amountInGrams: 80}]);
 /*5*/let pulpo: Dish = new Dish("PULPO A LA VINAGRETA", "STARTER", [{ingredient: octopus, amountInGrams: 400}, {ingredient: oliveOil, amountInGrams: 25}, {ingredient: greenPepper, amountInGrams: 80}, {ingredient: redPepper, amountInGrams: 40}, {ingredient: parsley, amountInGrams: 10}, {ingredient: vinegar, amountInGrams:10}]);
+
 /*6*/let arrozCubana: Dish = new Dish("ARROZ A LA CUBANA", "FIRSTCOURSE", [{ingredient: whiteRice, amountInGrams: 200}, {ingredient: banana, amountInGrams: 50}, {ingredient: egg, amountInGrams: 104}, {ingredient: garlic, amountInGrams: 15}, {ingredient: sausage, amountInGrams: 160}]);
 /*7*/let sopaPescado: Dish = new Dish("SOPA DE PESCADO", "FIRSTCOURSE", [{ingredient: noodles, amountInGrams: 125}, {ingredient: clams, amountInGrams: 350}, {ingredient: cod, amountInGrams: 700}, {ingredient: carrot, amountInGrams: 80}, {ingredient: parsley, amountInGrams: 3}, {ingredient: celery, amountInGrams: 10}]);
 /*8*/let estofado: Dish = new Dish("ESTOFADO", "FIRSTCOURSE", [{ingredient: veal, amountInGrams: 605}, {ingredient: greenPeas, amountInGrams: 120}, {ingredient: potato, amountInGrams: 400}, {ingredient: carrot, amountInGrams: 80}, {ingredient: cebolla, amountInGrams: 45}, {ingredient: celery, amountInGrams: 10}]);
 /*9*/let puchero: Dish = new Dish("PUCHERO CANARIO", "FIRSTCOURSE", [{ingredient: chickpea, amountInGrams: 300}, {ingredient: greenPepper, amountInGrams: 90}, {ingredient: potato, amountInGrams: 400}, {ingredient: carrot, amountInGrams: 100}, {ingredient: tomatoe, amountInGrams: 50}, {ingredient: redPepper, amountInGrams: 10}, {ingredient: cabbage, amountInGrams: 30}, {ingredient: beans, amountInGrams: 100}, {ingredient: pumpkin, amountInGrams: 230}, {ingredient: chicken, amountInGrams: 120}, {ingredient: zucchini, amountInGrams: 90}, {ingredient: oliveOil, amountInGrams: 10}]);
 /*10*/let macarrones: Dish = new Dish("MACARRONES", "FIRSTCOURSE", [{ingredient: macaroni, amountInGrams: 600}, {ingredient: tomatoe, amountInGrams: 200}, {ingredient: cheese, amountInGrams: 120}]);
+
 /*11*/let cesarSalad: Dish = new Dish("CESAR-SALAD", "SECONDCOURSE", [{ingredient:lettuce, amountInGrams: 100}, {ingredient: tomatoe, amountInGrams: 60}, {ingredient: oliveOil, amountInGrams: 20}, {ingredient: egg, amountInGrams: 53}, {ingredient: cheese, amountInGrams: 50}, {ingredient: garlic, amountInGrams: 15}, {ingredient: beet, amountInGrams: 30}, {ingredient: carrot, amountInGrams: 58}, {ingredient: avocado, amountInGrams: 40}]);
 /*12*/let tortilla: Dish = new Dish("TORTILLA", "SECONDCOURSE", [{ingredient: egg, amountInGrams: 50}, {ingredient: potato, amountInGrams: 200}]);
 /*13*/let merluza: Dish = new Dish("MERLUZA CON PAPAS", "SECONDCOURSE", [{ingredient: hake, amountInGrams: 300}, {ingredient: potato, amountInGrams: 200}, {ingredient: cebolla, amountInGrams: 30}, {ingredient: redPepper, amountInGrams: 20}, {ingredient: garlic, amountInGrams: 15}]);
 /*14*/let chuletas: Dish = new Dish("CHULETAS", "SECONDCOURSE", [{ingredient: porkChop, amountInGrams: 300}, {ingredient: potato, amountInGrams: 200}]);
 /*15*/let sargo_: Dish = new Dish("SARGO CON PAPAS", "SECONDCOURSE", [{ingredient: sargo, amountInGrams: 300}, {ingredient: potato, amountInGrams: 200}, {ingredient: redPepper, amountInGrams:30}, {ingredient:greenPepper, amountInGrams: 40}]);
+
 /*16*/let natilla: Dish = new Dish("NATILLA", "DESSERT", [{ingredient: milk, amountInGrams: 100}, {ingredient: limon, amountInGrams: 80}]);
 /*17*/let tiramisu: Dish = new Dish("TIRAMISÚ", "DESSERT", [{ingredient: cheese, amountInGrams: 500}, {ingredient: egg, amountInGrams: 100}, {ingredient: coffee, amountInGrams: 350}, {ingredient: cornmeal, amountInGrams:100}, {ingredient: cocoa, amountInGrams: 30}]);
 /*18*/let flan: Dish = new Dish("FLAN", "DESSERT", [{ingredient: milk, amountInGrams: 100}, {ingredient: egg, amountInGrams: 160}, {ingredient: limon, amountInGrams: 10}, {ingredient: cinnamon, amountInGrams: 20}]);
@@ -87,5 +88,9 @@ import { Command } from './Command';
 /*20*/let cheeseCake: Dish = new Dish("TARTA DE QUESO", "DESSERT", [{ingredient: butter, amountInGrams: 100}, {ingredient: cheese, amountInGrams: 500}, {ingredient: liquidCream, amountInGrams: 400}, {ingredient: strawberry, amountInGrams: 200}]);
 
 
-// List of menu
-let menu1: Menu = new Menu("MENU-CHEF", 9, [tortilla, natilla]);
+// List of menu (5-10 per type of menu)
+let menu1: Menu = new Menu("MENU DEL CHEF", 16, [pulpo, estofado, sargo_, tiramisu]);
+let menu2: Menu = new Menu("ESPECIAL DEL MAR", 10, [sardinas, sopaPescado, merluza, cheeseCake]);
+let menu3: Menu = new Menu("VIVA ESPAÑA", 10, [surtido, puchero, tortilla, natilla]);
+let menu4: Menu = new Menu("EXPERIENCIA EXTRANJERA", 10, [ensaladilla, arrozCubana, cesarSalad, bananaSplit]);
+let menu5: Menu = new Menu("MENU INFANTIL", 8, [croquetas, macarrones, chuletas, flan]);
