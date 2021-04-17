@@ -69,14 +69,23 @@ async function selectMenu() {
         let usermenu: Menu = carta.findMenuByName(menuSelection["chefMenu"])!;
         myCommand.addNewMenu(usermenu);
     } else {
-        const dishSelection = await inquirer.prompt({
+        const menutypeSelection = await inquirer.prompt({
             type: "list",
             name: "customMenu",
-            message: "What dishes do you want to order?",
-            choices: dishArray
-        })
-        let userdish: Dish = carta.findDishByName(dishSelection["customMenu"])!;
-        myCommand.addNewDish(userdish);
+            message: "How do you want to order your menu?",
+            choices: ["From a chef menu", "Choosing dishes"]
+        });
+        if(menutypeSelection["customMenu"] === "From a chef menu") {
+            const menuSelection = await inquirer.prompt({
+                type: "list",
+                name: "chefMenu",
+                message: "What menu do you want to choose?",
+                choices: menuArray
+            });
+        }
+        else {
+
+        }
     }
     mainPrompt();
 }
