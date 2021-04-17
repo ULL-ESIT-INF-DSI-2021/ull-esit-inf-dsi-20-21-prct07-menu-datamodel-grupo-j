@@ -1,4 +1,4 @@
-type ingredientType = "CARNES-HUEVOS-LEGUMBRES" |"VERDURAS-HORTALIZAS" | "LACTEOS" | "CEREALES" | "FRUTAS"; 
+export type ingredientType = "CARNES-HUEVOS-LEGUMBRES" |"VERDURAS-HORTALIZAS" | "LACTEOS" | "CEREALES" | "FRUTAS"; 
 
 export class Ingredient {
 
