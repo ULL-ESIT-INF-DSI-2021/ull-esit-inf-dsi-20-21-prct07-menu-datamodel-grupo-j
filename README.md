@@ -13,4 +13,8 @@ También se utiliza la GitHub Action de Coveralls para enviar automáticamente, 
 
 ### Cubrimiento de código con Coveralls
 
-[![Coverage Status](https://coveralls.io/repos/github/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct07-menu-datamodel-grupo-j/badge.svg?branch=main)](https://coveralls.io/github/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct07-menu-datamodel-grupo-j?branch=main)
+[![Coverage Status](https://coveralls.io/repos/github/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct07-menu-datamodel-grupo-j/badge.svg?branch=main)](https://coveralls.io/github/ULL-ESIT-INF-DSI-2021/ull-esit-inf-dsi-20-21-prct07-menu-datamodel-grupo-j?branch=main) 
+
+
+# repo_token: O3iiUZV2MJPn7n3yTDu6hBGSs4n1q7NCV
+

@@ -203,8 +203,9 @@ La clase comanda será la encargada de almacenar la comanda de un nuevo cliente 
 Para el funcionamiento de la clase Comanda, se hará uso de **Inquirer.js**. De esta forma, es cliente podrá acceder a un menú de selección donde podrá realizar distintas acciones:
 
 * Visualizar la carta del restaurante. Esta funcionalidad permite ver cada menú y cada plato que compone a cualquiera de los menús disponibles y su información correspondiente como comentamos en la `clase Dish`.
-* Realizar una comanda. Un cliente podrá realizar una comanda a partir de un menú preestablecido o bien solicitando un menú personalizado. Si se decanta por un menú personalizado, se podrá visualizar la carta completa del restaurante, seleccionar cualquier plato del sistema y la cantidad del mismo que el cliente considere oportuna (siempre de manera entera). 
-* Solicitar un menú personalizado a partir de un menú existente. Un cliente puede querer selecionar un menú predefinido pero quitando algún plato que no sea de su agrado o añadiendo otro que no esté.
+* Añadir menús a la comanda: El cliente podrá añadir uno o varios menus a su comanda. Para ello, dispone de varias opciones: Elegir un menú diseñado por el chef, crear un nuevo menú a partir de los menús ya existentes (añadiendo o eliminandole platos), o crear un menú seleccionando los platos desde cero. Toda esta información se irá añadiendo a la comanda hasta que se envie o elimine.
+* Añadir platos: Si se desea, se pueden añadir platos individuales a la comanda, sin convertirlos en ningún menu.
+* Eliminar elementos de la comanda: Habrá varias funciones que permitan eliminar elementos, ya sean menús completos, platos sueltos, o partes de un menú a la hora de crearlo de forma personalizada.
 
 Esta clase dispondrá de los siguientes atributos: 
 
@@ -212,8 +213,6 @@ Esta clase dispondrá de los siguientes atributos:
   * @param nameTable numero de la mesa de la comanda
   * @param dishes vector que almacenará los platos
   * @param menus vector que almacenará los menus
-  * @param menuAmount cantidad de menus
-  * @param isCustomMenu si es true el cliente elegirá un menú personalizado, sino será uno predefinido
 ```
 
 Y también tendrá los siguientes métodos:
@@ -235,7 +234,7 @@ Y también tendrá los siguientes métodos:
 ```
 El método que resalta de esta clase es `printCommand`:
 
-* printCommand. Comprueba si el cliente a seleccionado un menú predefinido o no. Si eligió un menú predefinido, muestra el nombre del menú seleccionado, su precio y los platos que lo componen. En caso contrario muestra la colección de platos al cliente para que los seleccione y confeccione su menú personalizado.
+* printCommand. Muestra la información de las comandas, separando los menús añadidos hasta el momento de los platos sueltos insertados.
 
 ### ---------------------------------------------------------------------------------------------------------------
 
@@ -243,7 +242,66 @@ El método que resalta de esta clase es `printCommand`:
 
 Para cumplir on el funcionamiento hemos creado el fichero `data.ts` que contiene la información de todos los ingredientes disponibles, los platos de las distintas categorías disponibles y los menús predeterminados que posee el restaurante.
 
-Haciendo uso del módulo **Inquirer.js** para la gestión de una línea de comandos interactiva la aplacación podrá añadir, borrar y modificar ingredientes, platos, menús y cartas, logrando además por medio del otro módulo comentado en la introducción, **Lowdb**,  que toda la información introducida persista.
+Haciendo uso del módulo **Inquirer.js** para la gestión de una línea de comandos interactiva la aplacación podrá añadir y borrar ingredientes, platos, menús y cartas, logrando además por medio del otro módulo comentado en la introducción, **Lowdb**,  que toda la información introducida persista.
+
+Para el desarrollo de este sistema, se ha creado una interfaz en admin-inquirer.ts. Esta interfaz permite al administrador ir creando diferentes platos, ingredientes, menus o cartas, y almacenarlas en una base de datos con Lowdb. 
+Este sistema está diseñado de la forma más amigable posible para el usuario, confirmando algunas acciones, preguntando si se desean añadir más elementos, entre muchas otras opciones.
+
+La base de datos se almacena en el fichero data.json, siguiendo la siguiente estructura:
+
+```json
+type dbtype = {
+    ingredients: {
+        name: string;
+        location: string;
+        ingredientGroup: ingredientType;
+        nutrients: {carbohydrates: number, proteins: number, lipids: number};
+        pricePerKg: number;
+    }[],
+    dishes: {
+        name: string;
+        dishType: DishType;
+        ingredients: {ingredient: Ingredient, amountInGrams: number}[];
+        dishPrice: number;
+    }[],
+    menus: {
+        name: string;
+        menuPrice: number;
+        dishes: Dish [];
+    }[],
+    cartas: {
+        localMenus: Menu[];
+        dishes: Dish[];
+    }[];
+};
+```
+
+### ---------------------------------------------------------------------------------------------------------------
+
+### Conclusiones
+
+### ---------------------------------------------------------------------------------------------------------------
+
+### Configuración de GitHub GitHub Pages
+El último paso consiste en implementar GitHub Pages desde el repositorio. Para hacerlo, se debe acceder a la sección "settings" en el repositorio en GitHub. Una vez allí, en la zona "GitHub Pages" se debe hacer lo siguiente:
+1. Habilitar GitHub pages en el repositorio
+2. Seleccionar la rama de trabajo (en este caso, master) y la carpeta raíz (en este caso, /docs, ya que allí se encuentra el archivo index.md) y marcar save
+3. Elegir un tema para la página
+Una vez hecho, solo queda esperar unos segundos y acceder a la página que aparece para ver la web.
+
+### ---------------------------------------------------------------------------------------------------------------
+
+### Referencias
+* [Coveralls](https://coveralls.io)
+* [GitHub Actions](https://github.com/features/actions)
+* Inquirer.js
+*  --> (https://www.npmjs.com/package/inquirer)
+*  --> (https://github.com/SBoudrias/Inquirer.js) 
+* [Lowdb](https://www.npmjs.com/package/lowdb)
+
+
+
+
 
 
 

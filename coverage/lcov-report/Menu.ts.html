@@ -23,9 +23,9 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">77.08% </span>
+                <span class="strong">84.09% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>37/48</span>
+                <span class='fraction'>37/44</span>
             </div>
         
             
@@ -37,16 +37,16 @@
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">95% </span>
+                <span class="strong">90.48% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>19/20</span>
+                <span class='fraction'>19/21</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">74.42% </span>
+                <span class="strong">82.05% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>32/43</span>
+                <span class='fraction'>32/39</span>
             </div>
         
             
@@ -55,7 +55,7 @@
             Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
         </p>
     </div>
-    <div class='status-line medium'></div>
+    <div class='status-line high'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -224,7 +224,13 @@
 <a name='L165'></a><a href='#L165'>165</a>
 <a name='L166'></a><a href='#L166'>166</a>
 <a name='L167'></a><a href='#L167'>167</a>
-<a name='L168'></a><a href='#L168'>168</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L168'></a><a href='#L168'>168</a>
+<a name='L169'></a><a href='#L169'>169</a>
+<a name='L170'></a><a href='#L170'>170</a>
+<a name='L171'></a><a href='#L171'>171</a>
+<a name='L172'></a><a href='#L172'>172</a>
+<a name='L173'></a><a href='#L173'>173</a>
+<a name='L174'></a><a href='#L174'>174</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -309,16 +315,22 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -476,17 +488,23 @@ export class Menu {
      * @function print, imprime el menú
      */
 <span class="fstat-no" title="function not covered" >    print(</span>): void{
-<span class="cstat-no" title="statement not covered" >        console.log(`${this.getName()}`);</span>
-        let aux: Dish[] = <span class="cstat-no" title="statement not covered" >Array.from(this.dishes);</span>
-        let count: number = <span class="cstat-no" title="statement not covered" >1;</span>
-<span class="cstat-no" title="statement not covered" >        aux.sort();</span>
-<span class="cstat-no" title="statement not covered" >        while(aux.length !== 0) {</span>
-<span class="cstat-no" title="statement not covered" >            while(aux[count] === aux[count - 1]) {</span>
-<span class="cstat-no" title="statement not covered" >                count++;</span>
-<span class="cstat-no" title="statement not covered" >                console.log(`${aux[0].getName()}   ${aux[0].getDishPrice().toFixed(2)}€   x${count}`);</span>
-<span class="cstat-no" title="statement not covered" >                aux.splice(0, count);</span>
+        /*console.log(`${this.getName()}`);
+        let aux: Dish[] = Array.from(this.dishes);
+        let count: number = 1;
+        aux.sort();
+        while(aux.length !== 0) {
+            while(aux[count] === aux[count - 1]) {
+                count++;
+                console.log(`${aux[0].getName()}   ${aux[0].getDishPrice().toFixed(2)}€   x${count}`);
+                aux.splice(0, count);
             }
-        }     
+        }  */
+        let result: string = <span class="cstat-no" title="statement not covered" >""; </span>
+<span class="cstat-no" title="statement not covered" >        result += "\n-------------------------------\n";</span>
+<span class="cstat-no" title="statement not covered" >        result += this.getName() + "\t\t" + this.getMenuPrice().toFixed(2) + "\n\n";</span>
+<span class="cstat-no" title="statement not covered" >        this.dishes.forEach(<span class="fstat-no" title="function not covered" >dish </span>=&gt; {</span>
+<span class="cstat-no" title="statement not covered" >            result += " * " + dish.getName() + "\n";</span>
+        });
     }
     
     /**
@@ -565,7 +583,7 @@ export class Menu {
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank">istanbul</a>
-                at Sun Apr 18 2021 23:10:01 GMT+0100 (hora de verano de Europa occidental)
+                at Sun Apr 18 2021 23:36:47 GMT+0100 (hora de verano de Europa occidental)
             </div>
         </div>
         <script src="prettify.js"></script>

@@ -83,7 +83,7 @@ export class Menu {
      * @function print, imprime el menú
      */
     print(): void{
-        console.log(`${this.getName()}`);
+        /*console.log(`${this.getName()}`);
         let aux: Dish[] = Array.from(this.dishes);
         let count: number = 1;
         aux.sort();
@@ -93,7 +93,13 @@ export class Menu {
                 console.log(`${aux[0].getName()}   ${aux[0].getDishPrice().toFixed(2)}€   x${count}`);
                 aux.splice(0, count);
             }
-        }     
+        }  */
+        let result: string = ""; 
+        result += "\n-------------------------------\n";
+        result += this.getName() + "\t\t" + this.getMenuPrice().toFixed(2) + "\n\n";
+        this.dishes.forEach(dish => {
+            result += " * " + dish.getName() + "\n";
+        });
     }
     
     /**
