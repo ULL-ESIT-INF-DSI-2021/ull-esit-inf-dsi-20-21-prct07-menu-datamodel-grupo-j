@@ -85,9 +85,7 @@ export class Menu {
      * Print imprime menú
      */
     print(): void{
-        console.log(`${this.getName()}:
-        Platos:
-        `);
+        console.log(`${this.getName()}`);
         this.dishes.forEach(element => {
             console.log(`${element.getName()}   ${element.getDishPrice().toFixed(2)}€   x ${this.amountDishes}
             `);

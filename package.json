@@ -21,12 +21,14 @@
     "@types/mocha": "^8.2.1",
     "chai": "^4.3.4",
     "eslint": "^7.22.0",
+    "lowdb": "^1.0.0",
     "mocha": "^8.3.2",
     "nyc": "^15.1.0",
     "ts-node": "^9.1.1",
     "typedoc": "^0.20.32"
   },
   "dependencies": {
+    "@types/lowdb": "^1.0.9",
     "inquirer": "^6.3.1"
   }
 }

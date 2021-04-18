@@ -246,6 +246,7 @@ async function showAll() {
             choices: dishOptionsArray
         });
         if(menuDishSelection["dishMenu"] === "Go Back") {
+            console.clear();
             showAll();
         }
         else {
@@ -253,7 +254,7 @@ async function showAll() {
             console.clear();
             console.log("Ingredientes del plato " + userdish.getName() + ":\n\n");
             userdish.getIngredients().forEach(element => {
-                console.log(element.ingredient.print());
+                element.ingredient.print();
             });
             const goback = await inquirer.prompt({
                 type: "list",
@@ -263,11 +264,12 @@ async function showAll() {
             showAll();
         }
     }
-    else if(userSelection["whatToShow"] === "Go Back") {
+    else if(userSelection["whatToShow"] === "Show all dishes") {
+
+    }
+    else {
         mainPrompt();
     }
-    
-    //mainPrompt();
 }
 
 mainPrompt();
