@@ -46,6 +46,6 @@ describe('Menu initialization tests', () => {
         let menu: Menu = new Menu();
         menu.addNewDish(tortilla);
         menu.deleteDish(tortilla)
-        expect(menu.getDishes().includes(tortilla)).to.be.eql(false);
+        expect(menu.getDishes().includes(tortilla)).to.be.equal(false);
     });
 });
