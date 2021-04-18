@@ -54,7 +54,7 @@ export class Dish {
     
     getMainIngredientType(): void { //ingredientType[]
         let carnes = 0, verduras = 0, lacteos = 0, cereales = 0, frutas = 0;
-        let percentIngredient: number[] = [carnes, verduras, lacteos, cereales, frutas]; 
+        /*let percentIngredient: number[] = [carnes, verduras, lacteos, cereales, frutas]; 
         this.ingredients.forEach(element => {
             switch(element.ingredient.getIngredientGroup()) {
                 case "CARNES-HUEVOS-LEGUMBRES": carnes++;   break;
@@ -68,7 +68,16 @@ export class Dish {
             });
             //console.log(mainIngredientType);
             //getMaxOfArray(percentIngredient[carnes, verduras, lacteos, cereales, frutas]);
-        });
+        });*/
+        /*var dicc = {};
+        for(let i = 0; i < this.ingredients.length; i++) {
+            if(dicc[this.ingredients[i].getIngredientGroup()] != undefined) dicc[this.ingredients[i].getIngredientGroup()]++;
+            else dicc[this.ingredients[i].getIngredientGroup()] = 1;
+        }
+        var highestVal = Math.max.apply(null, Object.values(dicc)), val = Object.keys(dicc).find(function(a) {
+            return dicc[a] === highestVal;
+        });*/
+        
         
     }
     

@@ -11,6 +11,10 @@ export class Command {
     /**
      * Constructor de la comanda
      * @param nameTable numero de la mesa de la comanda
+     * @param dishes vector que almacenará los platos
+     * @param menus vector que almacenará los menus
+     * @param menuAmount cantidad de menus
+     * @param isCustomMenu si es true el cliente elegirá un menú personalizado, sino será uno predefinido
      */
     constructor(nameTable: number) {
         this.nameTable = 0;

@@ -8,17 +8,24 @@ import * as Data from "./data"
 export class Carta {
     localMenus: Menu[];
     dishes: Dish[];
+    name: string;
 
     /**
      * @param localMenus
      * @param dishes
+     * @function generateCarta() Genera una carta
      */
     constructor(localMenus: Menu[] = [], dishes: Dish[] = []) {
         this.localMenus = localMenus;
         this.dishes = dishes;
+        this.name = "";
         this.generateCarta();
     }
 
+    getName(): string{
+        return this.name;
+    }
+    
     /**
      * @returns {Menu[]} Retorna la lista de menus
      */
@@ -31,6 +38,10 @@ export class Carta {
      */
     getDishes(): Dish[] {
         return this.dishes;
+    }
+
+    setName(newName: string): void {
+        this.name = newName;
     }
 
     findMenuByName(menu: string){

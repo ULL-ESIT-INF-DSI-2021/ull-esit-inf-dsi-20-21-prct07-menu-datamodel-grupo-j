@@ -6,20 +6,19 @@ export class Menu {
     name: string;
     menuPrice: number;
     dishes: Dish []; 
-    amountDishes: number;
 
     /**
      * Contructor del Menú
      * @param name nombre del menú
      * @param menuPrice precio del menú
      * @param dishes platos que componen el menú
+     * @function calculateMenuPrice() calcular precio del menu
      */
     constructor(name: string = "", menuPrice: number = 0, dishes: Dish [] = []) {
         this.name = name;
         this.dishes = dishes;
         this.menuPrice = 0;
         this.calculateMenuPrice();
-        this.amountDishes = 1;
     }
 
     /**
@@ -86,10 +85,21 @@ export class Menu {
      */
     print(): void{
         console.log(`${this.getName()}`);
-        this.dishes.forEach(element => {
-            console.log(`${element.getName()}   ${element.getDishPrice().toFixed(2)}€   x ${this.amountDishes}
+        let aux: Dish[] = Array.from(this.dishes);
+        let count: number = 1;
+        aux.sort();
+        while(aux.length !== 0) {
+            while(aux[count] === aux[count - 1]) {
+                count++;
+                console.log(`${aux[0].getName()}   ${aux[0].getDishPrice().toFixed(2)}€   x${count}`);
+                aux.splice(0, count);
+            }
+        }     
+        /*this.aux.forEa
+        ch(element => {
+            console.log(`${element.getName()}   ${element.getDishPrice().toFixed(2)}€   x ${this.dishes.}
             `);
-        });
+        });*/
     }
     
     /**
@@ -128,9 +138,6 @@ export class Menu {
      */
      addNewDish(newDish: Dish) {
         this.dishes.push(newDish);
-        if(this.dishes.includes(newDish)){
-            this.amountDishes++;
-        }
     }
 
     /**
