@@ -3,6 +3,7 @@ import {DishType} from "./Dish"
 import {Ingredient} from "./Ingredient"
 import {ingredientType} from "./Ingredient"
 import {Menu} from "./Menu"
+import * as Data from "./data"
 
 export class Carta {
     localMenus: Menu[];
@@ -53,7 +54,7 @@ export class Carta {
     }
 
     generateCarta(){
-        let egg: Ingredient = new Ingredient("EGG", "SPAIN", "CARNES-HUEVOS-LEGUMBRES", {carbohydrates: 5, proteins: 50, lipids: 25}, 5);
+        /*let egg: Ingredient = new Ingredient("EGG", "SPAIN", "CARNES-HUEVOS-LEGUMBRES", {carbohydrates: 5, proteins: 50, lipids: 25}, 5);
         let potato: Ingredient = new Ingredient("POTATO", "SPAIN", "VERDURAS-HORTALIZAS", {carbohydrates: 45, proteins: 10, lipids: 30}, 1.5);
         let tortilla: Dish = new Dish("TORTILLA", "SECONDCOURSE", [{ingredient: egg, amountInGrams: 50}, {ingredient: potato, amountInGrams: 200}]);
 
@@ -64,7 +65,16 @@ export class Carta {
         let menu1: Menu = new Menu("MENU-CHEF", 9, [tortilla, natilla]);
         this.addNewMenu(menu1);
         this.addNewDish(tortilla);
-        this.addNewDish(natilla);
+        this.addNewDish(natilla);*/
+
+        Data.dishesArray.forEach(element => {
+            this.addNewDish(element);
+        })
+
+        Data.menuArray.forEach(element => {
+            this.addNewMenu(element);
+        })
+
     }
     /**
      * Imprime la carta en un formato fácil de leer y entender para el usuario
@@ -75,7 +85,7 @@ export class Carta {
         Menús del chef:
         `;
         this.localMenus.forEach(element => {
-            result += `${element.getName()}     ${element.getMenuPrice()}€
+            result += `${element.getName()}     ${element.menuPrice.toFixed(2)}€
             
                 Platos incluidos:
                 `;

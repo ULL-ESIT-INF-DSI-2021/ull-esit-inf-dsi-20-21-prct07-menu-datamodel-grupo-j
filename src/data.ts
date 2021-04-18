@@ -1,8 +1,8 @@
 import {Ingredient} from './Ingredient'
 import {Dish} from './Dish'
 import {Menu} from './Menu'
-import { createPromptModule } from 'inquirer';
-import { Command } from './Command';
+//import { createPromptModule } from 'inquirer';
+//import { Command } from './Command';
 
 // List of ingredients
 
@@ -61,7 +61,10 @@ import { Command } from './Command';
 /*53*/let whippedCream: Ingredient = new Ingredient("WHIPPED CREAM", "NETHERLANDS", "LACTEOS", {carbohydrates: 10.1, proteins: 2.1, lipids: 31.4}, 3.5);
 /*54*/let butter: Ingredient = new Ingredient("BUTTER", "FRANCE", "LACTEOS", {carbohydrates: 99, proteins: 0.6, lipids: 83}, 2.15);
 
+//Ingredient Array
+export let ingredientArray: Ingredient[] = [egg,potato,cebolla,milk,limon,lettuce,tomatoe,oliveOil,cheese,garlic,beet,carrot,whiteRice,spaghetti,macaroni,tuna,sardines,hake,banana,sausage,cornmeal,breadCrumbs,liquidCream,noodles,clams,cod,celery,parsley,veal,greenPeas,redPepper,greenPepper,chickpea,cabbage,zucchini,beans,pumpkin,chicken,avocado,serranoHam,chorizo,bloodSausage,octopus,mayonnaise,olives,vinegar,porkChop,sargo,coffee,cocoa,cinnamon,strawberry,whippedCream,butter];
 
+     
 // List of dishes (5-10 per type of dish)
 /*1*/let croquetas: Dish = new Dish("CROQUETAS DE ATÚN", "STARTER", [{ingredient: milk, amountInGrams: 500}, {ingredient: tuna, amountInGrams: 100}, {ingredient: cornmeal, amountInGrams: 20}, {ingredient: oliveOil, amountInGrams: 100}, {ingredient: egg, amountInGrams: 150}, {ingredient:liquidCream, amountInGrams: 140}, {ingredient: breadCrumbs, amountInGrams: 30}]);
 /*2*/let surtido: Dish = new Dish("SURTIDO DE CHACINA", "STARTER", [{ingredient: cheese, amountInGrams: 50}, {ingredient: serranoHam, amountInGrams: 50}, {ingredient: chorizo, amountInGrams: 20}, {ingredient: bloodSausage, amountInGrams: 100}]);
@@ -87,6 +90,9 @@ import { Command } from './Command';
 /*19*/let bananaSplit: Dish = new Dish("BANANA SPLIT", "DESSERT", [{ingredient: milk, amountInGrams: 400}, {ingredient: banana, amountInGrams: 80}, {ingredient: strawberry, amountInGrams: 60}, {ingredient: whippedCream, amountInGrams: 175}]);
 /*20*/let cheeseCake: Dish = new Dish("TARTA DE QUESO", "DESSERT", [{ingredient: butter, amountInGrams: 100}, {ingredient: cheese, amountInGrams: 500}, {ingredient: liquidCream, amountInGrams: 400}, {ingredient: strawberry, amountInGrams: 200}]);
 
+//Dishes Array
+export let dishesArray: Dish[] = [croquetas,surtido,ensaladilla,sardinas,pulpo, arrozCubana,sopaPescado,estofado,puchero,macarrones,cesarSalad, tortilla,merluza,chuletas,sargo_,natilla,tiramisu,flan,bananaSplit,cheeseCake];
+
 
 // List of menu (5-10 per type of menu)
 let menu1: Menu = new Menu("MENU DEL CHEF", 16, [pulpo, estofado, sargo_, tiramisu]);
@@ -94,3 +100,6 @@ let menu2: Menu = new Menu("ESPECIAL DEL MAR", 10, [sardinas, sopaPescado, merlu
 let menu3: Menu = new Menu("VIVA ESPAÑA", 10, [surtido, puchero, tortilla, natilla]);
 let menu4: Menu = new Menu("EXPERIENCIA EXTRANJERA", 10, [ensaladilla, arrozCubana, cesarSalad, bananaSplit]);
 let menu5: Menu = new Menu("MENU INFANTIL", 8, [croquetas, macarrones, chuletas, flan]);
+
+//Menu Array
+export let menuArray: Menu[] = [menu1,menu2,menu3,menu4,menu5];

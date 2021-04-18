@@ -6,8 +6,7 @@ export class Menu {
     name: string;
     menuPrice: number;
     dishes: Dish []; 
-    menus: Menu[];
-    menuAmount: number;
+    amountDishes: number;
 
     /**
      * Contructor del Menú
@@ -15,12 +14,12 @@ export class Menu {
      * @param menuPrice precio del menú
      * @param dishes platos que componen el menú
      */
-    constructor(name: string, menuPrice: number, dishes: Dish []) {
+    constructor(name: string = "", menuPrice: number = 0, dishes: Dish [] = []) {
         this.name = name;
-        this.menuPrice = menuPrice;
-        this.menuAmount = 1;
-        this.menus = [];
         this.dishes = dishes;
+        this.menuPrice = 0;
+        this.calculateMenuPrice();
+        this.amountDishes = 1;
     }
 
     /**
@@ -37,12 +36,6 @@ export class Menu {
         return this.menuPrice;
     }
 
-     /**
-     * @returns menuAmount, cantidad de menus
-     */
-      getMenuAmount(){
-        return this.menuAmount; 
-     }
 
     /**
      * @returns platos, platos que lo componen
@@ -60,6 +53,19 @@ export class Menu {
     }
 
     /**
+     * Calcula el precio del menú
+     * @param ndishes Vector de tipo Dish que tendrá todos los platos elegidos
+     * @return Devuelve el coste total
+     */
+    calculateMenuPrice(): void{
+        this.dishes.forEach(dish => {
+            this.menuPrice += dish.dishPrice;  //["ingredient"].getPricePerKg() / 100 * ingredient["amountInGrams"]; // antes /1000
+        }); 
+        //return this.menuPrice;
+    }
+
+
+    /**
      * Cambia el precio del menú
      * @param newMenuPrice Nuevo precio del menú
     */
@@ -71,10 +77,23 @@ export class Menu {
      * Cambia los platos del menú
      * @param newDishes Nuevos platos del menú
     */
-    setDishs(newDishes: [] = []): void {
+    setDishes(newDishes: Dish[] = []): void {
         this.dishes = newDishes;
     }
 
+    /**
+     * Print imprime menú
+     */
+    print(): void{
+        console.log(`${this.getName()}:
+        Platos:
+        `);
+        this.dishes.forEach(element => {
+            console.log(`${element.getName()}   ${element.getDishPrice().toFixed(2)}€   x ${this.amountDishes}
+            `);
+        });
+    }
+    
     /**
      * Getter que devuelve la composición nutricional del menú
      * @returns Composicion Nutricional del menú
@@ -106,32 +125,13 @@ export class Menu {
     }
 
     /**
-     * Añade un nuevo menú 
-     * @param newMenu Menú que se desea añadir
-     */
-     addNewMenu(newMenu: Menu) {
-        this.menus.push(newMenu);
-    }
-
-    /**
      * Añade un nuevo plato
      * @param newDish Plato que se desea añadirse
      */
      addNewDish(newDish: Dish) {
         this.dishes.push(newDish);
-    }
-
-    /**
-     * Elimina un menu
-     * @param menu Menu que desea eliminarse
-     */
-     deleteMenu(menu: Menu) {
-        const deletion: number = this.menus.findIndex(element => element.getName() === menu.getName());
-        if(deletion !== -1) {
-            this.menus.splice(deletion, 1);
-        }
-        else {
-            console.log("El menú no está en la carta");
+        if(this.dishes.includes(newDish)){
+            this.amountDishes++;
         }
     }
 
@@ -143,6 +143,16 @@ export class Menu {
         const deletion: number = this.dishes.findIndex(element => element.getName() === dish.getName());
         if(deletion !== -1) {
             this.dishes.splice(deletion, 1);
+        }
+        else {
+            console.log("No hay ningún plato en el menú");
+        }
+    }
+
+    findDishByName(menu: string){
+        const deletion: number = this.dishes.findIndex(element => element.getName() === menu);
+        if(deletion !== -1) {
+            return this.dishes [deletion];
         }
         else {
             console.log("El plato no está en la carta");

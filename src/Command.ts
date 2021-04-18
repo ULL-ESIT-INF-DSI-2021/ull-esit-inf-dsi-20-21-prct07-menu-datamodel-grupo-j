@@ -5,6 +5,7 @@ export class Command {
     nameTable: number;
     isCustomMenu: boolean = true;
     menus: Menu[];
+    menuAmount: number;
     dishes: Dish[];
      
     /**
@@ -15,6 +16,7 @@ export class Command {
         this.nameTable = 0;
         this.dishes = [];
         this.menus = [];
+        this.menuAmount = 1;
         this.isCustomMenu = true;
     }
     
@@ -33,14 +35,29 @@ export class Command {
     }
 
     /**
+     * @returns menuAmount, cantidad de menus
+     */
+    getMenuAmount(){
+        return this.menuAmount; 
+    }
+
+    /**
      * @returns {Dish[]} Retorna la lista de platos
      */
     getDishes(): Dish[]{
         return this.dishes;
     }
 
+    /**
+     * Método encargado de borrar de la comanda todos los platos y los menus
+     */
     clear(){
-
+        this.menus.forEach(element => {
+            element.dishes.forEach(dish => {
+               element.deleteDish(dish);
+            })
+            this.deleteMenu(element);
+        });
     }
 
     /**
@@ -48,29 +65,27 @@ export class Command {
      * @returns comanda con el tipo de menú
      */
     printCommand() : string {
-        let result: string = `Comanda de la mesa ${this.getNameTable()}:
+        let result: string = `\n###########  COMANDA  ###########
         `
-
         if(this.isCustomMenu == false) {
             `Menú:
             
             `;
             this.menus.forEach(element => {
-                if(element.getMenuAmount())
-                    result += `${element.getName()}   x ${element.getMenuAmount()}   ${element.getMenuPrice()}€
-                    Platos:
-                    `;
-                    element.dishes.forEach(dish => {
-                    result += `${dish.getName()}
-                    `;
-                })
+                result += `${element.getName()}    ${element.menuPrice.toFixed(2)}€
+                Platos:
+                `;
+                element.dishes.forEach(dish => {
+                result += `${dish.getName()}
+                `;
+                });
             });
         } else {
             `Menú personalizado:
             
             `;
             this.menus.forEach(element => {
-            result += `${element.getName()}     ${element.getMenuPrice()}€
+            result += `${element.getName()}     ${element.menuPrice.toFixed(2)}€
                 Platos:
                 `;
                 element.dishes.forEach(dish => {
@@ -123,7 +138,7 @@ export class Command {
             this.dishes.splice(deletion, 1);
         }
         else {
-            console.log("El plato no está en la carta");
+            console.log("No hay ningún plato en el menú");
         }
     }
 

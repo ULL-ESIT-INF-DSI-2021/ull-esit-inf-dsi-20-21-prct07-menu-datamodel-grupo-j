@@ -1,3 +1,5 @@
+import { ingredientArray } from "./data";
+
 export type ingredientType = "CARNES-HUEVOS-LEGUMBRES" |"VERDURAS-HORTALIZAS" | "LACTEOS" | "CEREALES" | "FRUTAS"; 
 
 export class Ingredient {
@@ -7,6 +9,7 @@ export class Ingredient {
   ingredientGroup: ingredientType;
   nutrients: {carbohydrates: number, proteins: number, lipids: number};
   pricePerKg: number;
+  //amountDishes: any;
 
   /**
    * Contructor del alimento
@@ -76,5 +79,15 @@ export class Ingredient {
    */
   setNutrients(newNutrients: {carbohydrates: number, proteins: number, lipids: number}): void {
       this.nutrients = newNutrients;
+  }
+
+  print(){
+    ingredientArray.forEach(element => {
+      console.log(`${element.getName()}   ${element.getIngredientGroup()}
+      Composición nutricional:
+       
+      ${element.getNutrients()}
+      `);
+    });
   }
 }

@@ -51,8 +51,10 @@ export class Dish {
         return {carbohydrates: cb, proteins: pt, lipids: lp};
     }
 
-    /*getMainIngredientType(): ingredientType[] {
+    
+    getMainIngredientType(): void { //ingredientType[]
         let carnes = 0, verduras = 0, lacteos = 0, cereales = 0, frutas = 0;
+        let percentIngredient: number[] = [carnes, verduras, lacteos, cereales, frutas]; 
         this.ingredients.forEach(element => {
             switch(element.ingredient.getIngredientGroup()) {
                 case "CARNES-HUEVOS-LEGUMBRES": carnes++;   break;
@@ -61,9 +63,14 @@ export class Dish {
                 case "CEREALES": cereales++;                break;
                 case "FRUTAS": frutas++;                    break;
             }
+            percentIngredient.forEach(element2 => {
+                console.log(Math.max(element2));
+            });
+            //console.log(mainIngredientType);
+            //getMaxOfArray(percentIngredient[carnes, verduras, lacteos, cereales, frutas]);
         });
         
-    }*/
+    }
     
     /**
      * @returns name Retorna el nombre del plato

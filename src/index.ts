@@ -6,12 +6,8 @@ import {Carta} from './Carta'
 import {Command} from './Command'
 import * as data from './data'
 
-enum chefMenus {
-    Bueno = "The best menu! :)",
-    Malo = "Shitty menu"
-}
-
 enum actions {
+    showInformation = "See the information of our products",
     addMenu = "Add new menu to the command",
     addDish = "Add new dish to the command",
     deleteMenu = "Delete a menu from my command",
@@ -19,6 +15,13 @@ enum actions {
     clear = "Delete all my command",
     finishCommand = "Send my command",
     cancelCommand = "Cancel my command and quit"
+}
+
+enum customMenuActions {
+    addDish = "Add new dish to menu",
+    deleteDish = "Delete dish from menu",
+    confirm = "Confirm and add menu",
+    quit = "Cancel and quit"
 }
 
 const myCommand = new Command(1);
@@ -33,6 +36,7 @@ async function mainPrompt(): Promise<void>{
         message: "What do you want to do?",
         choices: Object.values(actions)
     }); switch(userSelection["actions"]) {
+            case actions.showInformation:   showAll();      break;
             case actions.addMenu:           selectMenu();   break;
             case actions.addDish:           selectDish();   break;
             case actions.deleteMenu:        deleteMenu();   break;
@@ -46,7 +50,7 @@ async function mainPrompt(): Promise<void>{
 
 async function selectMenu() {
     let carta = new Carta();
-    const menuArray: string[] = [], dishArray: string[] = [];
+    const menuArray: string[] = [], dishArray: string[] = [], menuId: number = 1;;
     carta.localMenus.forEach(element => {
         menuArray.push(element.getName());
     });
@@ -68,6 +72,7 @@ async function selectMenu() {
         });
         let usermenu: Menu = carta.findMenuByName(menuSelection["chefMenu"])!;
         myCommand.addNewMenu(usermenu);
+        mainPrompt();
     } else {
         const menutypeSelection = await inquirer.prompt({
             type: "list",
@@ -76,18 +81,20 @@ async function selectMenu() {
             choices: ["From a chef menu", "Choosing dishes"]
         });
         if(menutypeSelection["customMenu"] === "From a chef menu") {
-            const menuSelection = await inquirer.prompt({
+            const menuCustomSelection = await inquirer.prompt({
                 type: "list",
-                name: "chefMenu",
+                name: "chefCustomMenu",
                 message: "What menu do you want to choose?",
                 choices: menuArray
             });
-        }
-        else {
-
-        }
+            let newCustomMenu = new Menu("Custom Menu " /*+ menuId*/);
+            let usermenu: Menu = carta.findMenuByName(menuCustomSelection["chefCustomMenu"])!;
+            newCustomMenu.setDishes(usermenu.getDishes());
+            customMenuActionSelection(newCustomMenu);        
+            //waitForSelection(newCustomMenu);
+        }   
     }
-    mainPrompt();
+   // mainPrompt();
 }
 
 async function selectDish() {
@@ -124,12 +131,70 @@ async function deleteMenu() {
 }
 
 async function deleteDish() {
+    let dishitems: string[] = [];
+    myCommand.getDishes().forEach(element => {
+        dishitems.push(element.getName());
+    });
     const userSelection = await inquirer.prompt( {
         type: "list",
         name: "delDish",
         message: "Which dish do you want to delete?",
-        choices: ["Dish1", "None"]
+        choices: dishitems
     });
+    let userdish: Dish = myCommand.findDishByName(userSelection["delDish"])!;
+    myCommand.deleteDish(userdish);
+    mainPrompt();
+}
+
+var waitForSelection = (menu: Menu) => customMenuActionSelection(menu);
+async function customMenuActionSelection(menu: Menu): Promise<void> {
+    let option: boolean = true;
+    let carta: Carta = new Carta();
+    while(option) {
+        console.clear();
+        menu.print();
+        const userActionSelection = await inquirer.prompt( {
+            type: "list",
+            name: "customActions",
+            message: "What do you want to do?",
+            choices: Object.values(customMenuActions)
+        }); 
+        if(userActionSelection["customActions"] === customMenuActions.addDish) {
+            const dishArray: string[] = [];
+            carta.dishes.forEach(element => {
+                dishArray.push(element.getName());
+            });
+            const dishSelection = await inquirer.prompt({
+                type: "list",
+                name: "customMenu",
+                message: "What dish do you want to add to your menu?",
+                choices: dishArray
+            });
+            let userdish: Dish = carta.findDishByName(dishSelection["customMenu"])!;
+            menu.addNewDish(userdish);
+        }
+        else if(userActionSelection["customActions"] === customMenuActions.deleteDish) {
+            let dishitems: string[] = [];
+            menu.getDishes().forEach(element => {
+                dishitems.push(element.getName());
+            });
+            const deleteDishSelection = await inquirer.prompt( {
+                type: "list",
+                name: "delDish",
+                message: "Which dish do you want to delete from your menu?",
+                choices: dishitems
+            });
+            let userdish: Dish = menu.findDishByName(deleteDishSelection["delDish"])!;
+            menu.deleteDish(userdish);
+        }
+        else if(userActionSelection["customActions"] === customMenuActions.confirm) {
+            myCommand.addNewMenu(menu);
+            option = false;
+        }
+        else {
+            option = false;
+        }
+    }
     mainPrompt();
 }
 
@@ -140,6 +205,69 @@ function clear() {
 
 function sendCommand() {
     mainPrompt();
+}
+
+async function showAll() {
+    let carta = new Carta();
+    const userSelection = await inquirer.prompt( {
+        type: "list",
+        name: "whatToShow",
+        message: "What do you want to do?",
+        choices: ["Show all menus", "Show all dishes", "Go back"]
+    });
+    if(userSelection["whatToShow"] === "Show all menus") {
+        const menuArray: string[] = [], dishArray: string[] = [];
+        carta.localMenus.forEach(element => {
+            menuArray.push(element.getName());
+        });
+        carta.dishes.forEach(element => {
+            dishArray.push(element.getName());
+        });
+        console.clear();
+        console.log("##########ALL OUR MENUS##########\n\n");
+        const userMenuSelection = await inquirer.prompt( {
+            type: "list",
+            name: "menuType",
+            message: "What menu do you want to check?",
+            choices: menuArray
+        });
+        let usermenu: Menu = carta.findMenuByName(userMenuSelection["menuType"])!;
+        console.clear();
+        console.log("These are all the dishes includes in the menu.\nSelect any of them to check details.\n");
+        let dishOptionsArray: string[] = [];
+        usermenu.getDishes().forEach(element => {
+            dishOptionsArray.push(element.getName());
+        });
+        dishOptionsArray.push("Go Back");
+        const menuDishSelection = await inquirer.prompt({
+            type: "list",
+            name: "dishMenu",
+            message: "What dish do you want to check?",
+            choices: dishOptionsArray
+        });
+        if(menuDishSelection["dishMenu"] === "Go Back") {
+            showAll();
+        }
+        else {
+            let userdish: Dish = carta.findDishByName(menuDishSelection["dishMenu"])!;
+            console.clear();
+            console.log("Ingredientes del plato " + userdish.getName() + ":\n\n");
+            userdish.getIngredients().forEach(element => {
+                console.log(element.ingredient.print());
+            });
+            const goback = await inquirer.prompt({
+                type: "list",
+                name: "back",
+                choices: ["Go Back"]
+            });
+            showAll();
+        }
+    }
+    else if(userSelection["whatToShow"] === "Go Back") {
+        mainPrompt();
+    }
+    
+    //mainPrompt();
 }
 
 mainPrompt();
