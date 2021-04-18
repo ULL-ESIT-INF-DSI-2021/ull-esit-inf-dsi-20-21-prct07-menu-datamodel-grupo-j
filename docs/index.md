@@ -280,6 +280,8 @@ type dbtype = {
 
 ### Conclusiones
 
+La metodología que hemos usado al igual que en las otras prácticas ha sido desarrollo de las pruebas mediante TDD, además del uso de la herramienta Coveralls para el cubrimiento de dichas pruebas. Como novedada en esta práctico se agregó una herramienta nueva, Github Actions para llevar a cabo la integración continua del proyecto, es decir con cada cambio en el repositorio se actializa dichos tests, usando así como entorno de ejecución node.js.
+Finalmente el módulo Inquirer.js que es una dependencia que nos permite hacer que nuestra linea de comandos sea interactiva proporciona una vista más amigable al usuario de los distintos menús que podemos desplegar.
 ### ---------------------------------------------------------------------------------------------------------------
 
 ### Configuración de GitHub GitHub Pages
@@ -290,6 +292,7 @@ El último paso consiste en implementar GitHub Pages desde el repositorio. Para 
 Una vez hecho, solo queda esperar unos segundos y acceder a la página que aparece para ver la web.
 
 ### ---------------------------------------------------------------------------------------------------------------
+
 
 ### Referencias
 * [Coveralls](https://coveralls.io)
