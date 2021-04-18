@@ -11,6 +11,7 @@ export class Carta {
     name: string;
 
     /**
+     * Constructor
      * @param localMenus
      * @param dishes
      * @function generateCarta() Genera una carta

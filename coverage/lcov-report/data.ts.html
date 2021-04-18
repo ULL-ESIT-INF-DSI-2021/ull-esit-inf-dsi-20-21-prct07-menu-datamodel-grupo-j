@@ -1,0 +1,392 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Code coverage report for data.ts</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="prettify.css" />
+    <link rel="stylesheet" href="base.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+    
+<body>
+<div class='wrapper'>
+    <div class='pad1'>
+        <h1><a href="index.html">All files</a> data.ts</h1>
+        <div class='clearfix'>
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">100% </span>
+                <span class="quiet">Statements</span>
+                <span class='fraction'>85/85</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">100% </span>
+                <span class="quiet">Branches</span>
+                <span class='fraction'>0/0</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">100% </span>
+                <span class="quiet">Functions</span>
+                <span class='fraction'>0/0</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">100% </span>
+                <span class="quiet">Lines</span>
+                <span class='fraction'>85/85</span>
+            </div>
+        
+            
+        </div>
+        <p class="quiet">
+            Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
+        </p>
+    </div>
+    <div class='status-line high'></div>
+    <pre><table class="coverage">
+<tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
+<a name='L2'></a><a href='#L2'>2</a>
+<a name='L3'></a><a href='#L3'>3</a>
+<a name='L4'></a><a href='#L4'>4</a>
+<a name='L5'></a><a href='#L5'>5</a>
+<a name='L6'></a><a href='#L6'>6</a>
+<a name='L7'></a><a href='#L7'>7</a>
+<a name='L8'></a><a href='#L8'>8</a>
+<a name='L9'></a><a href='#L9'>9</a>
+<a name='L10'></a><a href='#L10'>10</a>
+<a name='L11'></a><a href='#L11'>11</a>
+<a name='L12'></a><a href='#L12'>12</a>
+<a name='L13'></a><a href='#L13'>13</a>
+<a name='L14'></a><a href='#L14'>14</a>
+<a name='L15'></a><a href='#L15'>15</a>
+<a name='L16'></a><a href='#L16'>16</a>
+<a name='L17'></a><a href='#L17'>17</a>
+<a name='L18'></a><a href='#L18'>18</a>
+<a name='L19'></a><a href='#L19'>19</a>
+<a name='L20'></a><a href='#L20'>20</a>
+<a name='L21'></a><a href='#L21'>21</a>
+<a name='L22'></a><a href='#L22'>22</a>
+<a name='L23'></a><a href='#L23'>23</a>
+<a name='L24'></a><a href='#L24'>24</a>
+<a name='L25'></a><a href='#L25'>25</a>
+<a name='L26'></a><a href='#L26'>26</a>
+<a name='L27'></a><a href='#L27'>27</a>
+<a name='L28'></a><a href='#L28'>28</a>
+<a name='L29'></a><a href='#L29'>29</a>
+<a name='L30'></a><a href='#L30'>30</a>
+<a name='L31'></a><a href='#L31'>31</a>
+<a name='L32'></a><a href='#L32'>32</a>
+<a name='L33'></a><a href='#L33'>33</a>
+<a name='L34'></a><a href='#L34'>34</a>
+<a name='L35'></a><a href='#L35'>35</a>
+<a name='L36'></a><a href='#L36'>36</a>
+<a name='L37'></a><a href='#L37'>37</a>
+<a name='L38'></a><a href='#L38'>38</a>
+<a name='L39'></a><a href='#L39'>39</a>
+<a name='L40'></a><a href='#L40'>40</a>
+<a name='L41'></a><a href='#L41'>41</a>
+<a name='L42'></a><a href='#L42'>42</a>
+<a name='L43'></a><a href='#L43'>43</a>
+<a name='L44'></a><a href='#L44'>44</a>
+<a name='L45'></a><a href='#L45'>45</a>
+<a name='L46'></a><a href='#L46'>46</a>
+<a name='L47'></a><a href='#L47'>47</a>
+<a name='L48'></a><a href='#L48'>48</a>
+<a name='L49'></a><a href='#L49'>49</a>
+<a name='L50'></a><a href='#L50'>50</a>
+<a name='L51'></a><a href='#L51'>51</a>
+<a name='L52'></a><a href='#L52'>52</a>
+<a name='L53'></a><a href='#L53'>53</a>
+<a name='L54'></a><a href='#L54'>54</a>
+<a name='L55'></a><a href='#L55'>55</a>
+<a name='L56'></a><a href='#L56'>56</a>
+<a name='L57'></a><a href='#L57'>57</a>
+<a name='L58'></a><a href='#L58'>58</a>
+<a name='L59'></a><a href='#L59'>59</a>
+<a name='L60'></a><a href='#L60'>60</a>
+<a name='L61'></a><a href='#L61'>61</a>
+<a name='L62'></a><a href='#L62'>62</a>
+<a name='L63'></a><a href='#L63'>63</a>
+<a name='L64'></a><a href='#L64'>64</a>
+<a name='L65'></a><a href='#L65'>65</a>
+<a name='L66'></a><a href='#L66'>66</a>
+<a name='L67'></a><a href='#L67'>67</a>
+<a name='L68'></a><a href='#L68'>68</a>
+<a name='L69'></a><a href='#L69'>69</a>
+<a name='L70'></a><a href='#L70'>70</a>
+<a name='L71'></a><a href='#L71'>71</a>
+<a name='L72'></a><a href='#L72'>72</a>
+<a name='L73'></a><a href='#L73'>73</a>
+<a name='L74'></a><a href='#L74'>74</a>
+<a name='L75'></a><a href='#L75'>75</a>
+<a name='L76'></a><a href='#L76'>76</a>
+<a name='L77'></a><a href='#L77'>77</a>
+<a name='L78'></a><a href='#L78'>78</a>
+<a name='L79'></a><a href='#L79'>79</a>
+<a name='L80'></a><a href='#L80'>80</a>
+<a name='L81'></a><a href='#L81'>81</a>
+<a name='L82'></a><a href='#L82'>82</a>
+<a name='L83'></a><a href='#L83'>83</a>
+<a name='L84'></a><a href='#L84'>84</a>
+<a name='L85'></a><a href='#L85'>85</a>
+<a name='L86'></a><a href='#L86'>86</a>
+<a name='L87'></a><a href='#L87'>87</a>
+<a name='L88'></a><a href='#L88'>88</a>
+<a name='L89'></a><a href='#L89'>89</a>
+<a name='L90'></a><a href='#L90'>90</a>
+<a name='L91'></a><a href='#L91'>91</a>
+<a name='L92'></a><a href='#L92'>92</a>
+<a name='L93'></a><a href='#L93'>93</a>
+<a name='L94'></a><a href='#L94'>94</a>
+<a name='L95'></a><a href='#L95'>95</a>
+<a name='L96'></a><a href='#L96'>96</a>
+<a name='L97'></a><a href='#L97'>97</a>
+<a name='L98'></a><a href='#L98'>98</a>
+<a name='L99'></a><a href='#L99'>99</a>
+<a name='L100'></a><a href='#L100'>100</a>
+<a name='L101'></a><a href='#L101'>101</a>
+<a name='L102'></a><a href='#L102'>102</a>
+<a name='L103'></a><a href='#L103'>103</a>
+<a name='L104'></a><a href='#L104'>104</a>
+<a name='L105'></a><a href='#L105'>105</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span></td><td class="text"><pre class="prettyprint lang-js">import {Ingredient} from './Ingredient'
+import {Dish} from './Dish'
+import {Menu} from './Menu'
+//import { createPromptModule } from 'inquirer';
+//import { Command } from './Command';
+&nbsp;
+// List of ingredients
+&nbsp;
+/*1*/let egg: Ingredient = new Ingredient("EGG", "SPAIN", "CARNES-HUEVOS-LEGUMBRES", {carbohydrates: 5, proteins: 50, lipids: 25}, 5);
+/*2*/let potato: Ingredient = new Ingredient("POTATO", "SPAIN", "VERDURAS-HORTALIZAS", {carbohydrates: 45, proteins: 10, lipids: 30}, 1.5);
+/*3*/let cebolla: Ingredient = new Ingredient("CEBOLLA", "FRANCE", "VERDURAS-HORTALIZAS", {carbohydrates: 5, proteins: 15, lipids: 0}, 1.20);
+/*4*/let milk: Ingredient = new Ingredient("MILK", "IRELAND", "LACTEOS", {carbohydrates: 4.7, proteins: 3.1, lipids: 3.5}, 7);
+/*5*/let limon: Ingredient = new Ingredient("LEMON", "PORTUGAL", "FRUTAS", {carbohydrates: 12.7, proteins: 0.1, lipids: 0.06}, 8);
+/*6*/let lettuce: Ingredient = new Ingredient("LETTUCE", "ITALY", "VERDURAS-HORTALIZAS", {carbohydrates: 2.9, proteins: 1.4, lipids: 0.2}, 2);
+/*7*/let tomatoe: Ingredient = new Ingredient("TOMATOE", "SPAIN", "VERDURAS-HORTALIZAS", {carbohydrates: 3.5, proteins: 1, lipids: 0.11}, 1.5);
+/*8*/let oliveOil: Ingredient = new Ingredient("OLIVE OIL", "ITALY", "VERDURAS-HORTALIZAS", {carbohydrates: 0, proteins: 0, lipids: 99.9}, 4.99);
+/*9*/let cheese: Ingredient = new Ingredient("CHEESE", "IRELAND", "LACTEOS", {carbohydrates: 0, proteins: 27.6, lipids: 39.6}, 3.15);
+/*10*/let garlic: Ingredient = new Ingredient("BEET", "GERMANY", "VERDURAS-HORTALIZAS", {carbohydrates: 23, proteins: 5.3, lipids: 0.3}, 3.15);
+/*11*/let beet: Ingredient = new Ingredient("BEET", "BELGIUM", "VERDURAS-HORTALIZAS", {carbohydrates: 6.4, proteins: 1.3, lipids: 0.17}, 2.1);
+/*12*/let carrot: Ingredient = new Ingredient("CARROT", "FRANCE", "VERDURAS-HORTALIZAS", {carbohydrates: 0, proteins: 1.3, lipids: 39.6}, 3.15);
+/*13*/let whiteRice: Ingredient = new Ingredient("WHITE RICE", "CHINA", "CEREALES", {carbohydrates: 86, proteins: 7, lipids: 0.9}, 1.79);
+/*14*/let spaghetti: Ingredient = new Ingredient("SPAGHETTI", "ITALY", "CEREALES", {carbohydrates: 74.1, proteins: 12, lipids: 1.8}, 1.85);
+/*15*/let macaroni: Ingredient = new Ingredient("MACARONI", "ITALY", "CEREALES", {carbohydrates: 74.1, proteins: 12, lipids: 1.8}, 1.85);
+/*16*/let tuna: Ingredient = new Ingredient("TUNA", "THAILAND", "CARNES-HUEVOS-LEGUMBRES", {carbohydrates: 0, proteins: 23, lipids: 12}, 10);
+/*17*/let sardines: Ingredient = new Ingredient("SARDINES", "CHINA", "CARNES-HUEVOS-LEGUMBRES", {carbohydrates: 0, proteins: 18.1, lipids: 17.5}, 10);
+/*18*/let hake: Ingredient = new Ingredient("HAKE", "CHINA", "CARNES-HUEVOS-LEGUMBRES", {carbohydrates: 0, proteins: 15.9, lipids: 2.8}, 9.6);
+/*19*/let banana: Ingredient = new Ingredient("BANANA", "INDIA", "FRUTAS", {carbohydrates: 20, proteins: 1.2, lipids: 0.3}, 3);
+/*20*/let sausage: Ingredient = new Ingredient("SAUSAGE", "GERMANY", "CARNES-HUEVOS-LEGUMBRES", {carbohydrates: 0.7, proteins: 12.9, lipids: 27}, 8);
+/*21*/let cornmeal: Ingredient = new Ingredient("CORNMEAL", "RUSSIA", "CEREALES", {carbohydrates: 76, proteins: 8.7, lipids: 2.7}, 5);
+/*22*/let breadCrumbs: Ingredient = new Ingredient("BREAD CRUMBS", "FRANCIA", "CEREALES", {carbohydrates: 58, proteins: 7.8, lipids: 1}, 5);
+/*23*/let liquidCream: Ingredient = new Ingredient("LIQUID CREAM", "NEW ZELAND", "LACTEOS", {carbohydrates: 3.4, proteins: 2.5, lipids: 20}, 6);
+/*24*/let noodles: Ingredient = new Ingredient("NOODLES", "CHINA", "CEREALES", {carbohydrates: 78, proteins: 12.9, lipids: 1.5}, 2);
+/*25*/let clams: Ingredient = new Ingredient("CLAMS", "JAPAN", "CARNES-HUEVOS-LEGUMBRES", {carbohydrates: 0, proteins: 10.7, lipids: 0.5}, 12);
+/*26*/let cod: Ingredient = new Ingredient("COD", "SPAIN", "CARNES-HUEVOS-LEGUMBRES", {carbohydrates: 0, proteins: 17.7, lipids: 0.4}, 11.5);
+/*27*/let celery: Ingredient = new Ingredient("CELERY", "ENGLAND", "VERDURAS-HORTALIZAS", {carbohydrates: 1.3, proteins: 1.3, lipids: 0.2}, 1.5);
+/*28*/let parsley: Ingredient = new Ingredient("PARSLEY", "SPAIN", "CARNES-HUEVOS-LEGUMBRES", {carbohydrates: 2.7, proteins: 3, lipids: 1.3}, 1.2);
+/*29*/let veal: Ingredient = new Ingredient("VEAL", "CANADA", "CARNES-HUEVOS-LEGUMBRES", {carbohydrates: 0, proteins: 24, lipids: 3}, 8);
+/*30*/let greenPeas: Ingredient = new Ingredient("GREEN PEAS", "ITALY", "VERDURAS-HORTALIZAS", {carbohydrates: 9.7, proteins: 5.6, lipids: 0.5}, 2);
+/*31*/let redPepper: Ingredient = new Ingredient("RED PEPPER", "CHINA", "VERDURAS-HORTALIZAS", {carbohydrates: 6.4, proteins: 1, lipids: 0.4}, 2.7);
+/*32*/let greenPepper: Ingredient = new Ingredient("GREEN PEPPER", "CHINA", "VERDURAS-HORTALIZAS", {carbohydrates: 3.7, proteins: 0.7, lipids: 0.2}, 2.65);
+/*33*/let chickpea: Ingredient = new Ingredient("CHICKPEA", "MEXICO", "VERDURAS-HORTALIZAS", {carbohydrates: 49.6, proteins: 21.3, lipids: 5.4}, 3.1);
+/*34*/let cabbage: Ingredient = new Ingredient("CABBAGE", "USA", "VERDURAS-HORTALIZAS", {carbohydrates: 6, proteins: 1.3, lipids: 0.1}, 3.6);
+/*35*/let zucchini: Ingredient = new Ingredient("ZUCCHINI", "INDIA", "VERDURAS-HORTALIZAS", {carbohydrates: 3.35, proteins: 1.21, lipids: 0.18}, 5);
+/*36*/let beans: Ingredient = new Ingredient("BEANS", "USA", "VERDURAS-HORTALIZAS", {carbohydrates: 7.13, proteins: 1.82, lipids: 0.12}, 1.69);
+/*37*/let pumpkin: Ingredient = new Ingredient("PUMPKIN", "CHINA", "VERDURAS-HORTALIZAS", {carbohydrates: 4.59, proteins: 1.13, lipids: 0.2}, 2.89);
+/*38*/let chicken: Ingredient = new Ingredient("CHICKEN", "BRAZIL", "CARNES-HUEVOS-LEGUMBRES", {carbohydrates: 0, proteins: 20, lipids: 9.7}, 10.1);
+/*39*/let avocado: Ingredient = new Ingredient("AVOCADO", "MEXICO", "VERDURAS-HORTALIZAS", {carbohydrates: 5.9, proteins: 1.5, lipids: 12}, 6);
+/*40*/let serranoHam: Ingredient = new Ingredient("SERANO HAM", "SPAIN", "CARNES-HUEVOS-LEGUMBRES", {carbohydrates: 0, proteins: 31, lipids: 13}, 5);
+/*41*/let chorizo: Ingredient = new Ingredient("CHORIZO", "SPAIN", "CARNES-HUEVOS-LEGUMBRES", {carbohydrates: 2.85, proteins: 13.72, lipids: 29.18}, 4);
+/*42*/let bloodSausage: Ingredient = new Ingredient("BLOOD SAUSAGE", "SPAIN", "CARNES-HUEVOS-LEGUMBRES", {carbohydrates: 3, proteins: 19.5, lipids: 39.5}, 6.4);
+/*43*/let octopus: Ingredient = new Ingredient("OCTOPUS", "SPAIN", "CARNES-HUEVOS-LEGUMBRES", {carbohydrates: 2.2, proteins: 14.91, lipids: 1.4}, 11.4);
+/*44*/let mayonnaise: Ingredient = new Ingredient("MAYONNAISE", "ARGENTINA", "CARNES-HUEVOS-LEGUMBRES", {carbohydrates: 3.51, proteins: 0.13, lipids: 4.91}, 2.4);
+/*45*/let olives: Ingredient = new Ingredient("OLIVES", "EGYPT", "VERDURAS-HORTALIZAS", {carbohydrates: 6, proteins: 0.8, lipids: 11}, 1.9);
+/*46*/let vinegar: Ingredient = new Ingredient("VINEGAR", "ARGENTINA", "VERDURAS-HORTALIZAS", {carbohydrates: 0, proteins: 0, lipids: 0}, 1.5);
+/*47*/let porkChop: Ingredient = new Ingredient("PORK CHOP", "USA", "CARNES-HUEVOS-LEGUMBRES", {carbohydrates: 0, proteins: 13.12, lipids: 6.85}, 8.5);
+/*48*/let sargo: Ingredient = new Ingredient("SARGO", "SPAIN", "CARNES-HUEVOS-LEGUMBRES", {carbohydrates: 0, proteins: 18.4, lipids: 12}, 9.5);
+/*49*/let coffee: Ingredient = new Ingredient("COFFEE", "BRAZIL", "VERDURAS-HORTALIZAS", {carbohydrates: 0, proteins: 0.1, lipids: 0}, 2);
+/*50*/let cocoa: Ingredient = new Ingredient("COCOA", "IVORY COAST", "VERDURAS-HORTALIZAS", {carbohydrates: 9.9, proteins: 25, lipids: 10}, 1.5);
+/*51*/let cinnamon: Ingredient = new Ingredient("CINNAMON", "SRI LANKA", "VERDURAS-HORTALIZAS", {carbohydrates: 1.89, proteins: 0.09, lipids: 0.07}, 1.5);
+/*52*/let strawberry: Ingredient = new Ingredient("STRAWBERRY", "CHINA", "FRUTAS", {carbohydrates: 7, proteins: 0.7, lipids: 0.5}, 2.5);
+/*53*/let whippedCream: Ingredient = new Ingredient("WHIPPED CREAM", "NETHERLANDS", "LACTEOS", {carbohydrates: 10.1, proteins: 2.1, lipids: 31.4}, 3.5);
+/*54*/let butter: Ingredient = new Ingredient("BUTTER", "FRANCE", "LACTEOS", {carbohydrates: 99, proteins: 0.6, lipids: 83}, 2.15);
+&nbsp;
+//Ingredient Array
+export let ingredientArray: Ingredient[] = [egg,potato,cebolla,milk,limon,lettuce,tomatoe,oliveOil,cheese,garlic,beet,carrot,whiteRice,spaghetti,macaroni,tuna,sardines,hake,banana,sausage,cornmeal,breadCrumbs,liquidCream,noodles,clams,cod,celery,parsley,veal,greenPeas,redPepper,greenPepper,chickpea,cabbage,zucchini,beans,pumpkin,chicken,avocado,serranoHam,chorizo,bloodSausage,octopus,mayonnaise,olives,vinegar,porkChop,sargo,coffee,cocoa,cinnamon,strawberry,whippedCream,butter];
+&nbsp;
+     
+// List of dishes (5-10 per type of dish)
+/*1*/let croquetas: Dish = new Dish("CROQUETAS DE ATÚN", "STARTER", [{ingredient: milk, amountInGrams: 500}, {ingredient: tuna, amountInGrams: 100}, {ingredient: cornmeal, amountInGrams: 20}, {ingredient: oliveOil, amountInGrams: 100}, {ingredient: egg, amountInGrams: 150}, {ingredient:liquidCream, amountInGrams: 140}, {ingredient: breadCrumbs, amountInGrams: 30}]);
+/*2*/let surtido: Dish = new Dish("SURTIDO DE CHACINA", "STARTER", [{ingredient: cheese, amountInGrams: 50}, {ingredient: serranoHam, amountInGrams: 50}, {ingredient: chorizo, amountInGrams: 20}, {ingredient: bloodSausage, amountInGrams: 100}]);
+/*3*/let ensaladilla: Dish = new Dish("ENSALADILLA RUSA", "STARTER", [{ingredient: egg, amountInGrams: 100}, {ingredient: potato, amountInGrams: 250}, {ingredient: carrot, amountInGrams: 80}, {ingredient: tuna, amountInGrams: 160}, {ingredient: mayonnaise, amountInGrams: 600}, {ingredient: olives, amountInGrams: 30}, {ingredient: redPepper, amountInGrams: 30}]);
+/*4*/let sardinas: Dish = new Dish("SARDINAS", "STARTER", [{ingredient: sardines, amountInGrams: 300}, {ingredient: oliveOil, amountInGrams: 25}, {ingredient: limon, amountInGrams: 80}]);
+/*5*/let pulpo: Dish = new Dish("PULPO A LA VINAGRETA", "STARTER", [{ingredient: octopus, amountInGrams: 400}, {ingredient: oliveOil, amountInGrams: 25}, {ingredient: greenPepper, amountInGrams: 80}, {ingredient: redPepper, amountInGrams: 40}, {ingredient: parsley, amountInGrams: 10}, {ingredient: vinegar, amountInGrams:10}]);
+&nbsp;
+/*6*/let arrozCubana: Dish = new Dish("ARROZ A LA CUBANA", "FIRSTCOURSE", [{ingredient: whiteRice, amountInGrams: 200}, {ingredient: banana, amountInGrams: 50}, {ingredient: egg, amountInGrams: 104}, {ingredient: garlic, amountInGrams: 15}, {ingredient: sausage, amountInGrams: 160}]);
+/*7*/let sopaPescado: Dish = new Dish("SOPA DE PESCADO", "FIRSTCOURSE", [{ingredient: noodles, amountInGrams: 125}, {ingredient: clams, amountInGrams: 350}, {ingredient: cod, amountInGrams: 700}, {ingredient: carrot, amountInGrams: 80}, {ingredient: parsley, amountInGrams: 3}, {ingredient: celery, amountInGrams: 10}]);
+/*8*/let estofado: Dish = new Dish("ESTOFADO", "FIRSTCOURSE", [{ingredient: veal, amountInGrams: 605}, {ingredient: greenPeas, amountInGrams: 120}, {ingredient: potato, amountInGrams: 400}, {ingredient: carrot, amountInGrams: 80}, {ingredient: cebolla, amountInGrams: 45}, {ingredient: celery, amountInGrams: 10}]);
+/*9*/let puchero: Dish = new Dish("PUCHERO CANARIO", "FIRSTCOURSE", [{ingredient: chickpea, amountInGrams: 300}, {ingredient: greenPepper, amountInGrams: 90}, {ingredient: potato, amountInGrams: 400}, {ingredient: carrot, amountInGrams: 100}, {ingredient: tomatoe, amountInGrams: 50}, {ingredient: redPepper, amountInGrams: 10}, {ingredient: cabbage, amountInGrams: 30}, {ingredient: beans, amountInGrams: 100}, {ingredient: pumpkin, amountInGrams: 230}, {ingredient: chicken, amountInGrams: 120}, {ingredient: zucchini, amountInGrams: 90}, {ingredient: oliveOil, amountInGrams: 10}]);
+/*10*/let macarrones: Dish = new Dish("MACARRONES", "FIRSTCOURSE", [{ingredient: macaroni, amountInGrams: 600}, {ingredient: tomatoe, amountInGrams: 200}, {ingredient: cheese, amountInGrams: 120}]);
+&nbsp;
+/*11*/let cesarSalad: Dish = new Dish("CESAR-SALAD", "SECONDCOURSE", [{ingredient:lettuce, amountInGrams: 100}, {ingredient: tomatoe, amountInGrams: 60}, {ingredient: oliveOil, amountInGrams: 20}, {ingredient: egg, amountInGrams: 53}, {ingredient: cheese, amountInGrams: 50}, {ingredient: garlic, amountInGrams: 15}, {ingredient: beet, amountInGrams: 30}, {ingredient: carrot, amountInGrams: 58}, {ingredient: avocado, amountInGrams: 40}]);
+/*12*/let tortilla: Dish = new Dish("TORTILLA", "SECONDCOURSE", [{ingredient: egg, amountInGrams: 50}, {ingredient: potato, amountInGrams: 200}]);
+/*13*/let merluza: Dish = new Dish("MERLUZA CON PAPAS", "SECONDCOURSE", [{ingredient: hake, amountInGrams: 300}, {ingredient: potato, amountInGrams: 200}, {ingredient: cebolla, amountInGrams: 30}, {ingredient: redPepper, amountInGrams: 20}, {ingredient: garlic, amountInGrams: 15}]);
+/*14*/let chuletas: Dish = new Dish("CHULETAS", "SECONDCOURSE", [{ingredient: porkChop, amountInGrams: 300}, {ingredient: potato, amountInGrams: 200}]);
+/*15*/let sargo_: Dish = new Dish("SARGO CON PAPAS", "SECONDCOURSE", [{ingredient: sargo, amountInGrams: 300}, {ingredient: potato, amountInGrams: 200}, {ingredient: redPepper, amountInGrams:30}, {ingredient:greenPepper, amountInGrams: 40}]);
+&nbsp;
+/*16*/let natilla: Dish = new Dish("NATILLA", "DESSERT", [{ingredient: milk, amountInGrams: 100}, {ingredient: limon, amountInGrams: 80}]);
+/*17*/let tiramisu: Dish = new Dish("TIRAMISÚ", "DESSERT", [{ingredient: cheese, amountInGrams: 500}, {ingredient: egg, amountInGrams: 100}, {ingredient: coffee, amountInGrams: 350}, {ingredient: cornmeal, amountInGrams:100}, {ingredient: cocoa, amountInGrams: 30}]);
+/*18*/let flan: Dish = new Dish("FLAN", "DESSERT", [{ingredient: milk, amountInGrams: 100}, {ingredient: egg, amountInGrams: 160}, {ingredient: limon, amountInGrams: 10}, {ingredient: cinnamon, amountInGrams: 20}]);
+/*19*/let bananaSplit: Dish = new Dish("BANANA SPLIT", "DESSERT", [{ingredient: milk, amountInGrams: 400}, {ingredient: banana, amountInGrams: 80}, {ingredient: strawberry, amountInGrams: 60}, {ingredient: whippedCream, amountInGrams: 175}]);
+/*20*/let cheeseCake: Dish = new Dish("TARTA DE QUESO", "DESSERT", [{ingredient: butter, amountInGrams: 100}, {ingredient: cheese, amountInGrams: 500}, {ingredient: liquidCream, amountInGrams: 400}, {ingredient: strawberry, amountInGrams: 200}]);
+&nbsp;
+//Dishes Array
+export let dishesArray: Dish[] = [croquetas,surtido,ensaladilla,sardinas,pulpo, arrozCubana,sopaPescado,estofado,puchero,macarrones,cesarSalad, tortilla,merluza,chuletas,sargo_,natilla,tiramisu,flan,bananaSplit,cheeseCake];
+&nbsp;
+&nbsp;
+// List of menu (5-10 per type of menu)
+let menu1: Menu = new Menu("MENU DEL CHEF", 16, [pulpo, estofado, sargo_, tiramisu]);
+let menu2: Menu = new Menu("ESPECIAL DEL MAR", 10, [sardinas, sopaPescado, merluza, cheeseCake]);
+let menu3: Menu = new Menu("VIVA ESPAÑA", 10, [surtido, puchero, tortilla, natilla]);
+let menu4: Menu = new Menu("EXPERIENCIA EXTRANJERA", 10, [ensaladilla, arrozCubana, cesarSalad, bananaSplit]);
+let menu5: Menu = new Menu("MENU INFANTIL", 8, [croquetas, macarrones, chuletas, flan]);
+&nbsp;
+//Menu Array
+export let menuArray: Menu[] = [menu1,menu2,menu3,menu4,menu5];// @returns {Menu[]}, retorna la lista de menús // @returns {Dish[]}, retorna la lista de platos</pre></td></tr></table></pre>
+
+                <div class='push'></div><!-- for sticky footer -->
+            </div><!-- /wrapper -->
+            <div class='footer quiet pad2 space-top1 center small'>
+                Code coverage generated by
+                <a href="https://istanbul.js.org/" target="_blank">istanbul</a>
+                at Sun Apr 18 2021 23:10:01 GMT+0100 (hora de verano de Europa occidental)
+            </div>
+        </div>
+        <script src="prettify.js"></script>
+        <script>
+            window.onload = function () {
+                prettyPrint();
+            };
+        </script>
+        <script src="sorter.js"></script>
+        <script src="block-navigation.js"></script>
+    </body>
+</html>
+    

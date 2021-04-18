@@ -48,13 +48,8 @@ describe('Carta dishes tests', () => {
     it('Delete dish', () => {
         let carta: Carta = new Carta();
         carta.addNewDish(tortilla);
-        expect(carta.deleteDish(tortilla)).to.be.eql([]);
-    });
-    it('Dishes are deleted properly', () => {
-        let carta: Carta = new Carta();
-        carta.addNewDish(tortilla);
         carta.addNewDish(natilla);
-        carta.deleteDish(natilla);
+        carta.deleteDish(tortilla)
         expect(carta.getDishes().includes(natilla)).to.be.eql(true);
     });
     it('Find dish by the name', () => {

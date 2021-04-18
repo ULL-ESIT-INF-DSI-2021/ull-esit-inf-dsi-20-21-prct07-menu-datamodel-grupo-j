@@ -91,10 +91,35 @@ async function selectMenu() {
             let usermenu: Menu = carta.findMenuByName(menuCustomSelection["chefCustomMenu"])!;
             newCustomMenu.setDishes(usermenu.getDishes());
             customMenuActionSelection(newCustomMenu);        
-            //waitForSelection(newCustomMenu);
-        }   
+        }
+        else {
+            let continueAdding: boolean = true;
+            let dsArr: string[] = [];
+            let _ds: Dish[] = [];
+            data.dishesArray.forEach(ing => {
+                dsArr.push(ing.getName());
+            });
+            while(continueAdding) {
+                const ingSelection = await inquirer.prompt({
+                    type: "list",
+                    name: "ingsel",
+                    message: "What dish do you want to add to the menu?",
+                    choices: dsArr
+                });
+                const userdish: Dish = data.dishesArray[data.dishesArray.findIndex(element => element.getName() === ingSelection["ingsel"])];
+                _ds.push(userdish);
+                const cont = await inquirer.prompt({
+                    type: "list",
+                    name: "contsel",
+                    message: "Add other dish?",
+                    choices: ["Yes", "No"]
+                }); continueAdding = (cont["contsel"] === "Yes");
+            }
+            let tmpmenu: Menu = new Menu("CUSTOM MENU", 0, _ds);
+            myCommand.addNewMenu(tmpmenu);
+            mainPrompt();
+        }
     }
-   // mainPrompt();
 }
 
 async function selectDish() {
@@ -146,7 +171,6 @@ async function deleteDish() {
     mainPrompt();
 }
 
-var waitForSelection = (menu: Menu) => customMenuActionSelection(menu);
 async function customMenuActionSelection(menu: Menu): Promise<void> {
     let option: boolean = true;
     let carta: Carta = new Carta();

@@ -94,10 +94,6 @@ export class Menu {
                 aux.splice(0, count);
             }
         }     
-        /*this.aux.forEach(element => {
-            console.log(`${element.getName()}   ${element.getDishPrice().toFixed(2)}€   x ${this.dishes.}
-            `);
-        });*/
     }
     
     /**

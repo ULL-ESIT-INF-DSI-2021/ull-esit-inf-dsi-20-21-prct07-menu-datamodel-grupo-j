@@ -34,10 +34,10 @@ type dbtype = {
 
 export class JSONcarta {
     private database: lowdb.LowdbSync<dbtype>;
-    private ingredientList: Ingredient[];
-    private dishList: Dish[];
-    private menuList: Menu[];
-    private cartaList: Carta[];
+    public ingredientList: Ingredient[];
+    public dishList: Dish[];
+    public menuList: Menu[];
+    public cartaList: Carta[];
 
     constructor(ingredients: Ingredient[] = [], dishes: Dish[] = [], menus: Menu[] = [], cartas: Carta[] = []) {
         this.database = lowdb(new FileSync("data.json"));

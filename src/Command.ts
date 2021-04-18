@@ -3,7 +3,7 @@ import {Menu} from './Menu'
 
 export class Command {
     nameTable: number;
-    isCustomMenu: boolean = true;
+    //isCustomMenu: boolean = true;
     menus: Menu[];
     dishes: Dish[];
      
@@ -13,13 +13,11 @@ export class Command {
      * @param dishes vector que almacenará los platos
      * @param menus vector que almacenará los menus
      * @param menuAmount cantidad de menus
-     * @param isCustomMenu si es true el cliente elegirá un menú personalizado, sino será uno predefinido
      */
-    constructor(nameTable: number) {
-        this.nameTable = 0;
+    constructor(nameTable: number = 0) {
+        this.nameTable = nameTable;
         this.dishes = [];
         this.menus = [];
-        this.isCustomMenu = true;
     }
     
     /**
@@ -60,22 +58,26 @@ export class Command {
      * @returns comanda con el tipo de menú
      */
     printCommand() : string {
-        let result: string = `\n###########  COMANDA  ###########
-        `
-        if(this.isCustomMenu == false) {
-            `Menú:
-            
-            `;
+        let result: string = "\n###########  COMANDA  ###########\n";
+
+        if(this.menus.length !== 0) {
             this.menus.forEach(element => {
-                result += `${element.getName()}    ${element.menuPrice.toFixed(2)}€
-                Platos:
-                `;
+                result += "\n-------------------------------\n";
+                result += element.getName() + "\t\t" + element.getMenuPrice().toFixed(2) + "\n\n"; //`${element.getName()}    ${element.menuPrice.toFixed(2)}€
                 element.dishes.forEach(dish => {
-                result += `${dish.getName()}
-                `;
+                result += " * " + dish.getName() + "\n";
                 });
             });
-        } else {
+        } 
+
+        result += "\n";
+
+        if(this.dishes.length !== 0) {
+            this.dishes.forEach(element => {
+                result += " * " + element.getName() + "\t\t" + element.getDishPrice().toFixed(2) + "\n\n"; //`${element.getName()}    ${element.menuPrice.toFixed(2)}€
+            });
+        } 
+        /*else {
             `Menú personalizado:
             
             `;
@@ -88,7 +90,7 @@ export class Command {
                     `;
                 })
             });
-        }
+        }*/
         console.log(result);
         return result;
     }

@@ -45,6 +45,7 @@ describe('Menu initialization tests', () => {
     it('Delete dish', () => {
         let menu: Menu = new Menu();
         menu.addNewDish(tortilla);
-        expect(menu.deleteDish(tortilla)).to.be.eql([]);
+        menu.deleteDish(tortilla)
+        expect(menu.getDishes().includes(tortilla)).to.be.eql(false);
     });
 });

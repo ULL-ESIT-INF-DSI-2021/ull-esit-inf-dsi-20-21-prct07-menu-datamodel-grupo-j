@@ -26,13 +26,8 @@ describe('Command  tests', () => {
 describe('Command dishes tests', () => {
     it('New dishes are added properly', () => {
         let command: Command = new Command(0);
-        command.addNewDish(tortilla);
         command.addNewDish(natilla);
-        expect(command.getDishes()).to.be.eql([tortilla, natilla]);
-    });
-    it('New dishes are added properly', () => {
-        let command: Command = new Command(0);
-        expect(command.addNewDish(natilla)).to.be.eql([natilla]);
+        expect(command.getDishes().includes(natilla)).to.be.eql(true);
     });
     it('Get dish', () => {
         let command: Command = new Command(0);
@@ -47,7 +42,8 @@ describe('Command dishes tests', () => {
     it('Delete dish', () => {
         let command: Command = new Command(0);
         command.addNewDish(tortilla);
-        expect(command.deleteDish(tortilla)).to.be.eql([]);
+        command.deleteDish(tortilla);
+        expect(command.getDishes().includes(tortilla)).to.be.eql(false);
     });
 });
 
@@ -60,18 +56,14 @@ describe('Command menu tests', () => {
     });
     it('New menu are added properly', () => {
         let command: Command = new Command(1);
-        expect(command.addNewMenu(menu1)).to.be.eql([menu1]);
+        command.addNewMenu(menu1);
+        expect(command.getMenus()).to.be.eql([menu1]);
     });
     it('Menus are deleted properly', () => {
         let command: Command = new Command(1);
         command.addNewMenu(menu1);
         command.deleteMenu(menu1);
         expect(command.getMenus()).to.be.eql([]);
-    });
-    it('Delete dish', () => {
-        let command: Command = new Command(1);
-        command.addNewDish(tortilla);
-        expect(command.deleteMenu(menu1)).to.be.eql([]);
     });
     it('Find menu by the name', () => {
         let command: Command = new Command(1);

@@ -20,7 +20,6 @@ enum adminOptions {
     deleteIngredient = "Delete ingredient",
     deleteDish       = "Delete dish",
     deleteMenu       = "Delete menu",
-    deleteCarta      = "Delete Carta",
 };
 
 /**
@@ -45,10 +44,10 @@ async function mainPrompt(): Promise<void>{
             case adminOptions.addDish:                  generateNewDish();              break;
             case adminOptions.addMenu:                  generateNewMenu();              break;
             case adminOptions.addCarta:                 generateNewCarta();            break;
-            case adminOptions.deleteIngredient:         //db.deleteIngredient();        break;
-            case adminOptions.deleteDish:               //db.deleteDish();              break;
-            case adminOptions.deleteMenu:               //db.deleteMenu();              break;
-            case adminOptions.deleteCarta:              //db.deleteCarta();             break;
+            case adminOptions.deleteIngredient:         deleteIngredientdb();        break;
+            case adminOptions.deleteDish:               deleteDishdb();              break;
+            case adminOptions.deleteMenu:               deleteMenudb();              break;
+            //case adminOptions.deleteCarta:              //db.deleteCarta();             break;
     }
 }
 
@@ -251,6 +250,53 @@ async function generateNewMenu() {
     let cartatmp: Carta = new Carta(_mn, _ds, _name);
 
     db.addNewCarta(cartatmp);
+}
+
+async function deleteIngredientdb() {
+    let ingr: string[] = [];
+    db.ingredientList.forEach(element => {
+        ingr.push(element.getName());
+    });
+    const userSelection = await inquirer.prompt( {
+        type: "list",
+        name: "delDish",
+        message: "Which ingredient do you want to delete?",
+        choices: ingr
+    });
+    //let userdish: Dish = myCommand.findDishByName(userSelection["delDish"])!;
+    const usering: Ingredient = data.ingredientArray[data.ingredientArray.findIndex(element => element.getName() === userSelection["delDish"])];
+    db.deleteIngredient(usering);
+}
+
+async function deleteDishdb() {
+    let ds: string[] = [];
+    db.dishList.forEach(element => {
+        ds.push(element.getName());
+    });
+    const userSelection = await inquirer.prompt( {
+        type: "list",
+        name: "delDish",
+        message: "Which dish do you want to delete?",
+        choices: ds
+    });
+    //let userdish: Dish = myCommand.findDishByName(userSelection["delDish"])!;
+    const userdish: Dish = data.dishesArray[data.dishesArray.findIndex(element => element.getName() === userSelection["delDish"])];
+    db.deleteDish(userdish);
+}
+
+async function deleteMenudb() {
+    let mn: string[] = [];
+    db.menuList.forEach(element => {
+        mn.push(element.getName());
+    });
+    const userSelection = await inquirer.prompt( {
+        type: "list",
+        name: "delDish",
+        message: "Which menu do you want to delete?",
+        choices: mn
+    });
+    const usermenu: Menu = data.menuArray[data.menuArray.findIndex(element => element.getName() === userSelection["delDish"])];
+    db.deleteMenu(usermenu);
 }
 
 mainPrompt();

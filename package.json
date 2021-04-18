@@ -8,7 +8,7 @@
     "test": "tests"
   },
   "scripts": {
-    "test": "nyc mocha",
+    "test": "mocha",
     "doc": "typedoc;",
     "build": "tsc",
     "coverage": "nyc npm test && nyc report --reporter=lcov"
