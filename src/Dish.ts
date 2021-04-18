@@ -51,59 +51,29 @@ export class Dish {
         return {carbohydrates: cb, proteins: pt, lipids: lp};
     }
 
-    
-    getMainIngredientType(): void { //ingredientType[]
-        let carnes = 0, verduras = 0, lacteos = 0, cereales = 0, frutas = 0;
-        /*let percentIngredient: number[] = [carnes, verduras, lacteos, cereales, frutas]; 
-        this.ingredients.forEach(element => {
-            switch(element.ingredient.getIngredientGroup()) {
-                case "CARNES-HUEVOS-LEGUMBRES": carnes++;   break;
-                case "VERDURAS-HORTALIZAS": verduras++;     break;
-                case "LACTEOS": lacteos++;                  break;
-                case "CEREALES": cereales++;                break;
-                case "FRUTAS": frutas++;                    break;
-            }
-            percentIngredient.forEach(element2 => {
-                console.log(Math.max(element2));
-            });
-            //console.log(mainIngredientType);
-            //getMaxOfArray(percentIngredient[carnes, verduras, lacteos, cereales, frutas]);
-        });*/
-        /*var dicc = {};
-        for(let i = 0; i < this.ingredients.length; i++) {
-            if(dicc[this.ingredients[i].getIngredientGroup()] != undefined) dicc[this.ingredients[i].getIngredientGroup()]++;
-            else dicc[this.ingredients[i].getIngredientGroup()] = 1;
-        }
-        var highestVal = Math.max.apply(null, Object.values(dicc)), val = Object.keys(dicc).find(function(a) {
-            return dicc[a] === highestVal;
-        });*/
-        
-        
-    }
-    
     /**
-     * @returns name Retorna el nombre del plato
+     * @returns name, retorna el nombre del plato
      */
     getName(): string{
         return this.name;
     }
 
     /**
-     * @returns dishType Retorna el tipo del plato (entrante, primer plato, ...)
+     * @returns dishType, retorna el tipo del plato (entrante, primer plato, ...)
      */
     getDishType(): DishType{
         return this.dishType;
     }
 
     /**
-     * @returns ingredients Retorna el nombre de los ingredientes del plato
+     * @returns ingredients, retorna el nombre de los ingredientes del plato
      */
     getIngredients():{ingredient: Ingredient, amountInGrams: number}[] {
         return this.ingredients;
     }
 
     /**
-     * @returns dishPrice Retorna el precio del plato
+     * @returns dishPrice, retorna el precio del plato
      */
     getDishPrice(): number{
         return this.dishPrice;

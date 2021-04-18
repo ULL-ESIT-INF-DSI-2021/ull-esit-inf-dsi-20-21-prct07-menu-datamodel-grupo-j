@@ -40,11 +40,51 @@ export class JSONcarta {
     private cartaList: Carta[];
 
     constructor(ingredients: Ingredient[] = [], dishes: Dish[] = [], menus: Menu[] = [], cartas: Carta[] = []) {
+        this.database = lowdb(new FileSync("data.json"));
+        /*if(this.database.has("ingredients").value()) {
+            let idb = this.database.get("ingredients").value();
+            idb.forEach(item => {
+                let tmpi: Ingredient = item;
+                this.ingredientList.push(tmpi);
+            })
+        }
+        if(this.database.has("dishes").value()) {
+            let idb = this.database.get("dishes").value();
+            idb.forEach(item => {
+                let tmpd: Dish = item;
+                this.dishList.push(tmpd);
+            })
+        }
+        if(this.database.has("menus").value()) {
+            let idb = this.database.get("menus").value();
+            idb.forEach(item => {
+                let tmpm: Menu = item;
+                this.menuList.push(tmpm);
+            })
+        }
+        if(this.database.has("cartas").value()) {
+            let idb = this.database.get("cartas").value();
+            idb.forEach(item => {
+                let tmpc: Carta = item;
+                this.cartaList.push(tmpc);
+            })
+        }
+        ingredients.forEach(item => {
+            if(!this.ingredientList.includes(item)) this.ingredientList.push(item);
+        })
+        dishes.forEach(item => {
+            if(!this.dishList.includes(item)) this.dishList.push(item);
+        })
+        menus.forEach(item => {
+            if(!this.menuList.includes(item)) this.menuList.push(item);
+        })
+        cartas.forEach(item => {
+            if(!this.cartaList.includes(item)) this.cartaList.push(item);
+        })*/
         this.ingredientList = ingredients;
         this.dishList = dishes;
         this.menuList = menus;
         this.cartaList = cartas;
-        this.database = lowdb(new FileSync("data.json"));
     }
 
     storeDB() {
@@ -53,15 +93,6 @@ export class JSONcarta {
         this.database.set("dishes", [...this.dishList]).write();
         this.database.set("cartas", [...this.cartaList]).write();
     }
-
-
-
-
-
-
-
-
-
 
     addNewIngredient(newIngredient: Ingredient) {
         this.ingredientList.push(newIngredient);
@@ -87,6 +118,7 @@ export class JSONcarta {
         const deletion: number = this.ingredientList.findIndex(element => element.getName() === ingredient.getName());
         if(deletion !== -1) {
             this.ingredientList.splice(deletion, 1);
+            this.storeDB();
         }
         else {
             console.log("El ingrediente ya no se encuentra");
@@ -97,6 +129,7 @@ export class JSONcarta {
         const deletion: number = this.dishList.findIndex(element => element.getName() === dish.getName());
         if(deletion !== -1) {
             this.dishList.splice(deletion, 1);
+            this.storeDB();
         }
         else {
             console.log("El plato ya no se encuentra");
@@ -107,6 +140,7 @@ export class JSONcarta {
         const deletion: number = this.menuList.findIndex(element => element.getName() === menu.getName());
         if(deletion !== -1) {
             this.menuList.splice(deletion, 1);
+            this.storeDB();
         }
         else {
             console.log("El menú ya no se encuentra");
@@ -117,17 +151,10 @@ export class JSONcarta {
         const deletion: number = this.cartaList.findIndex(element => element.getName() === carta.getName());
         if(deletion !== -1) {
             this.cartaList.splice(deletion, 1);
+            this.storeDB();
         }
         else {
             console.log("La carta ya no se encuentra");
         }
-    }
-
-
-
-
-
-
-
-    
+    }    
 }

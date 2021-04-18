@@ -593,17 +593,6 @@
         "lipids": 83
       },
       "pricePerKg": 2.15
-    },
-    {
-      "name": "Chocolate",
-      "location": "Suizo",
-      "ingredientGroup": "LACTEOS",
-      "nutrients": {
-        "carbohydrates": 45,
-        "proteins": 10,
-        "lipids": 30
-      },
-      "pricePerKg": 12.5
     }
   ],
   "menus": [
@@ -2176,6 +2165,166 @@
         }
       ],
       "menuPrice": 130.87
+    },
+    {
+      "name": "Menu chino",
+      "dishes": [
+        {
+          "name": "BANANA SPLIT",
+          "dishType": "DESSERT",
+          "ingredients": [
+            {
+              "ingredient": {
+                "name": "MILK",
+                "location": "IRELAND",
+                "ingredientGroup": "LACTEOS",
+                "nutrients": {
+                  "carbohydrates": 4.7,
+                  "proteins": 3.1,
+                  "lipids": 3.5
+                },
+                "pricePerKg": 7
+              },
+              "amountInGrams": 400
+            },
+            {
+              "ingredient": {
+                "name": "BANANA",
+                "location": "INDIA",
+                "ingredientGroup": "FRUTAS",
+                "nutrients": {
+                  "carbohydrates": 20,
+                  "proteins": 1.2,
+                  "lipids": 0.3
+                },
+                "pricePerKg": 3
+              },
+              "amountInGrams": 80
+            },
+            {
+              "ingredient": {
+                "name": "STRAWBERRY",
+                "location": "CHINA",
+                "ingredientGroup": "FRUTAS",
+                "nutrients": {
+                  "carbohydrates": 7,
+                  "proteins": 0.7,
+                  "lipids": 0.5
+                },
+                "pricePerKg": 2.5
+              },
+              "amountInGrams": 60
+            },
+            {
+              "ingredient": {
+                "name": "WHIPPED CREAM",
+                "location": "NETHERLANDS",
+                "ingredientGroup": "LACTEOS",
+                "nutrients": {
+                  "carbohydrates": 10.1,
+                  "proteins": 2.1,
+                  "lipids": 31.4
+                },
+                "pricePerKg": 3.5
+              },
+              "amountInGrams": 175
+            }
+          ],
+          "dishPrice": 38.025000000000006
+        },
+        {
+          "name": "SOPA DE PESCADO",
+          "dishType": "FIRSTCOURSE",
+          "ingredients": [
+            {
+              "ingredient": {
+                "name": "NOODLES",
+                "location": "CHINA",
+                "ingredientGroup": "CEREALES",
+                "nutrients": {
+                  "carbohydrates": 78,
+                  "proteins": 12.9,
+                  "lipids": 1.5
+                },
+                "pricePerKg": 2
+              },
+              "amountInGrams": 125
+            },
+            {
+              "ingredient": {
+                "name": "CLAMS",
+                "location": "JAPAN",
+                "ingredientGroup": "CARNES-HUEVOS-LEGUMBRES",
+                "nutrients": {
+                  "carbohydrates": 0,
+                  "proteins": 10.7,
+                  "lipids": 0.5
+                },
+                "pricePerKg": 12
+              },
+              "amountInGrams": 350
+            },
+            {
+              "ingredient": {
+                "name": "COD",
+                "location": "SPAIN",
+                "ingredientGroup": "CARNES-HUEVOS-LEGUMBRES",
+                "nutrients": {
+                  "carbohydrates": 0,
+                  "proteins": 17.7,
+                  "lipids": 0.4
+                },
+                "pricePerKg": 11.5
+              },
+              "amountInGrams": 700
+            },
+            {
+              "ingredient": {
+                "name": "CARROT",
+                "location": "FRANCE",
+                "ingredientGroup": "VERDURAS-HORTALIZAS",
+                "nutrients": {
+                  "carbohydrates": 0,
+                  "proteins": 1.3,
+                  "lipids": 39.6
+                },
+                "pricePerKg": 3.15
+              },
+              "amountInGrams": 80
+            },
+            {
+              "ingredient": {
+                "name": "PARSLEY",
+                "location": "SPAIN",
+                "ingredientGroup": "CARNES-HUEVOS-LEGUMBRES",
+                "nutrients": {
+                  "carbohydrates": 2.7,
+                  "proteins": 3,
+                  "lipids": 1.3
+                },
+                "pricePerKg": 1.2
+              },
+              "amountInGrams": 3
+            },
+            {
+              "ingredient": {
+                "name": "CELERY",
+                "location": "ENGLAND",
+                "ingredientGroup": "VERDURAS-HORTALIZAS",
+                "nutrients": {
+                  "carbohydrates": 1.3,
+                  "proteins": 1.3,
+                  "lipids": 0.2
+                },
+                "pricePerKg": 1.5
+              },
+              "amountInGrams": 10
+            }
+          ],
+          "dishPrice": 127.706
+        }
+      ],
+      "menuPrice": 165.731
     }
   ],
   "dishes": [

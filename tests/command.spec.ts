@@ -14,12 +14,69 @@ let limon: Ingredient = new Ingredient("LEMON", "PORTUGAL", "FRUTAS", {carbohydr
 let natilla: Dish = new Dish("NATILLA", "DESSERT", [{ingredient: milk, amountInGrams: 50}, {ingredient: limon, amountInGrams: 200}]);
 
 let menu1: Menu = new Menu("MENU-CHEF", 9, [tortilla, natilla]);
-/*
+
+
+describe('Command  tests', () => {
+    it('Command table', () => {
+        let command: Command = new Command(0);
+        expect(command.getNameTable()).to.be.eql(0);
+    });
+});
+
 describe('Command dishes tests', () => {
     it('New dishes are added properly', () => {
-        let command: Command = new Command(1);
+        let command: Command = new Command(0);
         command.addNewDish(tortilla);
         command.addNewDish(natilla);
         expect(command.getDishes()).to.be.eql([tortilla, natilla]);
     });
-});*/
+    it('New dishes are added properly', () => {
+        let command: Command = new Command(0);
+        expect(command.addNewDish(natilla)).to.be.eql([natilla]);
+    });
+    it('Get dish', () => {
+        let command: Command = new Command(0);
+        command.addNewDish(tortilla);
+        expect(command.getDishes()).to.be.eql([tortilla]);
+    });
+    it('Find dish by the name', () => {
+        let command: Command = new Command(0);
+        command.addNewDish(tortilla);
+        expect(command.findDishByName("TORTILLA")).to.be.eql(tortilla);
+    });
+    it('Delete dish', () => {
+        let command: Command = new Command(0);
+        command.addNewDish(tortilla);
+        expect(command.deleteDish(tortilla)).to.be.eql([]);
+    });
+});
+
+
+describe('Command menu tests', () => {
+    it('Get menu', () => {
+        let command: Command = new Command(1);
+        command.addNewMenu(menu1);
+        expect(command.getMenus()).to.be.eql([menu1]);
+    });
+    it('New menu are added properly', () => {
+        let command: Command = new Command(1);
+        expect(command.addNewMenu(menu1)).to.be.eql([menu1]);
+    });
+    it('Menus are deleted properly', () => {
+        let command: Command = new Command(1);
+        command.addNewMenu(menu1);
+        command.deleteMenu(menu1);
+        expect(command.getMenus()).to.be.eql([]);
+    });
+    it('Delete dish', () => {
+        let command: Command = new Command(1);
+        command.addNewDish(tortilla);
+        expect(command.deleteMenu(menu1)).to.be.eql([]);
+    });
+    it('Find menu by the name', () => {
+        let command: Command = new Command(1);
+        command.addNewMenu(menu1);
+        expect(command.findMenuByName("MENU-CHEF")).to.be.eql(menu1);
+    });
+});
+

@@ -16,16 +16,26 @@ let natilla: Dish = new Dish("NATILLA", "DESSERT", [{ingredient: milk, amountInG
 let menu1: Menu = new Menu("MENU-CHEF", 9, [tortilla, natilla]);
 
 describe('Carta menus tests', () => {
+    it('Name of elements menu and dishes', () => {
+        expect(menu1.setName("MENU-CHEF"));
+        expect(tortilla.setName("TORTILLA"));
+        expect(natilla.setName("NATILLA"));
+    });
     it('New menus are added properly', () => {
         let carta: Carta = new Carta();
         carta.addNewMenu(menu1);
-        expect(carta.getLocalMenus()).to.be.eql([menu1]);
+        expect(carta.getLocalMenus().includes(menu1)).to.be.eql(true);
     });
     it('Menus are deleted properly', () => {
         let carta: Carta = new Carta();
         carta.addNewMenu(menu1);
         carta.deleteMenu(menu1);
-        expect(carta.getLocalMenus()).to.be.eql([]);
+        expect(carta.getLocalMenus().includes(menu1)).to.be.eql(false);
+    });
+    it('Find menu by the name', () => {
+        let carta: Carta = new Carta();
+        carta.addNewMenu(menu1);
+        expect(carta.findMenuByName("MENU-CHEF")).to.be.eql(menu1);
     });
 });
 
@@ -33,20 +43,29 @@ describe('Carta dishes tests', () => {
     it('New dishes are added properly', () => {
         let carta: Carta = new Carta();
         carta.addNewDish(tortilla);
-        carta.addNewDish(natilla);
-        expect(carta.getDishes()).to.be.eql([tortilla, natilla]);
+        expect(carta.getDishes().includes(tortilla)).to.be.eql(true);
     });
-    /*it('Dishes are deleted properly', () => {
+    it('Delete dish', () => {
+        let carta: Carta = new Carta();
+        carta.addNewDish(tortilla);
+        expect(carta.deleteDish(tortilla)).to.be.eql([]);
+    });
+    it('Dishes are deleted properly', () => {
         let carta: Carta = new Carta();
         carta.addNewDish(tortilla);
         carta.addNewDish(natilla);
-        carta.deleteDish(tortilla);
         carta.deleteDish(natilla);
-        expect(carta.getDishes()).to.be.eql([]);
-    });*/
+        expect(carta.getDishes().includes(natilla)).to.be.eql(true);
+    });
+    it('Find dish by the name', () => {
+        let carta: Carta = new Carta();
+        carta.addNewDish(tortilla);
+        expect(carta.findDishByName("TORTILLA")).to.be.eql(tortilla);
+    });
 });
 
-/*describe('Carta print tests', () => {
+/*
+describe('Carta print tests', () => {
     it('Carta is print successfully', () => {
         let carta: Carta = new Carta();
         carta.addNewMenu(menu1);

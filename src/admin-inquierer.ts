@@ -2,6 +2,7 @@ import * as inquirer from 'inquirer';
 import {Ingredient} from './Ingredient'
 import {ingredientType} from './Ingredient'
 import {Dish} from './Dish'
+import {DishType} from './Dish'
 import {Menu} from './Menu'
 import {Carta} from './Carta'
 import {Command} from './Command'
@@ -31,9 +32,9 @@ async function mainPrompt(): Promise<void>{
         message: "What do you want to do?",
         choices: Object.values(adminOptions)
     }); switch(userSelection["actions"]) {
-            case adminOptions.addIngredient:            generateNewIngredient();      break;
-            case adminOptions.addDish:                  //db.addNewDish();              break;
-            case adminOptions.addMenu:                  //db.addNewMenu();              break;
+            case adminOptions.addIngredient:            generateNewIngredient();        break;
+            case adminOptions.addDish:                  generateNewDish();              break;
+            case adminOptions.addMenu:                  generateNewMenu();              break;
             case adminOptions.addCarta:                 //db.addNewCarta();             break;
             case adminOptions.deleteIngredient:         //db.deleteIngredient();        break;
             case adminOptions.deleteDish:               //db.deleteDish();              break;
@@ -89,6 +90,90 @@ async function generateNewIngredient() {
     let newIng: Ingredient = new Ingredient(_name, _loc, _grp, {carbohydrates: _crb, proteins: _prt, lipids: _lip}, _prc);
 
     db.addNewIngredient(newIng);
+}
+
+async function generateNewDish() {
+    const nameSelection = await inquirer.prompt( {
+        type: "input",
+        name: "nameinput",
+        message: "Dish Name: "
+    });
+    const typeSelection = await inquirer.prompt( {
+        type: "input",
+        name: "itypeinput",
+        message: "Dish Type: "
+    });
+    let continueAdding: boolean = true;
+    let ingArr: string[] = [];
+    data.ingredientArray.forEach(ing => {
+        ingArr.push(ing.getName());
+    })
+    ingArr.push("Go back");
+    let _ing: {ingredient: Ingredient, amountInGrams: number}[] = [];
+    while(continueAdding) {
+        const ingSelection = await inquirer.prompt({
+            type: "list",
+            name: "ingsel",
+            message: "What ingredient do you want to add?",
+            choices: ingArr
+        });
+        const usering: Ingredient = data.ingredientArray[data.ingredientArray.findIndex(element => element.getName() === ingSelection["ingsel"])];
+        const amtSelection = await inquirer.prompt( {
+            type: "number",
+            name: "amtinput",
+            message: "Ingredient Amount in grams: "
+        });
+        _ing.push({ingredient: usering, amountInGrams: amtSelection["amtinput"]})
+        const cont = await inquirer.prompt({
+            type: "list",
+            name: "contsel",
+            message: "Add other ingredient?",
+            choices: ["Yes", "No"]
+        }); continueAdding = (cont["contsel"] === "Yes");
+    }
+    let _name: string = nameSelection["nameinput"];
+    let _grp: DishType = typeSelection["itypeinput"]!;
+
+    let dsh = new Dish(_name, _grp, _ing);
+
+    db.addNewDish(dsh);
+}
+
+async function generateNewMenu() {
+    const nameSelection = await inquirer.prompt( {
+        type: "input",
+        name: "nameinput",
+        message: "Menu Name: "
+    });
+    let continueAdding: boolean = true;
+    let dsArr: string[] = [];
+    let _ds: Dish[] = [];
+    data.dishesArray.forEach(ing => {
+        dsArr.push(ing.getName());
+    })
+    while(continueAdding) {
+        const ingSelection = await inquirer.prompt({
+            type: "list",
+            name: "ingsel",
+            message: "What dish do you want to add?",
+            choices: dsArr
+        });
+        //const usering: Ingredient = data.ingredientArray[data.ingredientArray.findIndex(element => element.getName() === ingSelection["ingsel"])];
+        const userdish: Dish = data.dishesArray[data.dishesArray.findIndex(element => element.getName() === ingSelection["ingsel"])];
+        _ds.push(userdish);
+        //_ing.push({ingredient: usering, amountInGrams: amtSelection["amtinput"]})
+        const cont = await inquirer.prompt({
+            type: "list",
+            name: "contsel",
+            message: "Add other ingredient?",
+            choices: ["Yes", "No"]
+        }); continueAdding = (cont["contsel"] === "Yes");
+    }
+    let _name: string = nameSelection["nameinput"];
+
+    let menutmp: Menu = new Menu(_name, 0, _ds);
+
+    db.addNewMenu(menutmp);
 }
 
 mainPrompt();
@@ -156,7 +241,18 @@ mainPrompt();
 
 
 
-
+/*if (this.database.has("tasks").value()) {
+      let dbItems = this.database.get("tasks").value();
+      dbItems.forEach(item =>
+        this.taskMap.set(
+          item.id,
+          new TaskItem(item.id, item.task, item.complete)
+        )
+      );
+    } else {
+      this.database.set("tasks", taskItems).write();
+      taskItems.forEach(item => this.taskMap.set(item.id, item));
+    }*/
 
 
 

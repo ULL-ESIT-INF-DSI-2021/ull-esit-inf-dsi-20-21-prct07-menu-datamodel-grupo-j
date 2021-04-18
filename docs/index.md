@@ -15,7 +15,7 @@ Fecha de entrega: 18-04-2021
 
 ### Introducción
 
-Durante el desarrollo de esta práctica se pretende implementar un diseño orientado a objetos del modelo de datos de un sistema de información que permita el diseño de menús para un restaurante. Para ello, se utilizarán además módulos como **Inquirer.js** y **Lowdb** que nos permitirá hacer de esta práctica una aplicación interactiva, que permita al usuario moverse por las distintas opciones dentro de un menú, crear comandas mediante la elección de los distintos menús disponibles así como añadir o quitar platos de los mismos. Si así lo desea, el cliente también podrá consultar información referida a los distintos platos y losingredientes que los componen como los valores nutricionales o el tipo de alimentos predominante en cada plato.
+Durante el desarrollo de esta práctica se pretende implementar un diseño orientado a objetos del modelo de datos de un sistema de información que permita el diseño de menús para un restaurante. Para ello, se utilizarán además módulos como **Inquirer.js** y **Lowdb** que nos permitirá hacer de esta práctica una aplicación interactiva, que posibilite al usuario moverse por las distintas opciones dentro de un menú, crear comandas mediante la elección de los diferentes menús disponibles, así como añadir o quitar platos de los mismos. Si así lo desea, el cliente también podrá consultar información referida a los distintos platos e ingredientes que los componen como los valores nutricionales.
 
 Para enriquecer el código, hará usará TDD para la elaboración de pruebas, y además este estará preparado para documentar con typedoc. En esta ocasión se hará uso de **GitHub actions** que nos va a permitir automatizar, personalizar y ejecutar nuestros flujos de trabajo de desarrollo de software directamente en el repositorio.
 Finalmente, en la elaboración de esta entrega se respetarán los **principios SOLID** de diseño orientado a objetos.
@@ -24,7 +24,7 @@ Finalmente, en la elaboración de esta entrega se respetarán los **principios S
 
 ### Clase Ingredient
 
-La calse ingresiente será la encargada de representar los distintos ingredientes que van a conformar los platos, cada ingrediente debe estar catalogado en uno de los grupos de alimentos que se indican a continuación. En nuestro caso cada uno de ellos se encuentran definidos en un `type ingredientType`:
+La clase ingrediente será la encargada de representar los distintos ingredientes que van a conformar los platos. Cada alimento debe estar catalogado en uno de los grupos de alimentos que se indican a continuación. En nuestro caso cada uno de ellos se encuentran definidos en un `type ingredientType`:
 
 * Carnes, pescados, huevos, tofu, frutos secos, semillas y legumbres
 * Verduras y hortalizas
@@ -48,18 +48,23 @@ Esta clase dispondrá de los siguientes atributos:
 Y también tendrá los siguientes métodos:
 
 ```
-  * getName()
-  * getLocation()
-  * getIngredientGroup()
-  * getNutrients()
-  * getPricePerKg()
+  * getName() // @returns name, nombre del ingrediente
+  * getLocation() // @returns location, localización u origen del ingrediente
+  * getIngredientGroup() // @returns ingredientGroup, grupo del ingrediente al que pertenece
+  * getNutrients() // @returns nutrients, composición nutricional
+  * getPricePerKg() // @return pricePerKg, precio por kilo del ingrediente
 
-  * setName(newName: string)
-  * setPrice(newPrice: number)
+  * setName(newName: string) // Cambia el nombre del ingrediente
+  * setPrice(newPrice: number) // Cambia el precio del ingrediente
   * setNutrients(newNutrients: {carbohydrates: number, proteins: number, lipids: number})
 
   * print()
 ```
+
+Los métodos más destacables de esta clase son `setNutrients` y `print`:
+
+* setNutrients. Cambia la composicion nutricional, de tal forma que cada ingrediente o nuevo ingrediente tenga su composición nutricional en carbohidratos, proteínas y lípidos.
+* print. Imprime para cada ingrediente su nombre, grupo de alimento al que pertenece, y sus macronutrientes.
 
 ### ----------------------------------------------------------------------------------------------------------------
 
@@ -73,7 +78,6 @@ Los platos de un menú estarán compuestos por ingredientes como los descritos a
 * Postre
 
 Cuando un cliente seleccione un plato podrá ver los ingredientes que lo componen, el valor nutricional del plato a partir de la suma de la composición nutricional de los alimentos que componen a dicho plato dependiendo de la cantidad en gramos que se use de cada ingediente para la elaboración. 
-Otra información a la que podrá acceder el cliente será el grupo de alimentos predominante, es decir, si un plato está compuesto por cuatro ingedientes y de ellos son verduras, se indicará que ese plato tiene un mayor contenido en verduras.
 Finalmente también debe figurar el precio total del plato en euros en función de la suma de los precios de los ingredientes y las cantidades que lo componen.
 
 Esta clase dispondrá de los siguientes atributos: 
@@ -90,25 +94,29 @@ Y también tendrá los siguientes métodos:
 
 ```
   * getComposition() 
-  * getMainIngredientType()
-  * getName()
-  * getDishType()
-  * getIngredients()
-  * getDishPrice()
+  * getName() // @returns name, retorna el nombre del plato
+  * getDishType() // @returns dishType, retorna el tipo del plato (entrante, primer plato, ...)
+  * getIngredients() // @returns ingredients, retorna el nombre de los ingredientes del plato
+  * getDishPrice() // @returns dishPrice, retorna el precio del plato
 
-  * setName(newName: string)
-  * setDishType(newDishTye: DishType)
-  * setIngredients(newIngredients: {ingredient: Ingredient, amountInGrams: number}[] = [])
-  * setDishPrice(newDishPrice: number)
+  * setName(newName: string) // Cambia el nombre del plato
+  * setDishType(newDishTye: DishType) // Cambia el tipo del plato
+  * setIngredients(newIngredients: {ingredient: Ingredient, amountInGrams: number}[] = []) //Cambia los ingredientes de un plato
+  * setDishPrice(newDishPrice: number) // Cambia el precio de los platos
 
-  * calculatePrice()
+  * calculatePrice() 
 ```
+
+Los métodos que resaltan de esta clase son `getComposition` y `calculatePrice`:
+
+* getComposition. Calcula para cada ingrediete los valores de la composición de cada nutriente multiplicando su valor base por la cantidad en gramor y a su resultado lo divide por 100 gr.
+* calculatePrice. Calcula el precio total del plato en euros en función de la suma de los precios de los ingredientes y las cantidades de estos que componen el plato. La fórmula es sencilla, multiplica el precio del kilo por la cantidad en gramos que se usa en la elaboración del plato
 
 ### ----------------------------------------------------------------------------------------------------------------
 
 ### Clase Carta
 
-El sistema que estamos desarrolando está dirigido a un restaurante y este dispondrá una carta que tendrá una serie de menús predeterminados que hemos definido en el fichero `data.ts` almacenados en `menuArray`. Además, cada cliente podrá confeccionar un menú a su gusto de entre toda la selección de platos disponibles también localizados en `data.ts` dentro de `dishesArray`. Estos menús personalizados pueden tener la cantidad de un mismo platos deseada.
+El sistema que estamos desarrollando está dirigido a un restaurante y este dispondrá una carta que tendrá una serie de menús predeterminados que hemos definido en el fichero `data.ts` almacenados en `menuArray`. Además, cada cliente podrá confeccionar un menú a su gusto de entre toda la selección de platos disponibles también localizados en `data.ts` dentro de `dishesArray`. Estos menús personalizados pueden tener la cantidad de un mismo platos deseada.
 
 Esta clase dispondrá de los siguientes atributos: 
 
@@ -121,22 +129,35 @@ Esta clase dispondrá de los siguientes atributos:
 Y también tendrá los siguientes métodos:
 
 ```
-  * getLocalMenus()
-  * getDishes()
+  * getName() // @returns name, retorna el nombre de la carta
+  * getLocalMenus() // @returns {Menu[]}, retorna la lista de menús
+  * getDishes() // @returns {Dish[]}, retorna la lista de platos
 
-  * findMenuByName(menu: string)
-  * findDishByName(menu: string)
-  * generateCarta()
+  * setName(newName: string) // Cambia el nombre de la carta
+
+  * findMenuByName(menu: string) // Función que busca un menú
+  * findDishByName(menu: string) // Función que busca un plato
+  * generateCarta() // genera una carta a partir de los menús y sus platos
   * printFullCarta()
-  * addNewMenu(newMenu: Menu)
-  * addNewDish(newDish: Dish)
-  * deleteMenu(menu: Menu)
-  * deleteDish(dish: Dish)
+  * addNewMenu(newMenu: Menu) // Menu que desea añadirse a la carta
+  * addNewDish(newDish: Dish) // Plato que desea añadirse a la carta
+  * deleteMenu(menu: Menu) // Elimina un menú de la carta
+  * deleteDish(dish: Dish) // Elimina un plato de la carta
 ```
+
+El método que resalta de esta clase es `printFullCarta`:
+
+* printFullCarta. Recorre los diferentes menús mostrando sus precios y los distintos platos.
 
 ### ----------------------------------------------------------------------------------------------------------------
 
 ### Clase Menu
+
+Los menús van a estar compuestos por platos, incluyendo un plato de cada categoría (entrante, primer plato, segundo plato y postre). Para cada menú, podrá consultarse la siguiente información:
+
+* Precio total del menú en euros.
+* Platos que lo componen con sus correspodientes ingredientes y la composición nutricional.
+* Listado de grupos de alimentos por orden de aparición.
 
 Esta clase dispondrá de los siguientes atributos: 
 
@@ -150,26 +171,38 @@ Esta clase dispondrá de los siguientes atributos:
 Y también tendrá los siguientes métodos:
 
 ```
-  * getName()
-  * getMenuPrice()
-  * getDishes()
-  * getMenuComposition()
+  * getName() // @returns name, nombre del menu
+  * getMenuPrice() // @returns precio, precio del menú
+  * getDishes() // @returns platos, platos que lo componen
+  * getMenuComposition() // devuelve la composición nutricional del menú
   * getListGroupIngredients()
 
-  * setName(newName: string)
-  * setMenuPrice(newMenuPrice: number)
-  * setDishes(newDishes: Dish[] = [])
+  * setName(newName: string) // Cambia el nombre del menú
+  * setMenuPrice(newMenuPrice: number) // Cambia el precio del menú
+  * setDishes(newDishes: Dish[] = []) // Cambia los platos del menú
 
-  * calculateMenuPrice()
-  * print()
-  * addNewDish(newDish: Dish)
-  * deleteDish(dish: Dish)
-  * findDishByName(menu: string)
+  * calculateMenuPrice() // Calcula el precio del menú
+  * print() // Imprime el menú
+  * addNewDish(newDish: Dish) // Añade un nuevo plato
+  * deleteDish(dish: Dish) // Elimina un plato
+  * findDishByName(menu: string) // Busca un plato
 ```
+
+El método que resalta de esta clase es `getListGroupIngredients`:
+
+* getListGroupIngredients. Da un listado ordenado del grupo de alimentos que contiene los platos del menú.
 
 ### ----------------------------------------------------------------------------------------------------------------
 
 ### Clase Comanda
+
+La clase comanda será la encargada de almacenar la comanda de un nuevo cliente del restaurante, su contenido variará dependiendo del menú escogido.
+
+Para el funcionamiento de la clase Comanda, se hará uso de **Inquirer.js**. De esta forma, es cliente podrá acceder a un menú de selección donde podrá realizar distintas acciones:
+
+* Visualizar la carta del restaurante. Esta funcionalidad permite ver cada menú y cada plato que compone a cualquiera de los menús disponibles y su información correspondiente como comentamos en la `clase Dish`.
+* Realizar una comanda. Un cliente podrá realizar una comanda a partir de un menú preestablecido o bien solicitando un menú personalizado. Si se decanta por un menú personalizado, se podrá visualizar la carta completa del restaurante, seleccionar cualquier plato del sistema y la cantidad del mismo que el cliente considere oportuna (siempre de manera entera). 
+* Solicitar un menú personalizado a partir de un menú existente. Un cliente puede querer selecionar un menú predefinido pero quitando algún plato que no sea de su agrado o añadiendo otro que no esté.
 
 Esta clase dispondrá de los siguientes atributos: 
 
@@ -184,22 +217,28 @@ Esta clase dispondrá de los siguientes atributos:
 Y también tendrá los siguientes métodos:
 
 ```
-getNameTable()
-getMenus()
-getMenuAmount()
-getDishes()
+  * getNameTable() // @returns nameTable, numero de mesa de la comanda
+  * getMenus() // @returns {Menu[]}, retorna la lista de menús
+  * getMenuAmount() //
+  * getDishes() // @returns {Dish[]}, retorna la lista de platos
 
-clear()
-printCommand()
-addNewMenu(newMenu: Menu)
-addNewDish(newDish: Dish)
-deleteMenu(menu: Menu)
-deleteDish(dish: Dish)
-findMenuByName(menu: string)
-findDishByName(menu: string)
+  * clear() // método encargado de borrar de la comanda todos los platos y los menus
+  * printCommand()
+  * addNewMenu(newMenu: Menu) // Añade un nuevo menú a la comanda
+  * addNewDish(newDish: Dish) // Añade un nuevo plato a la comanda
+  * deleteMenu(menu: Menu) // Borra un menú de la comanda
+  * deleteDish(dish: Dish) // Borra un plato de la comanda
+  * findMenuByName(menu: string) // Busca un menú
+  * findDishByName(menu: string) // Busca un plato
 ```
 
+### ---------------------------------------------------------------------------------------------------------------
 
+### Funcionamiento
+
+Para cumplir on el funcionamiento hemos creado el fichero `data.ts` que contiene la información de todos los ingredientes disponibles, los platos de las distintas categorías disponibles y los menús predeterminados que posee el restaurante.
+
+Haciendo uso del módulo **Inquirer.js** para la gestión de una línea de comandos interactiva la aplacación podrá añadir, borrar y modificar ingredientes, platos, menús y cartas, logrando además por medio del otro módulo comentado en la introducción, **Lowdb**,  que toda la información introducida persista.
 
 
 

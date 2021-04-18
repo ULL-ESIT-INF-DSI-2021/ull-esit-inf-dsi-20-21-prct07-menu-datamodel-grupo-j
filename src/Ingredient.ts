@@ -44,19 +44,16 @@ export class Ingredient {
   getIngredientGroup(){
     return this.ingredientGroup;
   }
-  /**
-   * @returns nutrients, composición nutricia
-   */
-  getNutrients(): {carbohydrates: number, proteins: number, lipids: number}{
-    /*let nutrientArray: [] = [];
-    ingredientArray.forEach(element => {
-      return nutrientArray.push(element);
-    });*/
-    return this.nutrients;
-  }
 
   /**
-   * 
+   * @returns nutrients, composición nutricional
+   */
+  getNutrients(): {carbohydrates: number, proteins: number, lipids: number}{
+    return this.nutrients;
+  }
+  
+  /**
+   * @return pricePerKg, precio por kilo del ingrediente 
    */
   getPricePerKg(){
     return this.pricePerKg;
@@ -80,12 +77,15 @@ export class Ingredient {
 
   /**
    * Cambia la composicion nutricional
-   * @param newNutrients Nueva composición nutricional del ingrediente
+   * @param newNutrients asigna la composición nutricional
    */
   setNutrients(newNutrients: {carbohydrates: number, proteins: number, lipids: number}): void {
       this.nutrients = newNutrients;
   }
 
+  /**
+   * Método que imprime los ingredientes, su grupo y composición nutricional
+   */
   print(){
     console.log(this.getName() + "\t" + "Group: " + this.getIngredientGroup() + "\tcarbohydrates: " + this.getNutrients().carbohydrates + "  Proteins: " + this.getNutrients().proteins + "  Lipids: "+ this.getNutrients().lipids + "\n");
   }

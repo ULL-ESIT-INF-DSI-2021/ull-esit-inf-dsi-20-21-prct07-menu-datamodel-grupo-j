@@ -22,6 +22,9 @@ export class Carta {
         this.generateCarta();
     }
 
+    /**
+     * @returns name, retorna el nombre de la carta
+     */
     getName(): string{
         return this.name;
     }
@@ -40,10 +43,18 @@ export class Carta {
         return this.dishes;
     }
 
+    /** Cambia el nombre de la carta
+     * @param newName Nuevo nombre de la carta
+     */
     setName(newName: string): void {
         this.name = newName;
     }
 
+    /**
+     * @function findMenuByName, función que busca un menú
+     * @param menu, recibe un menú
+     * @return retorna un menú y sino lo encuentra lo indica
+     */
     findMenuByName(menu: string){
         const deletion: number = this.localMenus.findIndex(element => element.getName() === menu);
         if(deletion !== -1) {
@@ -54,30 +65,25 @@ export class Carta {
         }
     }
 
+    /**
+     * @function findDishByName, función que busca un plato
+     * @param menu, recibe un menú
+     * @return retorna un plato y sino lo encuentra lo indica
+     */
     findDishByName(menu: string){
         const deletion: number = this.dishes.findIndex(element => element.getName() === menu);
         if(deletion !== -1) {
             return this.dishes [deletion];
         }
         else {
-            console.log("El menú no está en la carta");
+            console.log("El plato no está en la carta");
         }
     }
 
+    /**
+     * @function generateCarta, genera una carta a partir de los menús y sus platos
+     */
     generateCarta(){
-        /*let egg: Ingredient = new Ingredient("EGG", "SPAIN", "CARNES-HUEVOS-LEGUMBRES", {carbohydrates: 5, proteins: 50, lipids: 25}, 5);
-        let potato: Ingredient = new Ingredient("POTATO", "SPAIN", "VERDURAS-HORTALIZAS", {carbohydrates: 45, proteins: 10, lipids: 30}, 1.5);
-        let tortilla: Dish = new Dish("TORTILLA", "SECONDCOURSE", [{ingredient: egg, amountInGrams: 50}, {ingredient: potato, amountInGrams: 200}]);
-
-        let milk: Ingredient = new Ingredient("MILK", "SPAIN", "LACTEOS", {carbohydrates: 4.7, proteins: 3.1, lipids: 3.5}, 7);
-        let limon: Ingredient = new Ingredient("LEMON", "PORTUGAL", "FRUTAS", {carbohydrates: 12.7, proteins: 0.1, lipids: 0.06}, 8);
-        let natilla: Dish = new Dish("NATILLA", "DESSERT", [{ingredient: milk, amountInGrams: 50}, {ingredient: limon, amountInGrams: 200}]);
-
-        let menu1: Menu = new Menu("MENU-CHEF", 9, [tortilla, natilla]);
-        this.addNewMenu(menu1);
-        this.addNewDish(tortilla);
-        this.addNewDish(natilla);*/
-
         Data.dishesArray.forEach(element => {
             this.addNewDish(element);
         })
@@ -88,7 +94,7 @@ export class Carta {
 
     }
     /**
-     * Imprime la carta en un formato fácil de leer y entender para el usuario
+     * @function printFullCarta, imprime la carta en un formato fácil de leer y entender para el usuario
      */
     printFullCarta() : string {
         let result: string = `Carta del restaurante:
@@ -109,7 +115,7 @@ export class Carta {
     }
 
     /**
-     * Añade un nuevo menu a la carta
+     * @function addNewMenu, añade un nuevo menu a la carta
      * @param newMenu Menu que desea añadirse a la carta
      */
     addNewMenu(newMenu: Menu) {
@@ -117,7 +123,7 @@ export class Carta {
     }
 
     /**
-     * Añade un nuevo menu a la carta
+     * @function addNewDish, añade un nuevo menu a la carta
      * @param newMenu Menu que desea añadirse a la carta
      */
     addNewDish(newDish: Dish) {
@@ -125,7 +131,7 @@ export class Carta {
     }
 
     /**
-     * Elimina un menu de la carta
+     * @function deleteMenu, elimina un menu de la carta
      * @param menu Menu que desea eliminarse de la carta
      */
     deleteMenu(menu: Menu) {
@@ -139,7 +145,7 @@ export class Carta {
     }
 
     /**
-     * Elimina un plato de la carta
+     * @funtion deleteDish, elimina un plato de la carta
      * @param dish Plato que desea eliminarse de la carta
      */
     deleteDish(dish: Dish) {

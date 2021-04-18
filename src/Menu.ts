@@ -35,7 +35,6 @@ export class Menu {
         return this.menuPrice;
     }
 
-
     /**
      * @returns platos, platos que lo componen
      */
@@ -81,7 +80,7 @@ export class Menu {
     }
 
     /**
-     * Print imprime menú
+     * @function print, imprime el menú
      */
     print(): void{
         console.log(`${this.getName()}`);
@@ -95,8 +94,7 @@ export class Menu {
                 aux.splice(0, count);
             }
         }     
-        /*this.aux.forEa
-        ch(element => {
+        /*this.aux.forEach(element => {
             console.log(`${element.getName()}   ${element.getDishPrice().toFixed(2)}€   x ${this.dishes.}
             `);
         });*/
@@ -154,6 +152,11 @@ export class Menu {
         }
     }
 
+    /**
+     * @function findDishByName, busca un plato
+     * @param menu, recibe un menú
+     * @return @return retorna un plato y sino lo encuentra lo indica
+     */
     findDishByName(menu: string){
         const deletion: number = this.dishes.findIndex(element => element.getName() === menu);
         if(deletion !== -1) {

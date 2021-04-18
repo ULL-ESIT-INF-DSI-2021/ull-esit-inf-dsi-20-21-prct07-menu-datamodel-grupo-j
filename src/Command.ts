@@ -5,7 +5,6 @@ export class Command {
     nameTable: number;
     isCustomMenu: boolean = true;
     menus: Menu[];
-    menuAmount: number;
     dishes: Dish[];
      
     /**
@@ -20,7 +19,6 @@ export class Command {
         this.nameTable = 0;
         this.dishes = [];
         this.menus = [];
-        this.menuAmount = 1;
         this.isCustomMenu = true;
     }
     
@@ -32,17 +30,10 @@ export class Command {
     }
 
     /**
-     * @returns {Menu[]} Retorna la lista de platos
+     * @returns {Menu[]} Retorna la lista de menús
      */
     getMenus(): Menu[]{
         return this.menus;
-    }
-
-    /**
-     * @returns menuAmount, cantidad de menus
-     */
-    getMenuAmount(){
-        return this.menuAmount; 
     }
 
     /**
@@ -165,5 +156,4 @@ export class Command {
             console.log("El menú no está en la carta");
         }
     }
-
 }

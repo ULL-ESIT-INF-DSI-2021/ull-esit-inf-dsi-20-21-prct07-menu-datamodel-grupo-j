@@ -102,4 +102,4 @@ let menu4: Menu = new Menu("EXPERIENCIA EXTRANJERA", 10, [ensaladilla, arrozCuba
 let menu5: Menu = new Menu("MENU INFANTIL", 8, [croquetas, macarrones, chuletas, flan]);
 
 //Menu Array
-export let menuArray: Menu[] = [menu1,menu2,menu3,menu4,menu5];
+export let menuArray: Menu[] = [menu1,menu2,menu3,menu4,menu5];// @returns {Menu[]}, retorna la lista de menús // @returns {Dish[]}, retorna la lista de platos
