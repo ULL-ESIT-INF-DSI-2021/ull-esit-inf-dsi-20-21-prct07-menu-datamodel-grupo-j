@@ -2165,166 +2165,6 @@
         }
       ],
       "menuPrice": 130.87
-    },
-    {
-      "name": "Menu chino",
-      "dishes": [
-        {
-          "name": "BANANA SPLIT",
-          "dishType": "DESSERT",
-          "ingredients": [
-            {
-              "ingredient": {
-                "name": "MILK",
-                "location": "IRELAND",
-                "ingredientGroup": "LACTEOS",
-                "nutrients": {
-                  "carbohydrates": 4.7,
-                  "proteins": 3.1,
-                  "lipids": 3.5
-                },
-                "pricePerKg": 7
-              },
-              "amountInGrams": 400
-            },
-            {
-              "ingredient": {
-                "name": "BANANA",
-                "location": "INDIA",
-                "ingredientGroup": "FRUTAS",
-                "nutrients": {
-                  "carbohydrates": 20,
-                  "proteins": 1.2,
-                  "lipids": 0.3
-                },
-                "pricePerKg": 3
-              },
-              "amountInGrams": 80
-            },
-            {
-              "ingredient": {
-                "name": "STRAWBERRY",
-                "location": "CHINA",
-                "ingredientGroup": "FRUTAS",
-                "nutrients": {
-                  "carbohydrates": 7,
-                  "proteins": 0.7,
-                  "lipids": 0.5
-                },
-                "pricePerKg": 2.5
-              },
-              "amountInGrams": 60
-            },
-            {
-              "ingredient": {
-                "name": "WHIPPED CREAM",
-                "location": "NETHERLANDS",
-                "ingredientGroup": "LACTEOS",
-                "nutrients": {
-                  "carbohydrates": 10.1,
-                  "proteins": 2.1,
-                  "lipids": 31.4
-                },
-                "pricePerKg": 3.5
-              },
-              "amountInGrams": 175
-            }
-          ],
-          "dishPrice": 38.025000000000006
-        },
-        {
-          "name": "SOPA DE PESCADO",
-          "dishType": "FIRSTCOURSE",
-          "ingredients": [
-            {
-              "ingredient": {
-                "name": "NOODLES",
-                "location": "CHINA",
-                "ingredientGroup": "CEREALES",
-                "nutrients": {
-                  "carbohydrates": 78,
-                  "proteins": 12.9,
-                  "lipids": 1.5
-                },
-                "pricePerKg": 2
-              },
-              "amountInGrams": 125
-            },
-            {
-              "ingredient": {
-                "name": "CLAMS",
-                "location": "JAPAN",
-                "ingredientGroup": "CARNES-HUEVOS-LEGUMBRES",
-                "nutrients": {
-                  "carbohydrates": 0,
-                  "proteins": 10.7,
-                  "lipids": 0.5
-                },
-                "pricePerKg": 12
-              },
-              "amountInGrams": 350
-            },
-            {
-              "ingredient": {
-                "name": "COD",
-                "location": "SPAIN",
-                "ingredientGroup": "CARNES-HUEVOS-LEGUMBRES",
-                "nutrients": {
-                  "carbohydrates": 0,
-                  "proteins": 17.7,
-                  "lipids": 0.4
-                },
-                "pricePerKg": 11.5
-              },
-              "amountInGrams": 700
-            },
-            {
-              "ingredient": {
-                "name": "CARROT",
-                "location": "FRANCE",
-                "ingredientGroup": "VERDURAS-HORTALIZAS",
-                "nutrients": {
-                  "carbohydrates": 0,
-                  "proteins": 1.3,
-                  "lipids": 39.6
-                },
-                "pricePerKg": 3.15
-              },
-              "amountInGrams": 80
-            },
-            {
-              "ingredient": {
-                "name": "PARSLEY",
-                "location": "SPAIN",
-                "ingredientGroup": "CARNES-HUEVOS-LEGUMBRES",
-                "nutrients": {
-                  "carbohydrates": 2.7,
-                  "proteins": 3,
-                  "lipids": 1.3
-                },
-                "pricePerKg": 1.2
-              },
-              "amountInGrams": 3
-            },
-            {
-              "ingredient": {
-                "name": "CELERY",
-                "location": "ENGLAND",
-                "ingredientGroup": "VERDURAS-HORTALIZAS",
-                "nutrients": {
-                  "carbohydrates": 1.3,
-                  "proteins": 1.3,
-                  "lipids": 0.2
-                },
-                "pricePerKg": 1.5
-              },
-              "amountInGrams": 10
-            }
-          ],
-          "dishPrice": 127.706
-        }
-      ],
-      "menuPrice": 165.731
     }
   ],
   "dishes": [
@@ -3869,5 +3709,3954 @@
       "dishPrice": 46.9
     }
   ],
-  "cartas": []
+  "cartas": [
+    {
+      "localMenus": [
+        {
+          "name": "MENU DEL CHEF",
+          "dishes": [
+            {
+              "name": "PULPO A LA VINAGRETA",
+              "dishType": "STARTER",
+              "ingredients": [
+                {
+                  "ingredient": {
+                    "name": "OCTOPUS",
+                    "location": "SPAIN",
+                    "ingredientGroup": "CARNES-HUEVOS-LEGUMBRES",
+                    "nutrients": {
+                      "carbohydrates": 2.2,
+                      "proteins": 14.91,
+                      "lipids": 1.4
+                    },
+                    "pricePerKg": 11.4
+                  },
+                  "amountInGrams": 400
+                },
+                {
+                  "ingredient": {
+                    "name": "OLIVE OIL",
+                    "location": "ITALY",
+                    "ingredientGroup": "VERDURAS-HORTALIZAS",
+                    "nutrients": {
+                      "carbohydrates": 0,
+                      "proteins": 0,
+                      "lipids": 99.9
+                    },
+                    "pricePerKg": 4.99
+                  },
+                  "amountInGrams": 25
+                },
+                {
+                  "ingredient": {
+                    "name": "GREEN PEPPER",
+                    "location": "CHINA",
+                    "ingredientGroup": "VERDURAS-HORTALIZAS",
+                    "nutrients": {
+                      "carbohydrates": 3.7,
+                      "proteins": 0.7,
+                      "lipids": 0.2
+                    },
+                    "pricePerKg": 2.65
+                  },
+                  "amountInGrams": 80
+                },
+                {
+                  "ingredient": {
+                    "name": "RED PEPPER",
+                    "location": "CHINA",
+                    "ingredientGroup": "VERDURAS-HORTALIZAS",
+                    "nutrients": {
+                      "carbohydrates": 6.4,
+                      "proteins": 1,
+                      "lipids": 0.4
+                    },
+                    "pricePerKg": 2.7
+                  },
+                  "amountInGrams": 40
+                },
+                {
+                  "ingredient": {
+                    "name": "PARSLEY",
+                    "location": "SPAIN",
+                    "ingredientGroup": "CARNES-HUEVOS-LEGUMBRES",
+                    "nutrients": {
+                      "carbohydrates": 2.7,
+                      "proteins": 3,
+                      "lipids": 1.3
+                    },
+                    "pricePerKg": 1.2
+                  },
+                  "amountInGrams": 10
+                },
+                {
+                  "ingredient": {
+                    "name": "VINEGAR",
+                    "location": "ARGENTINA",
+                    "ingredientGroup": "VERDURAS-HORTALIZAS",
+                    "nutrients": {
+                      "carbohydrates": 0,
+                      "proteins": 0,
+                      "lipids": 0
+                    },
+                    "pricePerKg": 1.5
+                  },
+                  "amountInGrams": 10
+                }
+              ],
+              "dishPrice": 50.317499999999995
+            },
+            {
+              "name": "ESTOFADO",
+              "dishType": "FIRSTCOURSE",
+              "ingredients": [
+                {
+                  "ingredient": {
+                    "name": "VEAL",
+                    "location": "CANADA",
+                    "ingredientGroup": "CARNES-HUEVOS-LEGUMBRES",
+                    "nutrients": {
+                      "carbohydrates": 0,
+                      "proteins": 24,
+                      "lipids": 3
+                    },
+                    "pricePerKg": 8
+                  },
+                  "amountInGrams": 605
+                },
+                {
+                  "ingredient": {
+                    "name": "GREEN PEAS",
+                    "location": "ITALY",
+                    "ingredientGroup": "VERDURAS-HORTALIZAS",
+                    "nutrients": {
+                      "carbohydrates": 9.7,
+                      "proteins": 5.6,
+                      "lipids": 0.5
+                    },
+                    "pricePerKg": 2
+                  },
+                  "amountInGrams": 120
+                },
+                {
+                  "ingredient": {
+                    "name": "POTATO",
+                    "location": "SPAIN",
+                    "ingredientGroup": "VERDURAS-HORTALIZAS",
+                    "nutrients": {
+                      "carbohydrates": 45,
+                      "proteins": 10,
+                      "lipids": 30
+                    },
+                    "pricePerKg": 1.5
+                  },
+                  "amountInGrams": 400
+                },
+                {
+                  "ingredient": {
+                    "name": "CARROT",
+                    "location": "FRANCE",
+                    "ingredientGroup": "VERDURAS-HORTALIZAS",
+                    "nutrients": {
+                      "carbohydrates": 0,
+                      "proteins": 1.3,
+                      "lipids": 39.6
+                    },
+                    "pricePerKg": 3.15
+                  },
+                  "amountInGrams": 80
+                },
+                {
+                  "ingredient": {
+                    "name": "CEBOLLA",
+                    "location": "FRANCE",
+                    "ingredientGroup": "VERDURAS-HORTALIZAS",
+                    "nutrients": {
+                      "carbohydrates": 5,
+                      "proteins": 15,
+                      "lipids": 0
+                    },
+                    "pricePerKg": 1.2
+                  },
+                  "amountInGrams": 45
+                },
+                {
+                  "ingredient": {
+                    "name": "CELERY",
+                    "location": "ENGLAND",
+                    "ingredientGroup": "VERDURAS-HORTALIZAS",
+                    "nutrients": {
+                      "carbohydrates": 1.3,
+                      "proteins": 1.3,
+                      "lipids": 0.2
+                    },
+                    "pricePerKg": 1.5
+                  },
+                  "amountInGrams": 10
+                }
+              ],
+              "dishPrice": 60.01
+            },
+            {
+              "name": "SARGO CON PAPAS",
+              "dishType": "SECONDCOURSE",
+              "ingredients": [
+                {
+                  "ingredient": {
+                    "name": "SARGO",
+                    "location": "SPAIN",
+                    "ingredientGroup": "CARNES-HUEVOS-LEGUMBRES",
+                    "nutrients": {
+                      "carbohydrates": 0,
+                      "proteins": 18.4,
+                      "lipids": 12
+                    },
+                    "pricePerKg": 9.5
+                  },
+                  "amountInGrams": 300
+                },
+                {
+                  "ingredient": {
+                    "name": "POTATO",
+                    "location": "SPAIN",
+                    "ingredientGroup": "VERDURAS-HORTALIZAS",
+                    "nutrients": {
+                      "carbohydrates": 45,
+                      "proteins": 10,
+                      "lipids": 30
+                    },
+                    "pricePerKg": 1.5
+                  },
+                  "amountInGrams": 200
+                },
+                {
+                  "ingredient": {
+                    "name": "RED PEPPER",
+                    "location": "CHINA",
+                    "ingredientGroup": "VERDURAS-HORTALIZAS",
+                    "nutrients": {
+                      "carbohydrates": 6.4,
+                      "proteins": 1,
+                      "lipids": 0.4
+                    },
+                    "pricePerKg": 2.7
+                  },
+                  "amountInGrams": 30
+                },
+                {
+                  "ingredient": {
+                    "name": "GREEN PEPPER",
+                    "location": "CHINA",
+                    "ingredientGroup": "VERDURAS-HORTALIZAS",
+                    "nutrients": {
+                      "carbohydrates": 3.7,
+                      "proteins": 0.7,
+                      "lipids": 0.2
+                    },
+                    "pricePerKg": 2.65
+                  },
+                  "amountInGrams": 40
+                }
+              ],
+              "dishPrice": 33.370000000000005
+            },
+            {
+              "name": "TIRAMISÚ",
+              "dishType": "DESSERT",
+              "ingredients": [
+                {
+                  "ingredient": {
+                    "name": "CHEESE",
+                    "location": "IRELAND",
+                    "ingredientGroup": "LACTEOS",
+                    "nutrients": {
+                      "carbohydrates": 0,
+                      "proteins": 27.6,
+                      "lipids": 39.6
+                    },
+                    "pricePerKg": 3.15
+                  },
+                  "amountInGrams": 500
+                },
+                {
+                  "ingredient": {
+                    "name": "EGG",
+                    "location": "SPAIN",
+                    "ingredientGroup": "CARNES-HUEVOS-LEGUMBRES",
+                    "nutrients": {
+                      "carbohydrates": 5,
+                      "proteins": 50,
+                      "lipids": 25
+                    },
+                    "pricePerKg": 5
+                  },
+                  "amountInGrams": 100
+                },
+                {
+                  "ingredient": {
+                    "name": "COFFEE",
+                    "location": "BRAZIL",
+                    "ingredientGroup": "VERDURAS-HORTALIZAS",
+                    "nutrients": {
+                      "carbohydrates": 0,
+                      "proteins": 0.1,
+                      "lipids": 0
+                    },
+                    "pricePerKg": 2
+                  },
+                  "amountInGrams": 350
+                },
+                {
+                  "ingredient": {
+                    "name": "CORNMEAL",
+                    "location": "RUSSIA",
+                    "ingredientGroup": "CEREALES",
+                    "nutrients": {
+                      "carbohydrates": 76,
+                      "proteins": 8.7,
+                      "lipids": 2.7
+                    },
+                    "pricePerKg": 5
+                  },
+                  "amountInGrams": 100
+                },
+                {
+                  "ingredient": {
+                    "name": "COCOA",
+                    "location": "IVORY COAST",
+                    "ingredientGroup": "VERDURAS-HORTALIZAS",
+                    "nutrients": {
+                      "carbohydrates": 9.9,
+                      "proteins": 25,
+                      "lipids": 10
+                    },
+                    "pricePerKg": 1.5
+                  },
+                  "amountInGrams": 30
+                }
+              ],
+              "dishPrice": 33.2
+            }
+          ],
+          "menuPrice": 176.89749999999998
+        },
+        {
+          "name": "ESPECIAL DEL MAR",
+          "dishes": [
+            {
+              "name": "SARDINAS",
+              "dishType": "STARTER",
+              "ingredients": [
+                {
+                  "ingredient": {
+                    "name": "SARDINES",
+                    "location": "CHINA",
+                    "ingredientGroup": "CARNES-HUEVOS-LEGUMBRES",
+                    "nutrients": {
+                      "carbohydrates": 0,
+                      "proteins": 18.1,
+                      "lipids": 17.5
+                    },
+                    "pricePerKg": 10
+                  },
+                  "amountInGrams": 300
+                },
+                {
+                  "ingredient": {
+                    "name": "OLIVE OIL",
+                    "location": "ITALY",
+                    "ingredientGroup": "VERDURAS-HORTALIZAS",
+                    "nutrients": {
+                      "carbohydrates": 0,
+                      "proteins": 0,
+                      "lipids": 99.9
+                    },
+                    "pricePerKg": 4.99
+                  },
+                  "amountInGrams": 25
+                },
+                {
+                  "ingredient": {
+                    "name": "LEMON",
+                    "location": "PORTUGAL",
+                    "ingredientGroup": "FRUTAS",
+                    "nutrients": {
+                      "carbohydrates": 12.7,
+                      "proteins": 0.1,
+                      "lipids": 0.06
+                    },
+                    "pricePerKg": 8
+                  },
+                  "amountInGrams": 80
+                }
+              ],
+              "dishPrice": 37.6475
+            },
+            {
+              "name": "SOPA DE PESCADO",
+              "dishType": "FIRSTCOURSE",
+              "ingredients": [
+                {
+                  "ingredient": {
+                    "name": "NOODLES",
+                    "location": "CHINA",
+                    "ingredientGroup": "CEREALES",
+                    "nutrients": {
+                      "carbohydrates": 78,
+                      "proteins": 12.9,
+                      "lipids": 1.5
+                    },
+                    "pricePerKg": 2
+                  },
+                  "amountInGrams": 125
+                },
+                {
+                  "ingredient": {
+                    "name": "CLAMS",
+                    "location": "JAPAN",
+                    "ingredientGroup": "CARNES-HUEVOS-LEGUMBRES",
+                    "nutrients": {
+                      "carbohydrates": 0,
+                      "proteins": 10.7,
+                      "lipids": 0.5
+                    },
+                    "pricePerKg": 12
+                  },
+                  "amountInGrams": 350
+                },
+                {
+                  "ingredient": {
+                    "name": "COD",
+                    "location": "SPAIN",
+                    "ingredientGroup": "CARNES-HUEVOS-LEGUMBRES",
+                    "nutrients": {
+                      "carbohydrates": 0,
+                      "proteins": 17.7,
+                      "lipids": 0.4
+                    },
+                    "pricePerKg": 11.5
+                  },
+                  "amountInGrams": 700
+                },
+                {
+                  "ingredient": {
+                    "name": "CARROT",
+                    "location": "FRANCE",
+                    "ingredientGroup": "VERDURAS-HORTALIZAS",
+                    "nutrients": {
+                      "carbohydrates": 0,
+                      "proteins": 1.3,
+                      "lipids": 39.6
+                    },
+                    "pricePerKg": 3.15
+                  },
+                  "amountInGrams": 80
+                },
+                {
+                  "ingredient": {
+                    "name": "PARSLEY",
+                    "location": "SPAIN",
+                    "ingredientGroup": "CARNES-HUEVOS-LEGUMBRES",
+                    "nutrients": {
+                      "carbohydrates": 2.7,
+                      "proteins": 3,
+                      "lipids": 1.3
+                    },
+                    "pricePerKg": 1.2
+                  },
+                  "amountInGrams": 3
+                },
+                {
+                  "ingredient": {
+                    "name": "CELERY",
+                    "location": "ENGLAND",
+                    "ingredientGroup": "VERDURAS-HORTALIZAS",
+                    "nutrients": {
+                      "carbohydrates": 1.3,
+                      "proteins": 1.3,
+                      "lipids": 0.2
+                    },
+                    "pricePerKg": 1.5
+                  },
+                  "amountInGrams": 10
+                }
+              ],
+              "dishPrice": 127.706
+            },
+            {
+              "name": "MERLUZA CON PAPAS",
+              "dishType": "SECONDCOURSE",
+              "ingredients": [
+                {
+                  "ingredient": {
+                    "name": "HAKE",
+                    "location": "CHINA",
+                    "ingredientGroup": "CARNES-HUEVOS-LEGUMBRES",
+                    "nutrients": {
+                      "carbohydrates": 0,
+                      "proteins": 15.9,
+                      "lipids": 2.8
+                    },
+                    "pricePerKg": 9.6
+                  },
+                  "amountInGrams": 300
+                },
+                {
+                  "ingredient": {
+                    "name": "POTATO",
+                    "location": "SPAIN",
+                    "ingredientGroup": "VERDURAS-HORTALIZAS",
+                    "nutrients": {
+                      "carbohydrates": 45,
+                      "proteins": 10,
+                      "lipids": 30
+                    },
+                    "pricePerKg": 1.5
+                  },
+                  "amountInGrams": 200
+                },
+                {
+                  "ingredient": {
+                    "name": "CEBOLLA",
+                    "location": "FRANCE",
+                    "ingredientGroup": "VERDURAS-HORTALIZAS",
+                    "nutrients": {
+                      "carbohydrates": 5,
+                      "proteins": 15,
+                      "lipids": 0
+                    },
+                    "pricePerKg": 1.2
+                  },
+                  "amountInGrams": 30
+                },
+                {
+                  "ingredient": {
+                    "name": "RED PEPPER",
+                    "location": "CHINA",
+                    "ingredientGroup": "VERDURAS-HORTALIZAS",
+                    "nutrients": {
+                      "carbohydrates": 6.4,
+                      "proteins": 1,
+                      "lipids": 0.4
+                    },
+                    "pricePerKg": 2.7
+                  },
+                  "amountInGrams": 20
+                },
+                {
+                  "ingredient": {
+                    "name": "BEET",
+                    "location": "GERMANY",
+                    "ingredientGroup": "VERDURAS-HORTALIZAS",
+                    "nutrients": {
+                      "carbohydrates": 23,
+                      "proteins": 5.3,
+                      "lipids": 0.3
+                    },
+                    "pricePerKg": 3.15
+                  },
+                  "amountInGrams": 15
+                }
+              ],
+              "dishPrice": 33.1725
+            },
+            {
+              "name": "TARTA DE QUESO",
+              "dishType": "DESSERT",
+              "ingredients": [
+                {
+                  "ingredient": {
+                    "name": "BUTTER",
+                    "location": "FRANCE",
+                    "ingredientGroup": "LACTEOS",
+                    "nutrients": {
+                      "carbohydrates": 99,
+                      "proteins": 0.6,
+                      "lipids": 83
+                    },
+                    "pricePerKg": 2.15
+                  },
+                  "amountInGrams": 100
+                },
+                {
+                  "ingredient": {
+                    "name": "CHEESE",
+                    "location": "IRELAND",
+                    "ingredientGroup": "LACTEOS",
+                    "nutrients": {
+                      "carbohydrates": 0,
+                      "proteins": 27.6,
+                      "lipids": 39.6
+                    },
+                    "pricePerKg": 3.15
+                  },
+                  "amountInGrams": 500
+                },
+                {
+                  "ingredient": {
+                    "name": "LIQUID CREAM",
+                    "location": "NEW ZELAND",
+                    "ingredientGroup": "LACTEOS",
+                    "nutrients": {
+                      "carbohydrates": 3.4,
+                      "proteins": 2.5,
+                      "lipids": 20
+                    },
+                    "pricePerKg": 6
+                  },
+                  "amountInGrams": 400
+                },
+                {
+                  "ingredient": {
+                    "name": "STRAWBERRY",
+                    "location": "CHINA",
+                    "ingredientGroup": "FRUTAS",
+                    "nutrients": {
+                      "carbohydrates": 7,
+                      "proteins": 0.7,
+                      "lipids": 0.5
+                    },
+                    "pricePerKg": 2.5
+                  },
+                  "amountInGrams": 200
+                }
+              ],
+              "dishPrice": 46.9
+            }
+          ],
+          "menuPrice": 245.42600000000002
+        },
+        {
+          "name": "MENU DEL CHEF",
+          "dishes": [
+            {
+              "name": "PULPO A LA VINAGRETA",
+              "dishType": "STARTER",
+              "ingredients": [
+                {
+                  "ingredient": {
+                    "name": "OCTOPUS",
+                    "location": "SPAIN",
+                    "ingredientGroup": "CARNES-HUEVOS-LEGUMBRES",
+                    "nutrients": {
+                      "carbohydrates": 2.2,
+                      "proteins": 14.91,
+                      "lipids": 1.4
+                    },
+                    "pricePerKg": 11.4
+                  },
+                  "amountInGrams": 400
+                },
+                {
+                  "ingredient": {
+                    "name": "OLIVE OIL",
+                    "location": "ITALY",
+                    "ingredientGroup": "VERDURAS-HORTALIZAS",
+                    "nutrients": {
+                      "carbohydrates": 0,
+                      "proteins": 0,
+                      "lipids": 99.9
+                    },
+                    "pricePerKg": 4.99
+                  },
+                  "amountInGrams": 25
+                },
+                {
+                  "ingredient": {
+                    "name": "GREEN PEPPER",
+                    "location": "CHINA",
+                    "ingredientGroup": "VERDURAS-HORTALIZAS",
+                    "nutrients": {
+                      "carbohydrates": 3.7,
+                      "proteins": 0.7,
+                      "lipids": 0.2
+                    },
+                    "pricePerKg": 2.65
+                  },
+                  "amountInGrams": 80
+                },
+                {
+                  "ingredient": {
+                    "name": "RED PEPPER",
+                    "location": "CHINA",
+                    "ingredientGroup": "VERDURAS-HORTALIZAS",
+                    "nutrients": {
+                      "carbohydrates": 6.4,
+                      "proteins": 1,
+                      "lipids": 0.4
+                    },
+                    "pricePerKg": 2.7
+                  },
+                  "amountInGrams": 40
+                },
+                {
+                  "ingredient": {
+                    "name": "PARSLEY",
+                    "location": "SPAIN",
+                    "ingredientGroup": "CARNES-HUEVOS-LEGUMBRES",
+                    "nutrients": {
+                      "carbohydrates": 2.7,
+                      "proteins": 3,
+                      "lipids": 1.3
+                    },
+                    "pricePerKg": 1.2
+                  },
+                  "amountInGrams": 10
+                },
+                {
+                  "ingredient": {
+                    "name": "VINEGAR",
+                    "location": "ARGENTINA",
+                    "ingredientGroup": "VERDURAS-HORTALIZAS",
+                    "nutrients": {
+                      "carbohydrates": 0,
+                      "proteins": 0,
+                      "lipids": 0
+                    },
+                    "pricePerKg": 1.5
+                  },
+                  "amountInGrams": 10
+                }
+              ],
+              "dishPrice": 50.317499999999995
+            },
+            {
+              "name": "ESTOFADO",
+              "dishType": "FIRSTCOURSE",
+              "ingredients": [
+                {
+                  "ingredient": {
+                    "name": "VEAL",
+                    "location": "CANADA",
+                    "ingredientGroup": "CARNES-HUEVOS-LEGUMBRES",
+                    "nutrients": {
+                      "carbohydrates": 0,
+                      "proteins": 24,
+                      "lipids": 3
+                    },
+                    "pricePerKg": 8
+                  },
+                  "amountInGrams": 605
+                },
+                {
+                  "ingredient": {
+                    "name": "GREEN PEAS",
+                    "location": "ITALY",
+                    "ingredientGroup": "VERDURAS-HORTALIZAS",
+                    "nutrients": {
+                      "carbohydrates": 9.7,
+                      "proteins": 5.6,
+                      "lipids": 0.5
+                    },
+                    "pricePerKg": 2
+                  },
+                  "amountInGrams": 120
+                },
+                {
+                  "ingredient": {
+                    "name": "POTATO",
+                    "location": "SPAIN",
+                    "ingredientGroup": "VERDURAS-HORTALIZAS",
+                    "nutrients": {
+                      "carbohydrates": 45,
+                      "proteins": 10,
+                      "lipids": 30
+                    },
+                    "pricePerKg": 1.5
+                  },
+                  "amountInGrams": 400
+                },
+                {
+                  "ingredient": {
+                    "name": "CARROT",
+                    "location": "FRANCE",
+                    "ingredientGroup": "VERDURAS-HORTALIZAS",
+                    "nutrients": {
+                      "carbohydrates": 0,
+                      "proteins": 1.3,
+                      "lipids": 39.6
+                    },
+                    "pricePerKg": 3.15
+                  },
+                  "amountInGrams": 80
+                },
+                {
+                  "ingredient": {
+                    "name": "CEBOLLA",
+                    "location": "FRANCE",
+                    "ingredientGroup": "VERDURAS-HORTALIZAS",
+                    "nutrients": {
+                      "carbohydrates": 5,
+                      "proteins": 15,
+                      "lipids": 0
+                    },
+                    "pricePerKg": 1.2
+                  },
+                  "amountInGrams": 45
+                },
+                {
+                  "ingredient": {
+                    "name": "CELERY",
+                    "location": "ENGLAND",
+                    "ingredientGroup": "VERDURAS-HORTALIZAS",
+                    "nutrients": {
+                      "carbohydrates": 1.3,
+                      "proteins": 1.3,
+                      "lipids": 0.2
+                    },
+                    "pricePerKg": 1.5
+                  },
+                  "amountInGrams": 10
+                }
+              ],
+              "dishPrice": 60.01
+            },
+            {
+              "name": "SARGO CON PAPAS",
+              "dishType": "SECONDCOURSE",
+              "ingredients": [
+                {
+                  "ingredient": {
+                    "name": "SARGO",
+                    "location": "SPAIN",
+                    "ingredientGroup": "CARNES-HUEVOS-LEGUMBRES",
+                    "nutrients": {
+                      "carbohydrates": 0,
+                      "proteins": 18.4,
+                      "lipids": 12
+                    },
+                    "pricePerKg": 9.5
+                  },
+                  "amountInGrams": 300
+                },
+                {
+                  "ingredient": {
+                    "name": "POTATO",
+                    "location": "SPAIN",
+                    "ingredientGroup": "VERDURAS-HORTALIZAS",
+                    "nutrients": {
+                      "carbohydrates": 45,
+                      "proteins": 10,
+                      "lipids": 30
+                    },
+                    "pricePerKg": 1.5
+                  },
+                  "amountInGrams": 200
+                },
+                {
+                  "ingredient": {
+                    "name": "RED PEPPER",
+                    "location": "CHINA",
+                    "ingredientGroup": "VERDURAS-HORTALIZAS",
+                    "nutrients": {
+                      "carbohydrates": 6.4,
+                      "proteins": 1,
+                      "lipids": 0.4
+                    },
+                    "pricePerKg": 2.7
+                  },
+                  "amountInGrams": 30
+                },
+                {
+                  "ingredient": {
+                    "name": "GREEN PEPPER",
+                    "location": "CHINA",
+                    "ingredientGroup": "VERDURAS-HORTALIZAS",
+                    "nutrients": {
+                      "carbohydrates": 3.7,
+                      "proteins": 0.7,
+                      "lipids": 0.2
+                    },
+                    "pricePerKg": 2.65
+                  },
+                  "amountInGrams": 40
+                }
+              ],
+              "dishPrice": 33.370000000000005
+            },
+            {
+              "name": "TIRAMISÚ",
+              "dishType": "DESSERT",
+              "ingredients": [
+                {
+                  "ingredient": {
+                    "name": "CHEESE",
+                    "location": "IRELAND",
+                    "ingredientGroup": "LACTEOS",
+                    "nutrients": {
+                      "carbohydrates": 0,
+                      "proteins": 27.6,
+                      "lipids": 39.6
+                    },
+                    "pricePerKg": 3.15
+                  },
+                  "amountInGrams": 500
+                },
+                {
+                  "ingredient": {
+                    "name": "EGG",
+                    "location": "SPAIN",
+                    "ingredientGroup": "CARNES-HUEVOS-LEGUMBRES",
+                    "nutrients": {
+                      "carbohydrates": 5,
+                      "proteins": 50,
+                      "lipids": 25
+                    },
+                    "pricePerKg": 5
+                  },
+                  "amountInGrams": 100
+                },
+                {
+                  "ingredient": {
+                    "name": "COFFEE",
+                    "location": "BRAZIL",
+                    "ingredientGroup": "VERDURAS-HORTALIZAS",
+                    "nutrients": {
+                      "carbohydrates": 0,
+                      "proteins": 0.1,
+                      "lipids": 0
+                    },
+                    "pricePerKg": 2
+                  },
+                  "amountInGrams": 350
+                },
+                {
+                  "ingredient": {
+                    "name": "CORNMEAL",
+                    "location": "RUSSIA",
+                    "ingredientGroup": "CEREALES",
+                    "nutrients": {
+                      "carbohydrates": 76,
+                      "proteins": 8.7,
+                      "lipids": 2.7
+                    },
+                    "pricePerKg": 5
+                  },
+                  "amountInGrams": 100
+                },
+                {
+                  "ingredient": {
+                    "name": "COCOA",
+                    "location": "IVORY COAST",
+                    "ingredientGroup": "VERDURAS-HORTALIZAS",
+                    "nutrients": {
+                      "carbohydrates": 9.9,
+                      "proteins": 25,
+                      "lipids": 10
+                    },
+                    "pricePerKg": 1.5
+                  },
+                  "amountInGrams": 30
+                }
+              ],
+              "dishPrice": 33.2
+            }
+          ],
+          "menuPrice": 176.89749999999998
+        },
+        {
+          "name": "ESPECIAL DEL MAR",
+          "dishes": [
+            {
+              "name": "SARDINAS",
+              "dishType": "STARTER",
+              "ingredients": [
+                {
+                  "ingredient": {
+                    "name": "SARDINES",
+                    "location": "CHINA",
+                    "ingredientGroup": "CARNES-HUEVOS-LEGUMBRES",
+                    "nutrients": {
+                      "carbohydrates": 0,
+                      "proteins": 18.1,
+                      "lipids": 17.5
+                    },
+                    "pricePerKg": 10
+                  },
+                  "amountInGrams": 300
+                },
+                {
+                  "ingredient": {
+                    "name": "OLIVE OIL",
+                    "location": "ITALY",
+                    "ingredientGroup": "VERDURAS-HORTALIZAS",
+                    "nutrients": {
+                      "carbohydrates": 0,
+                      "proteins": 0,
+                      "lipids": 99.9
+                    },
+                    "pricePerKg": 4.99
+                  },
+                  "amountInGrams": 25
+                },
+                {
+                  "ingredient": {
+                    "name": "LEMON",
+                    "location": "PORTUGAL",
+                    "ingredientGroup": "FRUTAS",
+                    "nutrients": {
+                      "carbohydrates": 12.7,
+                      "proteins": 0.1,
+                      "lipids": 0.06
+                    },
+                    "pricePerKg": 8
+                  },
+                  "amountInGrams": 80
+                }
+              ],
+              "dishPrice": 37.6475
+            },
+            {
+              "name": "SOPA DE PESCADO",
+              "dishType": "FIRSTCOURSE",
+              "ingredients": [
+                {
+                  "ingredient": {
+                    "name": "NOODLES",
+                    "location": "CHINA",
+                    "ingredientGroup": "CEREALES",
+                    "nutrients": {
+                      "carbohydrates": 78,
+                      "proteins": 12.9,
+                      "lipids": 1.5
+                    },
+                    "pricePerKg": 2
+                  },
+                  "amountInGrams": 125
+                },
+                {
+                  "ingredient": {
+                    "name": "CLAMS",
+                    "location": "JAPAN",
+                    "ingredientGroup": "CARNES-HUEVOS-LEGUMBRES",
+                    "nutrients": {
+                      "carbohydrates": 0,
+                      "proteins": 10.7,
+                      "lipids": 0.5
+                    },
+                    "pricePerKg": 12
+                  },
+                  "amountInGrams": 350
+                },
+                {
+                  "ingredient": {
+                    "name": "COD",
+                    "location": "SPAIN",
+                    "ingredientGroup": "CARNES-HUEVOS-LEGUMBRES",
+                    "nutrients": {
+                      "carbohydrates": 0,
+                      "proteins": 17.7,
+                      "lipids": 0.4
+                    },
+                    "pricePerKg": 11.5
+                  },
+                  "amountInGrams": 700
+                },
+                {
+                  "ingredient": {
+                    "name": "CARROT",
+                    "location": "FRANCE",
+                    "ingredientGroup": "VERDURAS-HORTALIZAS",
+                    "nutrients": {
+                      "carbohydrates": 0,
+                      "proteins": 1.3,
+                      "lipids": 39.6
+                    },
+                    "pricePerKg": 3.15
+                  },
+                  "amountInGrams": 80
+                },
+                {
+                  "ingredient": {
+                    "name": "PARSLEY",
+                    "location": "SPAIN",
+                    "ingredientGroup": "CARNES-HUEVOS-LEGUMBRES",
+                    "nutrients": {
+                      "carbohydrates": 2.7,
+                      "proteins": 3,
+                      "lipids": 1.3
+                    },
+                    "pricePerKg": 1.2
+                  },
+                  "amountInGrams": 3
+                },
+                {
+                  "ingredient": {
+                    "name": "CELERY",
+                    "location": "ENGLAND",
+                    "ingredientGroup": "VERDURAS-HORTALIZAS",
+                    "nutrients": {
+                      "carbohydrates": 1.3,
+                      "proteins": 1.3,
+                      "lipids": 0.2
+                    },
+                    "pricePerKg": 1.5
+                  },
+                  "amountInGrams": 10
+                }
+              ],
+              "dishPrice": 127.706
+            },
+            {
+              "name": "MERLUZA CON PAPAS",
+              "dishType": "SECONDCOURSE",
+              "ingredients": [
+                {
+                  "ingredient": {
+                    "name": "HAKE",
+                    "location": "CHINA",
+                    "ingredientGroup": "CARNES-HUEVOS-LEGUMBRES",
+                    "nutrients": {
+                      "carbohydrates": 0,
+                      "proteins": 15.9,
+                      "lipids": 2.8
+                    },
+                    "pricePerKg": 9.6
+                  },
+                  "amountInGrams": 300
+                },
+                {
+                  "ingredient": {
+                    "name": "POTATO",
+                    "location": "SPAIN",
+                    "ingredientGroup": "VERDURAS-HORTALIZAS",
+                    "nutrients": {
+                      "carbohydrates": 45,
+                      "proteins": 10,
+                      "lipids": 30
+                    },
+                    "pricePerKg": 1.5
+                  },
+                  "amountInGrams": 200
+                },
+                {
+                  "ingredient": {
+                    "name": "CEBOLLA",
+                    "location": "FRANCE",
+                    "ingredientGroup": "VERDURAS-HORTALIZAS",
+                    "nutrients": {
+                      "carbohydrates": 5,
+                      "proteins": 15,
+                      "lipids": 0
+                    },
+                    "pricePerKg": 1.2
+                  },
+                  "amountInGrams": 30
+                },
+                {
+                  "ingredient": {
+                    "name": "RED PEPPER",
+                    "location": "CHINA",
+                    "ingredientGroup": "VERDURAS-HORTALIZAS",
+                    "nutrients": {
+                      "carbohydrates": 6.4,
+                      "proteins": 1,
+                      "lipids": 0.4
+                    },
+                    "pricePerKg": 2.7
+                  },
+                  "amountInGrams": 20
+                },
+                {
+                  "ingredient": {
+                    "name": "BEET",
+                    "location": "GERMANY",
+                    "ingredientGroup": "VERDURAS-HORTALIZAS",
+                    "nutrients": {
+                      "carbohydrates": 23,
+                      "proteins": 5.3,
+                      "lipids": 0.3
+                    },
+                    "pricePerKg": 3.15
+                  },
+                  "amountInGrams": 15
+                }
+              ],
+              "dishPrice": 33.1725
+            },
+            {
+              "name": "TARTA DE QUESO",
+              "dishType": "DESSERT",
+              "ingredients": [
+                {
+                  "ingredient": {
+                    "name": "BUTTER",
+                    "location": "FRANCE",
+                    "ingredientGroup": "LACTEOS",
+                    "nutrients": {
+                      "carbohydrates": 99,
+                      "proteins": 0.6,
+                      "lipids": 83
+                    },
+                    "pricePerKg": 2.15
+                  },
+                  "amountInGrams": 100
+                },
+                {
+                  "ingredient": {
+                    "name": "CHEESE",
+                    "location": "IRELAND",
+                    "ingredientGroup": "LACTEOS",
+                    "nutrients": {
+                      "carbohydrates": 0,
+                      "proteins": 27.6,
+                      "lipids": 39.6
+                    },
+                    "pricePerKg": 3.15
+                  },
+                  "amountInGrams": 500
+                },
+                {
+                  "ingredient": {
+                    "name": "LIQUID CREAM",
+                    "location": "NEW ZELAND",
+                    "ingredientGroup": "LACTEOS",
+                    "nutrients": {
+                      "carbohydrates": 3.4,
+                      "proteins": 2.5,
+                      "lipids": 20
+                    },
+                    "pricePerKg": 6
+                  },
+                  "amountInGrams": 400
+                },
+                {
+                  "ingredient": {
+                    "name": "STRAWBERRY",
+                    "location": "CHINA",
+                    "ingredientGroup": "FRUTAS",
+                    "nutrients": {
+                      "carbohydrates": 7,
+                      "proteins": 0.7,
+                      "lipids": 0.5
+                    },
+                    "pricePerKg": 2.5
+                  },
+                  "amountInGrams": 200
+                }
+              ],
+              "dishPrice": 46.9
+            }
+          ],
+          "menuPrice": 245.42600000000002
+        },
+        {
+          "name": "VIVA ESPAÑA",
+          "dishes": [
+            {
+              "name": "SURTIDO DE CHACINA",
+              "dishType": "STARTER",
+              "ingredients": [
+                {
+                  "ingredient": {
+                    "name": "CHEESE",
+                    "location": "IRELAND",
+                    "ingredientGroup": "LACTEOS",
+                    "nutrients": {
+                      "carbohydrates": 0,
+                      "proteins": 27.6,
+                      "lipids": 39.6
+                    },
+                    "pricePerKg": 3.15
+                  },
+                  "amountInGrams": 50
+                },
+                {
+                  "ingredient": {
+                    "name": "SERANO HAM",
+                    "location": "SPAIN",
+                    "ingredientGroup": "CARNES-HUEVOS-LEGUMBRES",
+                    "nutrients": {
+                      "carbohydrates": 0,
+                      "proteins": 31,
+                      "lipids": 13
+                    },
+                    "pricePerKg": 5
+                  },
+                  "amountInGrams": 50
+                },
+                {
+                  "ingredient": {
+                    "name": "CHORIZO",
+                    "location": "SPAIN",
+                    "ingredientGroup": "CARNES-HUEVOS-LEGUMBRES",
+                    "nutrients": {
+                      "carbohydrates": 2.85,
+                      "proteins": 13.72,
+                      "lipids": 29.18
+                    },
+                    "pricePerKg": 4
+                  },
+                  "amountInGrams": 20
+                },
+                {
+                  "ingredient": {
+                    "name": "BLOOD SAUSAGE",
+                    "location": "SPAIN",
+                    "ingredientGroup": "CARNES-HUEVOS-LEGUMBRES",
+                    "nutrients": {
+                      "carbohydrates": 3,
+                      "proteins": 19.5,
+                      "lipids": 39.5
+                    },
+                    "pricePerKg": 6.4
+                  },
+                  "amountInGrams": 100
+                }
+              ],
+              "dishPrice": 11.275
+            },
+            {
+              "name": "PUCHERO CANARIO",
+              "dishType": "FIRSTCOURSE",
+              "ingredients": [
+                {
+                  "ingredient": {
+                    "name": "CHICKPEA",
+                    "location": "MEXICO",
+                    "ingredientGroup": "VERDURAS-HORTALIZAS",
+                    "nutrients": {
+                      "carbohydrates": 49.6,
+                      "proteins": 21.3,
+                      "lipids": 5.4
+                    },
+                    "pricePerKg": 3.1
+                  },
+                  "amountInGrams": 300
+                },
+                {
+                  "ingredient": {
+                    "name": "GREEN PEPPER",
+                    "location": "CHINA",
+                    "ingredientGroup": "VERDURAS-HORTALIZAS",
+                    "nutrients": {
+                      "carbohydrates": 3.7,
+                      "proteins": 0.7,
+                      "lipids": 0.2
+                    },
+                    "pricePerKg": 2.65
+                  },
+                  "amountInGrams": 90
+                },
+                {
+                  "ingredient": {
+                    "name": "POTATO",
+                    "location": "SPAIN",
+                    "ingredientGroup": "VERDURAS-HORTALIZAS",
+                    "nutrients": {
+                      "carbohydrates": 45,
+                      "proteins": 10,
+                      "lipids": 30
+                    },
+                    "pricePerKg": 1.5
+                  },
+                  "amountInGrams": 400
+                },
+                {
+                  "ingredient": {
+                    "name": "CARROT",
+                    "location": "FRANCE",
+                    "ingredientGroup": "VERDURAS-HORTALIZAS",
+                    "nutrients": {
+                      "carbohydrates": 0,
+                      "proteins": 1.3,
+                      "lipids": 39.6
+                    },
+                    "pricePerKg": 3.15
+                  },
+                  "amountInGrams": 100
+                },
+                {
+                  "ingredient": {
+                    "name": "TOMATOE",
+                    "location": "SPAIN",
+                    "ingredientGroup": "VERDURAS-HORTALIZAS",
+                    "nutrients": {
+                      "carbohydrates": 3.5,
+                      "proteins": 1,
+                      "lipids": 0.11
+                    },
+                    "pricePerKg": 1.5
+                  },
+                  "amountInGrams": 50
+                },
+                {
+                  "ingredient": {
+                    "name": "RED PEPPER",
+                    "location": "CHINA",
+                    "ingredientGroup": "VERDURAS-HORTALIZAS",
+                    "nutrients": {
+                      "carbohydrates": 6.4,
+                      "proteins": 1,
+                      "lipids": 0.4
+                    },
+                    "pricePerKg": 2.7
+                  },
+                  "amountInGrams": 10
+                },
+                {
+                  "ingredient": {
+                    "name": "CABBAGE",
+                    "location": "USA",
+                    "ingredientGroup": "VERDURAS-HORTALIZAS",
+                    "nutrients": {
+                      "carbohydrates": 6,
+                      "proteins": 1.3,
+                      "lipids": 0.1
+                    },
+                    "pricePerKg": 3.6
+                  },
+                  "amountInGrams": 30
+                },
+                {
+                  "ingredient": {
+                    "name": "BEANS",
+                    "location": "USA",
+                    "ingredientGroup": "VERDURAS-HORTALIZAS",
+                    "nutrients": {
+                      "carbohydrates": 7.13,
+                      "proteins": 1.82,
+                      "lipids": 0.12
+                    },
+                    "pricePerKg": 1.69
+                  },
+                  "amountInGrams": 100
+                },
+                {
+                  "ingredient": {
+                    "name": "PUMPKIN",
+                    "location": "CHINA",
+                    "ingredientGroup": "VERDURAS-HORTALIZAS",
+                    "nutrients": {
+                      "carbohydrates": 4.59,
+                      "proteins": 1.13,
+                      "lipids": 0.2
+                    },
+                    "pricePerKg": 2.89
+                  },
+                  "amountInGrams": 230
+                },
+                {
+                  "ingredient": {
+                    "name": "CHICKEN",
+                    "location": "BRAZIL",
+                    "ingredientGroup": "CARNES-HUEVOS-LEGUMBRES",
+                    "nutrients": {
+                      "carbohydrates": 0,
+                      "proteins": 20,
+                      "lipids": 9.7
+                    },
+                    "pricePerKg": 10.1
+                  },
+                  "amountInGrams": 120
+                },
+                {
+                  "ingredient": {
+                    "name": "ZUCCHINI",
+                    "location": "INDIA",
+                    "ingredientGroup": "VERDURAS-HORTALIZAS",
+                    "nutrients": {
+                      "carbohydrates": 3.35,
+                      "proteins": 1.21,
+                      "lipids": 0.18
+                    },
+                    "pricePerKg": 5
+                  },
+                  "amountInGrams": 90
+                },
+                {
+                  "ingredient": {
+                    "name": "OLIVE OIL",
+                    "location": "ITALY",
+                    "ingredientGroup": "VERDURAS-HORTALIZAS",
+                    "nutrients": {
+                      "carbohydrates": 0,
+                      "proteins": 0,
+                      "lipids": 99.9
+                    },
+                    "pricePerKg": 4.99
+                  },
+                  "amountInGrams": 10
+                }
+              ],
+              "dishPrice": 48.391000000000005
+            },
+            {
+              "name": "TORTILLA",
+              "dishType": "SECONDCOURSE",
+              "ingredients": [
+                {
+                  "ingredient": {
+                    "name": "EGG",
+                    "location": "SPAIN",
+                    "ingredientGroup": "CARNES-HUEVOS-LEGUMBRES",
+                    "nutrients": {
+                      "carbohydrates": 5,
+                      "proteins": 50,
+                      "lipids": 25
+                    },
+                    "pricePerKg": 5
+                  },
+                  "amountInGrams": 50
+                },
+                {
+                  "ingredient": {
+                    "name": "POTATO",
+                    "location": "SPAIN",
+                    "ingredientGroup": "VERDURAS-HORTALIZAS",
+                    "nutrients": {
+                      "carbohydrates": 45,
+                      "proteins": 10,
+                      "lipids": 30
+                    },
+                    "pricePerKg": 1.5
+                  },
+                  "amountInGrams": 200
+                }
+              ],
+              "dishPrice": 5.5
+            },
+            {
+              "name": "NATILLA",
+              "dishType": "DESSERT",
+              "ingredients": [
+                {
+                  "ingredient": {
+                    "name": "MILK",
+                    "location": "IRELAND",
+                    "ingredientGroup": "LACTEOS",
+                    "nutrients": {
+                      "carbohydrates": 4.7,
+                      "proteins": 3.1,
+                      "lipids": 3.5
+                    },
+                    "pricePerKg": 7
+                  },
+                  "amountInGrams": 100
+                },
+                {
+                  "ingredient": {
+                    "name": "LEMON",
+                    "location": "PORTUGAL",
+                    "ingredientGroup": "FRUTAS",
+                    "nutrients": {
+                      "carbohydrates": 12.7,
+                      "proteins": 0.1,
+                      "lipids": 0.06
+                    },
+                    "pricePerKg": 8
+                  },
+                  "amountInGrams": 80
+                }
+              ],
+              "dishPrice": 13.400000000000002
+            }
+          ],
+          "menuPrice": 78.566
+        },
+        {
+          "name": "EXPERIENCIA EXTRANJERA",
+          "dishes": [
+            {
+              "name": "ENSALADILLA RUSA",
+              "dishType": "STARTER",
+              "ingredients": [
+                {
+                  "ingredient": {
+                    "name": "EGG",
+                    "location": "SPAIN",
+                    "ingredientGroup": "CARNES-HUEVOS-LEGUMBRES",
+                    "nutrients": {
+                      "carbohydrates": 5,
+                      "proteins": 50,
+                      "lipids": 25
+                    },
+                    "pricePerKg": 5
+                  },
+                  "amountInGrams": 100
+                },
+                {
+                  "ingredient": {
+                    "name": "POTATO",
+                    "location": "SPAIN",
+                    "ingredientGroup": "VERDURAS-HORTALIZAS",
+                    "nutrients": {
+                      "carbohydrates": 45,
+                      "proteins": 10,
+                      "lipids": 30
+                    },
+                    "pricePerKg": 1.5
+                  },
+                  "amountInGrams": 250
+                },
+                {
+                  "ingredient": {
+                    "name": "CARROT",
+                    "location": "FRANCE",
+                    "ingredientGroup": "VERDURAS-HORTALIZAS",
+                    "nutrients": {
+                      "carbohydrates": 0,
+                      "proteins": 1.3,
+                      "lipids": 39.6
+                    },
+                    "pricePerKg": 3.15
+                  },
+                  "amountInGrams": 80
+                },
+                {
+                  "ingredient": {
+                    "name": "TUNA",
+                    "location": "THAILAND",
+                    "ingredientGroup": "CARNES-HUEVOS-LEGUMBRES",
+                    "nutrients": {
+                      "carbohydrates": 0,
+                      "proteins": 23,
+                      "lipids": 12
+                    },
+                    "pricePerKg": 10
+                  },
+                  "amountInGrams": 160
+                },
+                {
+                  "ingredient": {
+                    "name": "MAYONNAISE",
+                    "location": "ARGENTINA",
+                    "ingredientGroup": "CARNES-HUEVOS-LEGUMBRES",
+                    "nutrients": {
+                      "carbohydrates": 3.51,
+                      "proteins": 0.13,
+                      "lipids": 4.91
+                    },
+                    "pricePerKg": 2.4
+                  },
+                  "amountInGrams": 600
+                },
+                {
+                  "ingredient": {
+                    "name": "OLIVES",
+                    "location": "EGYPT",
+                    "ingredientGroup": "VERDURAS-HORTALIZAS",
+                    "nutrients": {
+                      "carbohydrates": 6,
+                      "proteins": 0.8,
+                      "lipids": 11
+                    },
+                    "pricePerKg": 1.9
+                  },
+                  "amountInGrams": 30
+                },
+                {
+                  "ingredient": {
+                    "name": "RED PEPPER",
+                    "location": "CHINA",
+                    "ingredientGroup": "VERDURAS-HORTALIZAS",
+                    "nutrients": {
+                      "carbohydrates": 6.4,
+                      "proteins": 1,
+                      "lipids": 0.4
+                    },
+                    "pricePerKg": 2.7
+                  },
+                  "amountInGrams": 30
+                }
+              ],
+              "dishPrice": 43.050000000000004
+            },
+            {
+              "name": "ARROZ A LA CUBANA",
+              "dishType": "FIRSTCOURSE",
+              "ingredients": [
+                {
+                  "ingredient": {
+                    "name": "WHITE RICE",
+                    "location": "CHINA",
+                    "ingredientGroup": "CEREALES",
+                    "nutrients": {
+                      "carbohydrates": 86,
+                      "proteins": 7,
+                      "lipids": 0.9
+                    },
+                    "pricePerKg": 1.79
+                  },
+                  "amountInGrams": 200
+                },
+                {
+                  "ingredient": {
+                    "name": "BANANA",
+                    "location": "INDIA",
+                    "ingredientGroup": "FRUTAS",
+                    "nutrients": {
+                      "carbohydrates": 20,
+                      "proteins": 1.2,
+                      "lipids": 0.3
+                    },
+                    "pricePerKg": 3
+                  },
+                  "amountInGrams": 50
+                },
+                {
+                  "ingredient": {
+                    "name": "EGG",
+                    "location": "SPAIN",
+                    "ingredientGroup": "CARNES-HUEVOS-LEGUMBRES",
+                    "nutrients": {
+                      "carbohydrates": 5,
+                      "proteins": 50,
+                      "lipids": 25
+                    },
+                    "pricePerKg": 5
+                  },
+                  "amountInGrams": 104
+                },
+                {
+                  "ingredient": {
+                    "name": "BEET",
+                    "location": "GERMANY",
+                    "ingredientGroup": "VERDURAS-HORTALIZAS",
+                    "nutrients": {
+                      "carbohydrates": 23,
+                      "proteins": 5.3,
+                      "lipids": 0.3
+                    },
+                    "pricePerKg": 3.15
+                  },
+                  "amountInGrams": 15
+                },
+                {
+                  "ingredient": {
+                    "name": "SAUSAGE",
+                    "location": "GERMANY",
+                    "ingredientGroup": "CARNES-HUEVOS-LEGUMBRES",
+                    "nutrients": {
+                      "carbohydrates": 0.7,
+                      "proteins": 12.9,
+                      "lipids": 27
+                    },
+                    "pricePerKg": 8
+                  },
+                  "amountInGrams": 160
+                }
+              ],
+              "dishPrice": 23.552500000000002
+            },
+            {
+              "name": "CESAR-SALAD",
+              "dishType": "SECONDCOURSE",
+              "ingredients": [
+                {
+                  "ingredient": {
+                    "name": "LETTUCE",
+                    "location": "ITALY",
+                    "ingredientGroup": "VERDURAS-HORTALIZAS",
+                    "nutrients": {
+                      "carbohydrates": 2.9,
+                      "proteins": 1.4,
+                      "lipids": 0.2
+                    },
+                    "pricePerKg": 2
+                  },
+                  "amountInGrams": 100
+                },
+                {
+                  "ingredient": {
+                    "name": "TOMATOE",
+                    "location": "SPAIN",
+                    "ingredientGroup": "VERDURAS-HORTALIZAS",
+                    "nutrients": {
+                      "carbohydrates": 3.5,
+                      "proteins": 1,
+                      "lipids": 0.11
+                    },
+                    "pricePerKg": 1.5
+                  },
+                  "amountInGrams": 60
+                },
+                {
+                  "ingredient": {
+                    "name": "OLIVE OIL",
+                    "location": "ITALY",
+                    "ingredientGroup": "VERDURAS-HORTALIZAS",
+                    "nutrients": {
+                      "carbohydrates": 0,
+                      "proteins": 0,
+                      "lipids": 99.9
+                    },
+                    "pricePerKg": 4.99
+                  },
+                  "amountInGrams": 20
+                },
+                {
+                  "ingredient": {
+                    "name": "EGG",
+                    "location": "SPAIN",
+                    "ingredientGroup": "CARNES-HUEVOS-LEGUMBRES",
+                    "nutrients": {
+                      "carbohydrates": 5,
+                      "proteins": 50,
+                      "lipids": 25
+                    },
+                    "pricePerKg": 5
+                  },
+                  "amountInGrams": 53
+                },
+                {
+                  "ingredient": {
+                    "name": "CHEESE",
+                    "location": "IRELAND",
+                    "ingredientGroup": "LACTEOS",
+                    "nutrients": {
+                      "carbohydrates": 0,
+                      "proteins": 27.6,
+                      "lipids": 39.6
+                    },
+                    "pricePerKg": 3.15
+                  },
+                  "amountInGrams": 50
+                },
+                {
+                  "ingredient": {
+                    "name": "BEET",
+                    "location": "GERMANY",
+                    "ingredientGroup": "VERDURAS-HORTALIZAS",
+                    "nutrients": {
+                      "carbohydrates": 23,
+                      "proteins": 5.3,
+                      "lipids": 0.3
+                    },
+                    "pricePerKg": 3.15
+                  },
+                  "amountInGrams": 15
+                },
+                {
+                  "ingredient": {
+                    "name": "BEET",
+                    "location": "BELGIUM",
+                    "ingredientGroup": "VERDURAS-HORTALIZAS",
+                    "nutrients": {
+                      "carbohydrates": 6.4,
+                      "proteins": 1.3,
+                      "lipids": 0.17
+                    },
+                    "pricePerKg": 2.1
+                  },
+                  "amountInGrams": 30
+                },
+                {
+                  "ingredient": {
+                    "name": "CARROT",
+                    "location": "FRANCE",
+                    "ingredientGroup": "VERDURAS-HORTALIZAS",
+                    "nutrients": {
+                      "carbohydrates": 0,
+                      "proteins": 1.3,
+                      "lipids": 39.6
+                    },
+                    "pricePerKg": 3.15
+                  },
+                  "amountInGrams": 58
+                },
+                {
+                  "ingredient": {
+                    "name": "AVOCADO",
+                    "location": "MEXICO",
+                    "ingredientGroup": "VERDURAS-HORTALIZAS",
+                    "nutrients": {
+                      "carbohydrates": 5.9,
+                      "proteins": 1.5,
+                      "lipids": 12
+                    },
+                    "pricePerKg": 6
+                  },
+                  "amountInGrams": 40
+                }
+              ],
+              "dishPrice": 13.4525
+            },
+            {
+              "name": "BANANA SPLIT",
+              "dishType": "DESSERT",
+              "ingredients": [
+                {
+                  "ingredient": {
+                    "name": "MILK",
+                    "location": "IRELAND",
+                    "ingredientGroup": "LACTEOS",
+                    "nutrients": {
+                      "carbohydrates": 4.7,
+                      "proteins": 3.1,
+                      "lipids": 3.5
+                    },
+                    "pricePerKg": 7
+                  },
+                  "amountInGrams": 400
+                },
+                {
+                  "ingredient": {
+                    "name": "BANANA",
+                    "location": "INDIA",
+                    "ingredientGroup": "FRUTAS",
+                    "nutrients": {
+                      "carbohydrates": 20,
+                      "proteins": 1.2,
+                      "lipids": 0.3
+                    },
+                    "pricePerKg": 3
+                  },
+                  "amountInGrams": 80
+                },
+                {
+                  "ingredient": {
+                    "name": "STRAWBERRY",
+                    "location": "CHINA",
+                    "ingredientGroup": "FRUTAS",
+                    "nutrients": {
+                      "carbohydrates": 7,
+                      "proteins": 0.7,
+                      "lipids": 0.5
+                    },
+                    "pricePerKg": 2.5
+                  },
+                  "amountInGrams": 60
+                },
+                {
+                  "ingredient": {
+                    "name": "WHIPPED CREAM",
+                    "location": "NETHERLANDS",
+                    "ingredientGroup": "LACTEOS",
+                    "nutrients": {
+                      "carbohydrates": 10.1,
+                      "proteins": 2.1,
+                      "lipids": 31.4
+                    },
+                    "pricePerKg": 3.5
+                  },
+                  "amountInGrams": 175
+                }
+              ],
+              "dishPrice": 38.025000000000006
+            }
+          ],
+          "menuPrice": 118.08000000000001
+        },
+        {
+          "name": "MENU INFANTIL",
+          "dishes": [
+            {
+              "name": "CROQUETAS DE ATÚN",
+              "dishType": "STARTER",
+              "ingredients": [
+                {
+                  "ingredient": {
+                    "name": "MILK",
+                    "location": "IRELAND",
+                    "ingredientGroup": "LACTEOS",
+                    "nutrients": {
+                      "carbohydrates": 4.7,
+                      "proteins": 3.1,
+                      "lipids": 3.5
+                    },
+                    "pricePerKg": 7
+                  },
+                  "amountInGrams": 500
+                },
+                {
+                  "ingredient": {
+                    "name": "TUNA",
+                    "location": "THAILAND",
+                    "ingredientGroup": "CARNES-HUEVOS-LEGUMBRES",
+                    "nutrients": {
+                      "carbohydrates": 0,
+                      "proteins": 23,
+                      "lipids": 12
+                    },
+                    "pricePerKg": 10
+                  },
+                  "amountInGrams": 100
+                },
+                {
+                  "ingredient": {
+                    "name": "CORNMEAL",
+                    "location": "RUSSIA",
+                    "ingredientGroup": "CEREALES",
+                    "nutrients": {
+                      "carbohydrates": 76,
+                      "proteins": 8.7,
+                      "lipids": 2.7
+                    },
+                    "pricePerKg": 5
+                  },
+                  "amountInGrams": 20
+                },
+                {
+                  "ingredient": {
+                    "name": "OLIVE OIL",
+                    "location": "ITALY",
+                    "ingredientGroup": "VERDURAS-HORTALIZAS",
+                    "nutrients": {
+                      "carbohydrates": 0,
+                      "proteins": 0,
+                      "lipids": 99.9
+                    },
+                    "pricePerKg": 4.99
+                  },
+                  "amountInGrams": 100
+                },
+                {
+                  "ingredient": {
+                    "name": "EGG",
+                    "location": "SPAIN",
+                    "ingredientGroup": "CARNES-HUEVOS-LEGUMBRES",
+                    "nutrients": {
+                      "carbohydrates": 5,
+                      "proteins": 50,
+                      "lipids": 25
+                    },
+                    "pricePerKg": 5
+                  },
+                  "amountInGrams": 150
+                },
+                {
+                  "ingredient": {
+                    "name": "LIQUID CREAM",
+                    "location": "NEW ZELAND",
+                    "ingredientGroup": "LACTEOS",
+                    "nutrients": {
+                      "carbohydrates": 3.4,
+                      "proteins": 2.5,
+                      "lipids": 20
+                    },
+                    "pricePerKg": 6
+                  },
+                  "amountInGrams": 140
+                },
+                {
+                  "ingredient": {
+                    "name": "BREAD CRUMBS",
+                    "location": "FRANCIA",
+                    "ingredientGroup": "CEREALES",
+                    "nutrients": {
+                      "carbohydrates": 58,
+                      "proteins": 7.8,
+                      "lipids": 1
+                    },
+                    "pricePerKg": 5
+                  },
+                  "amountInGrams": 30
+                }
+              ],
+              "dishPrice": 68.39
+            },
+            {
+              "name": "MACARRONES",
+              "dishType": "FIRSTCOURSE",
+              "ingredients": [
+                {
+                  "ingredient": {
+                    "name": "MACARONI",
+                    "location": "ITALY",
+                    "ingredientGroup": "CEREALES",
+                    "nutrients": {
+                      "carbohydrates": 74.1,
+                      "proteins": 12,
+                      "lipids": 1.8
+                    },
+                    "pricePerKg": 1.85
+                  },
+                  "amountInGrams": 600
+                },
+                {
+                  "ingredient": {
+                    "name": "TOMATOE",
+                    "location": "SPAIN",
+                    "ingredientGroup": "VERDURAS-HORTALIZAS",
+                    "nutrients": {
+                      "carbohydrates": 3.5,
+                      "proteins": 1,
+                      "lipids": 0.11
+                    },
+                    "pricePerKg": 1.5
+                  },
+                  "amountInGrams": 200
+                },
+                {
+                  "ingredient": {
+                    "name": "CHEESE",
+                    "location": "IRELAND",
+                    "ingredientGroup": "LACTEOS",
+                    "nutrients": {
+                      "carbohydrates": 0,
+                      "proteins": 27.6,
+                      "lipids": 39.6
+                    },
+                    "pricePerKg": 3.15
+                  },
+                  "amountInGrams": 120
+                }
+              ],
+              "dishPrice": 17.880000000000003
+            },
+            {
+              "name": "CHULETAS",
+              "dishType": "SECONDCOURSE",
+              "ingredients": [
+                {
+                  "ingredient": {
+                    "name": "PORK CHOP",
+                    "location": "USA",
+                    "ingredientGroup": "CARNES-HUEVOS-LEGUMBRES",
+                    "nutrients": {
+                      "carbohydrates": 0,
+                      "proteins": 13.12,
+                      "lipids": 6.85
+                    },
+                    "pricePerKg": 8.5
+                  },
+                  "amountInGrams": 300
+                },
+                {
+                  "ingredient": {
+                    "name": "POTATO",
+                    "location": "SPAIN",
+                    "ingredientGroup": "VERDURAS-HORTALIZAS",
+                    "nutrients": {
+                      "carbohydrates": 45,
+                      "proteins": 10,
+                      "lipids": 30
+                    },
+                    "pricePerKg": 1.5
+                  },
+                  "amountInGrams": 200
+                }
+              ],
+              "dishPrice": 28.500000000000004
+            },
+            {
+              "name": "FLAN",
+              "dishType": "DESSERT",
+              "ingredients": [
+                {
+                  "ingredient": {
+                    "name": "MILK",
+                    "location": "IRELAND",
+                    "ingredientGroup": "LACTEOS",
+                    "nutrients": {
+                      "carbohydrates": 4.7,
+                      "proteins": 3.1,
+                      "lipids": 3.5
+                    },
+                    "pricePerKg": 7
+                  },
+                  "amountInGrams": 100
+                },
+                {
+                  "ingredient": {
+                    "name": "EGG",
+                    "location": "SPAIN",
+                    "ingredientGroup": "CARNES-HUEVOS-LEGUMBRES",
+                    "nutrients": {
+                      "carbohydrates": 5,
+                      "proteins": 50,
+                      "lipids": 25
+                    },
+                    "pricePerKg": 5
+                  },
+                  "amountInGrams": 160
+                },
+                {
+                  "ingredient": {
+                    "name": "LEMON",
+                    "location": "PORTUGAL",
+                    "ingredientGroup": "FRUTAS",
+                    "nutrients": {
+                      "carbohydrates": 12.7,
+                      "proteins": 0.1,
+                      "lipids": 0.06
+                    },
+                    "pricePerKg": 8
+                  },
+                  "amountInGrams": 10
+                },
+                {
+                  "ingredient": {
+                    "name": "CINNAMON",
+                    "location": "SRI LANKA",
+                    "ingredientGroup": "VERDURAS-HORTALIZAS",
+                    "nutrients": {
+                      "carbohydrates": 1.89,
+                      "proteins": 0.09,
+                      "lipids": 0.07
+                    },
+                    "pricePerKg": 1.5
+                  },
+                  "amountInGrams": 20
+                }
+              ],
+              "dishPrice": 16.1
+            }
+          ],
+          "menuPrice": 130.87
+        }
+      ],
+      "dishes": [
+        {
+          "name": "CROQUETAS DE ATÚN",
+          "dishType": "STARTER",
+          "ingredients": [
+            {
+              "ingredient": {
+                "name": "MILK",
+                "location": "IRELAND",
+                "ingredientGroup": "LACTEOS",
+                "nutrients": {
+                  "carbohydrates": 4.7,
+                  "proteins": 3.1,
+                  "lipids": 3.5
+                },
+                "pricePerKg": 7
+              },
+              "amountInGrams": 500
+            },
+            {
+              "ingredient": {
+                "name": "TUNA",
+                "location": "THAILAND",
+                "ingredientGroup": "CARNES-HUEVOS-LEGUMBRES",
+                "nutrients": {
+                  "carbohydrates": 0,
+                  "proteins": 23,
+                  "lipids": 12
+                },
+                "pricePerKg": 10
+              },
+              "amountInGrams": 100
+            },
+            {
+              "ingredient": {
+                "name": "CORNMEAL",
+                "location": "RUSSIA",
+                "ingredientGroup": "CEREALES",
+                "nutrients": {
+                  "carbohydrates": 76,
+                  "proteins": 8.7,
+                  "lipids": 2.7
+                },
+                "pricePerKg": 5
+              },
+              "amountInGrams": 20
+            },
+            {
+              "ingredient": {
+                "name": "OLIVE OIL",
+                "location": "ITALY",
+                "ingredientGroup": "VERDURAS-HORTALIZAS",
+                "nutrients": {
+                  "carbohydrates": 0,
+                  "proteins": 0,
+                  "lipids": 99.9
+                },
+                "pricePerKg": 4.99
+              },
+              "amountInGrams": 100
+            },
+            {
+              "ingredient": {
+                "name": "EGG",
+                "location": "SPAIN",
+                "ingredientGroup": "CARNES-HUEVOS-LEGUMBRES",
+                "nutrients": {
+                  "carbohydrates": 5,
+                  "proteins": 50,
+                  "lipids": 25
+                },
+                "pricePerKg": 5
+              },
+              "amountInGrams": 150
+            },
+            {
+              "ingredient": {
+                "name": "LIQUID CREAM",
+                "location": "NEW ZELAND",
+                "ingredientGroup": "LACTEOS",
+                "nutrients": {
+                  "carbohydrates": 3.4,
+                  "proteins": 2.5,
+                  "lipids": 20
+                },
+                "pricePerKg": 6
+              },
+              "amountInGrams": 140
+            },
+            {
+              "ingredient": {
+                "name": "BREAD CRUMBS",
+                "location": "FRANCIA",
+                "ingredientGroup": "CEREALES",
+                "nutrients": {
+                  "carbohydrates": 58,
+                  "proteins": 7.8,
+                  "lipids": 1
+                },
+                "pricePerKg": 5
+              },
+              "amountInGrams": 30
+            }
+          ],
+          "dishPrice": 68.39
+        },
+        {
+          "name": "SURTIDO DE CHACINA",
+          "dishType": "STARTER",
+          "ingredients": [
+            {
+              "ingredient": {
+                "name": "CHEESE",
+                "location": "IRELAND",
+                "ingredientGroup": "LACTEOS",
+                "nutrients": {
+                  "carbohydrates": 0,
+                  "proteins": 27.6,
+                  "lipids": 39.6
+                },
+                "pricePerKg": 3.15
+              },
+              "amountInGrams": 50
+            },
+            {
+              "ingredient": {
+                "name": "SERANO HAM",
+                "location": "SPAIN",
+                "ingredientGroup": "CARNES-HUEVOS-LEGUMBRES",
+                "nutrients": {
+                  "carbohydrates": 0,
+                  "proteins": 31,
+                  "lipids": 13
+                },
+                "pricePerKg": 5
+              },
+              "amountInGrams": 50
+            },
+            {
+              "ingredient": {
+                "name": "CHORIZO",
+                "location": "SPAIN",
+                "ingredientGroup": "CARNES-HUEVOS-LEGUMBRES",
+                "nutrients": {
+                  "carbohydrates": 2.85,
+                  "proteins": 13.72,
+                  "lipids": 29.18
+                },
+                "pricePerKg": 4
+              },
+              "amountInGrams": 20
+            },
+            {
+              "ingredient": {
+                "name": "BLOOD SAUSAGE",
+                "location": "SPAIN",
+                "ingredientGroup": "CARNES-HUEVOS-LEGUMBRES",
+                "nutrients": {
+                  "carbohydrates": 3,
+                  "proteins": 19.5,
+                  "lipids": 39.5
+                },
+                "pricePerKg": 6.4
+              },
+              "amountInGrams": 100
+            }
+          ],
+          "dishPrice": 11.275
+        },
+        {
+          "name": "SARDINAS",
+          "dishType": "STARTER",
+          "ingredients": [
+            {
+              "ingredient": {
+                "name": "SARDINES",
+                "location": "CHINA",
+                "ingredientGroup": "CARNES-HUEVOS-LEGUMBRES",
+                "nutrients": {
+                  "carbohydrates": 0,
+                  "proteins": 18.1,
+                  "lipids": 17.5
+                },
+                "pricePerKg": 10
+              },
+              "amountInGrams": 300
+            },
+            {
+              "ingredient": {
+                "name": "OLIVE OIL",
+                "location": "ITALY",
+                "ingredientGroup": "VERDURAS-HORTALIZAS",
+                "nutrients": {
+                  "carbohydrates": 0,
+                  "proteins": 0,
+                  "lipids": 99.9
+                },
+                "pricePerKg": 4.99
+              },
+              "amountInGrams": 25
+            },
+            {
+              "ingredient": {
+                "name": "LEMON",
+                "location": "PORTUGAL",
+                "ingredientGroup": "FRUTAS",
+                "nutrients": {
+                  "carbohydrates": 12.7,
+                  "proteins": 0.1,
+                  "lipids": 0.06
+                },
+                "pricePerKg": 8
+              },
+              "amountInGrams": 80
+            }
+          ],
+          "dishPrice": 37.6475
+        },
+        {
+          "name": "CROQUETAS DE ATÚN",
+          "dishType": "STARTER",
+          "ingredients": [
+            {
+              "ingredient": {
+                "name": "MILK",
+                "location": "IRELAND",
+                "ingredientGroup": "LACTEOS",
+                "nutrients": {
+                  "carbohydrates": 4.7,
+                  "proteins": 3.1,
+                  "lipids": 3.5
+                },
+                "pricePerKg": 7
+              },
+              "amountInGrams": 500
+            },
+            {
+              "ingredient": {
+                "name": "TUNA",
+                "location": "THAILAND",
+                "ingredientGroup": "CARNES-HUEVOS-LEGUMBRES",
+                "nutrients": {
+                  "carbohydrates": 0,
+                  "proteins": 23,
+                  "lipids": 12
+                },
+                "pricePerKg": 10
+              },
+              "amountInGrams": 100
+            },
+            {
+              "ingredient": {
+                "name": "CORNMEAL",
+                "location": "RUSSIA",
+                "ingredientGroup": "CEREALES",
+                "nutrients": {
+                  "carbohydrates": 76,
+                  "proteins": 8.7,
+                  "lipids": 2.7
+                },
+                "pricePerKg": 5
+              },
+              "amountInGrams": 20
+            },
+            {
+              "ingredient": {
+                "name": "OLIVE OIL",
+                "location": "ITALY",
+                "ingredientGroup": "VERDURAS-HORTALIZAS",
+                "nutrients": {
+                  "carbohydrates": 0,
+                  "proteins": 0,
+                  "lipids": 99.9
+                },
+                "pricePerKg": 4.99
+              },
+              "amountInGrams": 100
+            },
+            {
+              "ingredient": {
+                "name": "EGG",
+                "location": "SPAIN",
+                "ingredientGroup": "CARNES-HUEVOS-LEGUMBRES",
+                "nutrients": {
+                  "carbohydrates": 5,
+                  "proteins": 50,
+                  "lipids": 25
+                },
+                "pricePerKg": 5
+              },
+              "amountInGrams": 150
+            },
+            {
+              "ingredient": {
+                "name": "LIQUID CREAM",
+                "location": "NEW ZELAND",
+                "ingredientGroup": "LACTEOS",
+                "nutrients": {
+                  "carbohydrates": 3.4,
+                  "proteins": 2.5,
+                  "lipids": 20
+                },
+                "pricePerKg": 6
+              },
+              "amountInGrams": 140
+            },
+            {
+              "ingredient": {
+                "name": "BREAD CRUMBS",
+                "location": "FRANCIA",
+                "ingredientGroup": "CEREALES",
+                "nutrients": {
+                  "carbohydrates": 58,
+                  "proteins": 7.8,
+                  "lipids": 1
+                },
+                "pricePerKg": 5
+              },
+              "amountInGrams": 30
+            }
+          ],
+          "dishPrice": 68.39
+        },
+        {
+          "name": "SURTIDO DE CHACINA",
+          "dishType": "STARTER",
+          "ingredients": [
+            {
+              "ingredient": {
+                "name": "CHEESE",
+                "location": "IRELAND",
+                "ingredientGroup": "LACTEOS",
+                "nutrients": {
+                  "carbohydrates": 0,
+                  "proteins": 27.6,
+                  "lipids": 39.6
+                },
+                "pricePerKg": 3.15
+              },
+              "amountInGrams": 50
+            },
+            {
+              "ingredient": {
+                "name": "SERANO HAM",
+                "location": "SPAIN",
+                "ingredientGroup": "CARNES-HUEVOS-LEGUMBRES",
+                "nutrients": {
+                  "carbohydrates": 0,
+                  "proteins": 31,
+                  "lipids": 13
+                },
+                "pricePerKg": 5
+              },
+              "amountInGrams": 50
+            },
+            {
+              "ingredient": {
+                "name": "CHORIZO",
+                "location": "SPAIN",
+                "ingredientGroup": "CARNES-HUEVOS-LEGUMBRES",
+                "nutrients": {
+                  "carbohydrates": 2.85,
+                  "proteins": 13.72,
+                  "lipids": 29.18
+                },
+                "pricePerKg": 4
+              },
+              "amountInGrams": 20
+            },
+            {
+              "ingredient": {
+                "name": "BLOOD SAUSAGE",
+                "location": "SPAIN",
+                "ingredientGroup": "CARNES-HUEVOS-LEGUMBRES",
+                "nutrients": {
+                  "carbohydrates": 3,
+                  "proteins": 19.5,
+                  "lipids": 39.5
+                },
+                "pricePerKg": 6.4
+              },
+              "amountInGrams": 100
+            }
+          ],
+          "dishPrice": 11.275
+        },
+        {
+          "name": "ENSALADILLA RUSA",
+          "dishType": "STARTER",
+          "ingredients": [
+            {
+              "ingredient": {
+                "name": "EGG",
+                "location": "SPAIN",
+                "ingredientGroup": "CARNES-HUEVOS-LEGUMBRES",
+                "nutrients": {
+                  "carbohydrates": 5,
+                  "proteins": 50,
+                  "lipids": 25
+                },
+                "pricePerKg": 5
+              },
+              "amountInGrams": 100
+            },
+            {
+              "ingredient": {
+                "name": "POTATO",
+                "location": "SPAIN",
+                "ingredientGroup": "VERDURAS-HORTALIZAS",
+                "nutrients": {
+                  "carbohydrates": 45,
+                  "proteins": 10,
+                  "lipids": 30
+                },
+                "pricePerKg": 1.5
+              },
+              "amountInGrams": 250
+            },
+            {
+              "ingredient": {
+                "name": "CARROT",
+                "location": "FRANCE",
+                "ingredientGroup": "VERDURAS-HORTALIZAS",
+                "nutrients": {
+                  "carbohydrates": 0,
+                  "proteins": 1.3,
+                  "lipids": 39.6
+                },
+                "pricePerKg": 3.15
+              },
+              "amountInGrams": 80
+            },
+            {
+              "ingredient": {
+                "name": "TUNA",
+                "location": "THAILAND",
+                "ingredientGroup": "CARNES-HUEVOS-LEGUMBRES",
+                "nutrients": {
+                  "carbohydrates": 0,
+                  "proteins": 23,
+                  "lipids": 12
+                },
+                "pricePerKg": 10
+              },
+              "amountInGrams": 160
+            },
+            {
+              "ingredient": {
+                "name": "MAYONNAISE",
+                "location": "ARGENTINA",
+                "ingredientGroup": "CARNES-HUEVOS-LEGUMBRES",
+                "nutrients": {
+                  "carbohydrates": 3.51,
+                  "proteins": 0.13,
+                  "lipids": 4.91
+                },
+                "pricePerKg": 2.4
+              },
+              "amountInGrams": 600
+            },
+            {
+              "ingredient": {
+                "name": "OLIVES",
+                "location": "EGYPT",
+                "ingredientGroup": "VERDURAS-HORTALIZAS",
+                "nutrients": {
+                  "carbohydrates": 6,
+                  "proteins": 0.8,
+                  "lipids": 11
+                },
+                "pricePerKg": 1.9
+              },
+              "amountInGrams": 30
+            },
+            {
+              "ingredient": {
+                "name": "RED PEPPER",
+                "location": "CHINA",
+                "ingredientGroup": "VERDURAS-HORTALIZAS",
+                "nutrients": {
+                  "carbohydrates": 6.4,
+                  "proteins": 1,
+                  "lipids": 0.4
+                },
+                "pricePerKg": 2.7
+              },
+              "amountInGrams": 30
+            }
+          ],
+          "dishPrice": 43.050000000000004
+        },
+        {
+          "name": "SARDINAS",
+          "dishType": "STARTER",
+          "ingredients": [
+            {
+              "ingredient": {
+                "name": "SARDINES",
+                "location": "CHINA",
+                "ingredientGroup": "CARNES-HUEVOS-LEGUMBRES",
+                "nutrients": {
+                  "carbohydrates": 0,
+                  "proteins": 18.1,
+                  "lipids": 17.5
+                },
+                "pricePerKg": 10
+              },
+              "amountInGrams": 300
+            },
+            {
+              "ingredient": {
+                "name": "OLIVE OIL",
+                "location": "ITALY",
+                "ingredientGroup": "VERDURAS-HORTALIZAS",
+                "nutrients": {
+                  "carbohydrates": 0,
+                  "proteins": 0,
+                  "lipids": 99.9
+                },
+                "pricePerKg": 4.99
+              },
+              "amountInGrams": 25
+            },
+            {
+              "ingredient": {
+                "name": "LEMON",
+                "location": "PORTUGAL",
+                "ingredientGroup": "FRUTAS",
+                "nutrients": {
+                  "carbohydrates": 12.7,
+                  "proteins": 0.1,
+                  "lipids": 0.06
+                },
+                "pricePerKg": 8
+              },
+              "amountInGrams": 80
+            }
+          ],
+          "dishPrice": 37.6475
+        },
+        {
+          "name": "PULPO A LA VINAGRETA",
+          "dishType": "STARTER",
+          "ingredients": [
+            {
+              "ingredient": {
+                "name": "OCTOPUS",
+                "location": "SPAIN",
+                "ingredientGroup": "CARNES-HUEVOS-LEGUMBRES",
+                "nutrients": {
+                  "carbohydrates": 2.2,
+                  "proteins": 14.91,
+                  "lipids": 1.4
+                },
+                "pricePerKg": 11.4
+              },
+              "amountInGrams": 400
+            },
+            {
+              "ingredient": {
+                "name": "OLIVE OIL",
+                "location": "ITALY",
+                "ingredientGroup": "VERDURAS-HORTALIZAS",
+                "nutrients": {
+                  "carbohydrates": 0,
+                  "proteins": 0,
+                  "lipids": 99.9
+                },
+                "pricePerKg": 4.99
+              },
+              "amountInGrams": 25
+            },
+            {
+              "ingredient": {
+                "name": "GREEN PEPPER",
+                "location": "CHINA",
+                "ingredientGroup": "VERDURAS-HORTALIZAS",
+                "nutrients": {
+                  "carbohydrates": 3.7,
+                  "proteins": 0.7,
+                  "lipids": 0.2
+                },
+                "pricePerKg": 2.65
+              },
+              "amountInGrams": 80
+            },
+            {
+              "ingredient": {
+                "name": "RED PEPPER",
+                "location": "CHINA",
+                "ingredientGroup": "VERDURAS-HORTALIZAS",
+                "nutrients": {
+                  "carbohydrates": 6.4,
+                  "proteins": 1,
+                  "lipids": 0.4
+                },
+                "pricePerKg": 2.7
+              },
+              "amountInGrams": 40
+            },
+            {
+              "ingredient": {
+                "name": "PARSLEY",
+                "location": "SPAIN",
+                "ingredientGroup": "CARNES-HUEVOS-LEGUMBRES",
+                "nutrients": {
+                  "carbohydrates": 2.7,
+                  "proteins": 3,
+                  "lipids": 1.3
+                },
+                "pricePerKg": 1.2
+              },
+              "amountInGrams": 10
+            },
+            {
+              "ingredient": {
+                "name": "VINEGAR",
+                "location": "ARGENTINA",
+                "ingredientGroup": "VERDURAS-HORTALIZAS",
+                "nutrients": {
+                  "carbohydrates": 0,
+                  "proteins": 0,
+                  "lipids": 0
+                },
+                "pricePerKg": 1.5
+              },
+              "amountInGrams": 10
+            }
+          ],
+          "dishPrice": 50.317499999999995
+        },
+        {
+          "name": "ARROZ A LA CUBANA",
+          "dishType": "FIRSTCOURSE",
+          "ingredients": [
+            {
+              "ingredient": {
+                "name": "WHITE RICE",
+                "location": "CHINA",
+                "ingredientGroup": "CEREALES",
+                "nutrients": {
+                  "carbohydrates": 86,
+                  "proteins": 7,
+                  "lipids": 0.9
+                },
+                "pricePerKg": 1.79
+              },
+              "amountInGrams": 200
+            },
+            {
+              "ingredient": {
+                "name": "BANANA",
+                "location": "INDIA",
+                "ingredientGroup": "FRUTAS",
+                "nutrients": {
+                  "carbohydrates": 20,
+                  "proteins": 1.2,
+                  "lipids": 0.3
+                },
+                "pricePerKg": 3
+              },
+              "amountInGrams": 50
+            },
+            {
+              "ingredient": {
+                "name": "EGG",
+                "location": "SPAIN",
+                "ingredientGroup": "CARNES-HUEVOS-LEGUMBRES",
+                "nutrients": {
+                  "carbohydrates": 5,
+                  "proteins": 50,
+                  "lipids": 25
+                },
+                "pricePerKg": 5
+              },
+              "amountInGrams": 104
+            },
+            {
+              "ingredient": {
+                "name": "BEET",
+                "location": "GERMANY",
+                "ingredientGroup": "VERDURAS-HORTALIZAS",
+                "nutrients": {
+                  "carbohydrates": 23,
+                  "proteins": 5.3,
+                  "lipids": 0.3
+                },
+                "pricePerKg": 3.15
+              },
+              "amountInGrams": 15
+            },
+            {
+              "ingredient": {
+                "name": "SAUSAGE",
+                "location": "GERMANY",
+                "ingredientGroup": "CARNES-HUEVOS-LEGUMBRES",
+                "nutrients": {
+                  "carbohydrates": 0.7,
+                  "proteins": 12.9,
+                  "lipids": 27
+                },
+                "pricePerKg": 8
+              },
+              "amountInGrams": 160
+            }
+          ],
+          "dishPrice": 23.552500000000002
+        },
+        {
+          "name": "SOPA DE PESCADO",
+          "dishType": "FIRSTCOURSE",
+          "ingredients": [
+            {
+              "ingredient": {
+                "name": "NOODLES",
+                "location": "CHINA",
+                "ingredientGroup": "CEREALES",
+                "nutrients": {
+                  "carbohydrates": 78,
+                  "proteins": 12.9,
+                  "lipids": 1.5
+                },
+                "pricePerKg": 2
+              },
+              "amountInGrams": 125
+            },
+            {
+              "ingredient": {
+                "name": "CLAMS",
+                "location": "JAPAN",
+                "ingredientGroup": "CARNES-HUEVOS-LEGUMBRES",
+                "nutrients": {
+                  "carbohydrates": 0,
+                  "proteins": 10.7,
+                  "lipids": 0.5
+                },
+                "pricePerKg": 12
+              },
+              "amountInGrams": 350
+            },
+            {
+              "ingredient": {
+                "name": "COD",
+                "location": "SPAIN",
+                "ingredientGroup": "CARNES-HUEVOS-LEGUMBRES",
+                "nutrients": {
+                  "carbohydrates": 0,
+                  "proteins": 17.7,
+                  "lipids": 0.4
+                },
+                "pricePerKg": 11.5
+              },
+              "amountInGrams": 700
+            },
+            {
+              "ingredient": {
+                "name": "CARROT",
+                "location": "FRANCE",
+                "ingredientGroup": "VERDURAS-HORTALIZAS",
+                "nutrients": {
+                  "carbohydrates": 0,
+                  "proteins": 1.3,
+                  "lipids": 39.6
+                },
+                "pricePerKg": 3.15
+              },
+              "amountInGrams": 80
+            },
+            {
+              "ingredient": {
+                "name": "PARSLEY",
+                "location": "SPAIN",
+                "ingredientGroup": "CARNES-HUEVOS-LEGUMBRES",
+                "nutrients": {
+                  "carbohydrates": 2.7,
+                  "proteins": 3,
+                  "lipids": 1.3
+                },
+                "pricePerKg": 1.2
+              },
+              "amountInGrams": 3
+            },
+            {
+              "ingredient": {
+                "name": "CELERY",
+                "location": "ENGLAND",
+                "ingredientGroup": "VERDURAS-HORTALIZAS",
+                "nutrients": {
+                  "carbohydrates": 1.3,
+                  "proteins": 1.3,
+                  "lipids": 0.2
+                },
+                "pricePerKg": 1.5
+              },
+              "amountInGrams": 10
+            }
+          ],
+          "dishPrice": 127.706
+        },
+        {
+          "name": "ESTOFADO",
+          "dishType": "FIRSTCOURSE",
+          "ingredients": [
+            {
+              "ingredient": {
+                "name": "VEAL",
+                "location": "CANADA",
+                "ingredientGroup": "CARNES-HUEVOS-LEGUMBRES",
+                "nutrients": {
+                  "carbohydrates": 0,
+                  "proteins": 24,
+                  "lipids": 3
+                },
+                "pricePerKg": 8
+              },
+              "amountInGrams": 605
+            },
+            {
+              "ingredient": {
+                "name": "GREEN PEAS",
+                "location": "ITALY",
+                "ingredientGroup": "VERDURAS-HORTALIZAS",
+                "nutrients": {
+                  "carbohydrates": 9.7,
+                  "proteins": 5.6,
+                  "lipids": 0.5
+                },
+                "pricePerKg": 2
+              },
+              "amountInGrams": 120
+            },
+            {
+              "ingredient": {
+                "name": "POTATO",
+                "location": "SPAIN",
+                "ingredientGroup": "VERDURAS-HORTALIZAS",
+                "nutrients": {
+                  "carbohydrates": 45,
+                  "proteins": 10,
+                  "lipids": 30
+                },
+                "pricePerKg": 1.5
+              },
+              "amountInGrams": 400
+            },
+            {
+              "ingredient": {
+                "name": "CARROT",
+                "location": "FRANCE",
+                "ingredientGroup": "VERDURAS-HORTALIZAS",
+                "nutrients": {
+                  "carbohydrates": 0,
+                  "proteins": 1.3,
+                  "lipids": 39.6
+                },
+                "pricePerKg": 3.15
+              },
+              "amountInGrams": 80
+            },
+            {
+              "ingredient": {
+                "name": "CEBOLLA",
+                "location": "FRANCE",
+                "ingredientGroup": "VERDURAS-HORTALIZAS",
+                "nutrients": {
+                  "carbohydrates": 5,
+                  "proteins": 15,
+                  "lipids": 0
+                },
+                "pricePerKg": 1.2
+              },
+              "amountInGrams": 45
+            },
+            {
+              "ingredient": {
+                "name": "CELERY",
+                "location": "ENGLAND",
+                "ingredientGroup": "VERDURAS-HORTALIZAS",
+                "nutrients": {
+                  "carbohydrates": 1.3,
+                  "proteins": 1.3,
+                  "lipids": 0.2
+                },
+                "pricePerKg": 1.5
+              },
+              "amountInGrams": 10
+            }
+          ],
+          "dishPrice": 60.01
+        },
+        {
+          "name": "PUCHERO CANARIO",
+          "dishType": "FIRSTCOURSE",
+          "ingredients": [
+            {
+              "ingredient": {
+                "name": "CHICKPEA",
+                "location": "MEXICO",
+                "ingredientGroup": "VERDURAS-HORTALIZAS",
+                "nutrients": {
+                  "carbohydrates": 49.6,
+                  "proteins": 21.3,
+                  "lipids": 5.4
+                },
+                "pricePerKg": 3.1
+              },
+              "amountInGrams": 300
+            },
+            {
+              "ingredient": {
+                "name": "GREEN PEPPER",
+                "location": "CHINA",
+                "ingredientGroup": "VERDURAS-HORTALIZAS",
+                "nutrients": {
+                  "carbohydrates": 3.7,
+                  "proteins": 0.7,
+                  "lipids": 0.2
+                },
+                "pricePerKg": 2.65
+              },
+              "amountInGrams": 90
+            },
+            {
+              "ingredient": {
+                "name": "POTATO",
+                "location": "SPAIN",
+                "ingredientGroup": "VERDURAS-HORTALIZAS",
+                "nutrients": {
+                  "carbohydrates": 45,
+                  "proteins": 10,
+                  "lipids": 30
+                },
+                "pricePerKg": 1.5
+              },
+              "amountInGrams": 400
+            },
+            {
+              "ingredient": {
+                "name": "CARROT",
+                "location": "FRANCE",
+                "ingredientGroup": "VERDURAS-HORTALIZAS",
+                "nutrients": {
+                  "carbohydrates": 0,
+                  "proteins": 1.3,
+                  "lipids": 39.6
+                },
+                "pricePerKg": 3.15
+              },
+              "amountInGrams": 100
+            },
+            {
+              "ingredient": {
+                "name": "TOMATOE",
+                "location": "SPAIN",
+                "ingredientGroup": "VERDURAS-HORTALIZAS",
+                "nutrients": {
+                  "carbohydrates": 3.5,
+                  "proteins": 1,
+                  "lipids": 0.11
+                },
+                "pricePerKg": 1.5
+              },
+              "amountInGrams": 50
+            },
+            {
+              "ingredient": {
+                "name": "RED PEPPER",
+                "location": "CHINA",
+                "ingredientGroup": "VERDURAS-HORTALIZAS",
+                "nutrients": {
+                  "carbohydrates": 6.4,
+                  "proteins": 1,
+                  "lipids": 0.4
+                },
+                "pricePerKg": 2.7
+              },
+              "amountInGrams": 10
+            },
+            {
+              "ingredient": {
+                "name": "CABBAGE",
+                "location": "USA",
+                "ingredientGroup": "VERDURAS-HORTALIZAS",
+                "nutrients": {
+                  "carbohydrates": 6,
+                  "proteins": 1.3,
+                  "lipids": 0.1
+                },
+                "pricePerKg": 3.6
+              },
+              "amountInGrams": 30
+            },
+            {
+              "ingredient": {
+                "name": "BEANS",
+                "location": "USA",
+                "ingredientGroup": "VERDURAS-HORTALIZAS",
+                "nutrients": {
+                  "carbohydrates": 7.13,
+                  "proteins": 1.82,
+                  "lipids": 0.12
+                },
+                "pricePerKg": 1.69
+              },
+              "amountInGrams": 100
+            },
+            {
+              "ingredient": {
+                "name": "PUMPKIN",
+                "location": "CHINA",
+                "ingredientGroup": "VERDURAS-HORTALIZAS",
+                "nutrients": {
+                  "carbohydrates": 4.59,
+                  "proteins": 1.13,
+                  "lipids": 0.2
+                },
+                "pricePerKg": 2.89
+              },
+              "amountInGrams": 230
+            },
+            {
+              "ingredient": {
+                "name": "CHICKEN",
+                "location": "BRAZIL",
+                "ingredientGroup": "CARNES-HUEVOS-LEGUMBRES",
+                "nutrients": {
+                  "carbohydrates": 0,
+                  "proteins": 20,
+                  "lipids": 9.7
+                },
+                "pricePerKg": 10.1
+              },
+              "amountInGrams": 120
+            },
+            {
+              "ingredient": {
+                "name": "ZUCCHINI",
+                "location": "INDIA",
+                "ingredientGroup": "VERDURAS-HORTALIZAS",
+                "nutrients": {
+                  "carbohydrates": 3.35,
+                  "proteins": 1.21,
+                  "lipids": 0.18
+                },
+                "pricePerKg": 5
+              },
+              "amountInGrams": 90
+            },
+            {
+              "ingredient": {
+                "name": "OLIVE OIL",
+                "location": "ITALY",
+                "ingredientGroup": "VERDURAS-HORTALIZAS",
+                "nutrients": {
+                  "carbohydrates": 0,
+                  "proteins": 0,
+                  "lipids": 99.9
+                },
+                "pricePerKg": 4.99
+              },
+              "amountInGrams": 10
+            }
+          ],
+          "dishPrice": 48.391000000000005
+        },
+        {
+          "name": "MACARRONES",
+          "dishType": "FIRSTCOURSE",
+          "ingredients": [
+            {
+              "ingredient": {
+                "name": "MACARONI",
+                "location": "ITALY",
+                "ingredientGroup": "CEREALES",
+                "nutrients": {
+                  "carbohydrates": 74.1,
+                  "proteins": 12,
+                  "lipids": 1.8
+                },
+                "pricePerKg": 1.85
+              },
+              "amountInGrams": 600
+            },
+            {
+              "ingredient": {
+                "name": "TOMATOE",
+                "location": "SPAIN",
+                "ingredientGroup": "VERDURAS-HORTALIZAS",
+                "nutrients": {
+                  "carbohydrates": 3.5,
+                  "proteins": 1,
+                  "lipids": 0.11
+                },
+                "pricePerKg": 1.5
+              },
+              "amountInGrams": 200
+            },
+            {
+              "ingredient": {
+                "name": "CHEESE",
+                "location": "IRELAND",
+                "ingredientGroup": "LACTEOS",
+                "nutrients": {
+                  "carbohydrates": 0,
+                  "proteins": 27.6,
+                  "lipids": 39.6
+                },
+                "pricePerKg": 3.15
+              },
+              "amountInGrams": 120
+            }
+          ],
+          "dishPrice": 17.880000000000003
+        },
+        {
+          "name": "CESAR-SALAD",
+          "dishType": "SECONDCOURSE",
+          "ingredients": [
+            {
+              "ingredient": {
+                "name": "LETTUCE",
+                "location": "ITALY",
+                "ingredientGroup": "VERDURAS-HORTALIZAS",
+                "nutrients": {
+                  "carbohydrates": 2.9,
+                  "proteins": 1.4,
+                  "lipids": 0.2
+                },
+                "pricePerKg": 2
+              },
+              "amountInGrams": 100
+            },
+            {
+              "ingredient": {
+                "name": "TOMATOE",
+                "location": "SPAIN",
+                "ingredientGroup": "VERDURAS-HORTALIZAS",
+                "nutrients": {
+                  "carbohydrates": 3.5,
+                  "proteins": 1,
+                  "lipids": 0.11
+                },
+                "pricePerKg": 1.5
+              },
+              "amountInGrams": 60
+            },
+            {
+              "ingredient": {
+                "name": "OLIVE OIL",
+                "location": "ITALY",
+                "ingredientGroup": "VERDURAS-HORTALIZAS",
+                "nutrients": {
+                  "carbohydrates": 0,
+                  "proteins": 0,
+                  "lipids": 99.9
+                },
+                "pricePerKg": 4.99
+              },
+              "amountInGrams": 20
+            },
+            {
+              "ingredient": {
+                "name": "EGG",
+                "location": "SPAIN",
+                "ingredientGroup": "CARNES-HUEVOS-LEGUMBRES",
+                "nutrients": {
+                  "carbohydrates": 5,
+                  "proteins": 50,
+                  "lipids": 25
+                },
+                "pricePerKg": 5
+              },
+              "amountInGrams": 53
+            },
+            {
+              "ingredient": {
+                "name": "CHEESE",
+                "location": "IRELAND",
+                "ingredientGroup": "LACTEOS",
+                "nutrients": {
+                  "carbohydrates": 0,
+                  "proteins": 27.6,
+                  "lipids": 39.6
+                },
+                "pricePerKg": 3.15
+              },
+              "amountInGrams": 50
+            },
+            {
+              "ingredient": {
+                "name": "BEET",
+                "location": "GERMANY",
+                "ingredientGroup": "VERDURAS-HORTALIZAS",
+                "nutrients": {
+                  "carbohydrates": 23,
+                  "proteins": 5.3,
+                  "lipids": 0.3
+                },
+                "pricePerKg": 3.15
+              },
+              "amountInGrams": 15
+            },
+            {
+              "ingredient": {
+                "name": "BEET",
+                "location": "BELGIUM",
+                "ingredientGroup": "VERDURAS-HORTALIZAS",
+                "nutrients": {
+                  "carbohydrates": 6.4,
+                  "proteins": 1.3,
+                  "lipids": 0.17
+                },
+                "pricePerKg": 2.1
+              },
+              "amountInGrams": 30
+            },
+            {
+              "ingredient": {
+                "name": "CARROT",
+                "location": "FRANCE",
+                "ingredientGroup": "VERDURAS-HORTALIZAS",
+                "nutrients": {
+                  "carbohydrates": 0,
+                  "proteins": 1.3,
+                  "lipids": 39.6
+                },
+                "pricePerKg": 3.15
+              },
+              "amountInGrams": 58
+            },
+            {
+              "ingredient": {
+                "name": "AVOCADO",
+                "location": "MEXICO",
+                "ingredientGroup": "VERDURAS-HORTALIZAS",
+                "nutrients": {
+                  "carbohydrates": 5.9,
+                  "proteins": 1.5,
+                  "lipids": 12
+                },
+                "pricePerKg": 6
+              },
+              "amountInGrams": 40
+            }
+          ],
+          "dishPrice": 13.4525
+        },
+        {
+          "name": "TORTILLA",
+          "dishType": "SECONDCOURSE",
+          "ingredients": [
+            {
+              "ingredient": {
+                "name": "EGG",
+                "location": "SPAIN",
+                "ingredientGroup": "CARNES-HUEVOS-LEGUMBRES",
+                "nutrients": {
+                  "carbohydrates": 5,
+                  "proteins": 50,
+                  "lipids": 25
+                },
+                "pricePerKg": 5
+              },
+              "amountInGrams": 50
+            },
+            {
+              "ingredient": {
+                "name": "POTATO",
+                "location": "SPAIN",
+                "ingredientGroup": "VERDURAS-HORTALIZAS",
+                "nutrients": {
+                  "carbohydrates": 45,
+                  "proteins": 10,
+                  "lipids": 30
+                },
+                "pricePerKg": 1.5
+              },
+              "amountInGrams": 200
+            }
+          ],
+          "dishPrice": 5.5
+        },
+        {
+          "name": "MERLUZA CON PAPAS",
+          "dishType": "SECONDCOURSE",
+          "ingredients": [
+            {
+              "ingredient": {
+                "name": "HAKE",
+                "location": "CHINA",
+                "ingredientGroup": "CARNES-HUEVOS-LEGUMBRES",
+                "nutrients": {
+                  "carbohydrates": 0,
+                  "proteins": 15.9,
+                  "lipids": 2.8
+                },
+                "pricePerKg": 9.6
+              },
+              "amountInGrams": 300
+            },
+            {
+              "ingredient": {
+                "name": "POTATO",
+                "location": "SPAIN",
+                "ingredientGroup": "VERDURAS-HORTALIZAS",
+                "nutrients": {
+                  "carbohydrates": 45,
+                  "proteins": 10,
+                  "lipids": 30
+                },
+                "pricePerKg": 1.5
+              },
+              "amountInGrams": 200
+            },
+            {
+              "ingredient": {
+                "name": "CEBOLLA",
+                "location": "FRANCE",
+                "ingredientGroup": "VERDURAS-HORTALIZAS",
+                "nutrients": {
+                  "carbohydrates": 5,
+                  "proteins": 15,
+                  "lipids": 0
+                },
+                "pricePerKg": 1.2
+              },
+              "amountInGrams": 30
+            },
+            {
+              "ingredient": {
+                "name": "RED PEPPER",
+                "location": "CHINA",
+                "ingredientGroup": "VERDURAS-HORTALIZAS",
+                "nutrients": {
+                  "carbohydrates": 6.4,
+                  "proteins": 1,
+                  "lipids": 0.4
+                },
+                "pricePerKg": 2.7
+              },
+              "amountInGrams": 20
+            },
+            {
+              "ingredient": {
+                "name": "BEET",
+                "location": "GERMANY",
+                "ingredientGroup": "VERDURAS-HORTALIZAS",
+                "nutrients": {
+                  "carbohydrates": 23,
+                  "proteins": 5.3,
+                  "lipids": 0.3
+                },
+                "pricePerKg": 3.15
+              },
+              "amountInGrams": 15
+            }
+          ],
+          "dishPrice": 33.1725
+        },
+        {
+          "name": "CHULETAS",
+          "dishType": "SECONDCOURSE",
+          "ingredients": [
+            {
+              "ingredient": {
+                "name": "PORK CHOP",
+                "location": "USA",
+                "ingredientGroup": "CARNES-HUEVOS-LEGUMBRES",
+                "nutrients": {
+                  "carbohydrates": 0,
+                  "proteins": 13.12,
+                  "lipids": 6.85
+                },
+                "pricePerKg": 8.5
+              },
+              "amountInGrams": 300
+            },
+            {
+              "ingredient": {
+                "name": "POTATO",
+                "location": "SPAIN",
+                "ingredientGroup": "VERDURAS-HORTALIZAS",
+                "nutrients": {
+                  "carbohydrates": 45,
+                  "proteins": 10,
+                  "lipids": 30
+                },
+                "pricePerKg": 1.5
+              },
+              "amountInGrams": 200
+            }
+          ],
+          "dishPrice": 28.500000000000004
+        },
+        {
+          "name": "SARGO CON PAPAS",
+          "dishType": "SECONDCOURSE",
+          "ingredients": [
+            {
+              "ingredient": {
+                "name": "SARGO",
+                "location": "SPAIN",
+                "ingredientGroup": "CARNES-HUEVOS-LEGUMBRES",
+                "nutrients": {
+                  "carbohydrates": 0,
+                  "proteins": 18.4,
+                  "lipids": 12
+                },
+                "pricePerKg": 9.5
+              },
+              "amountInGrams": 300
+            },
+            {
+              "ingredient": {
+                "name": "POTATO",
+                "location": "SPAIN",
+                "ingredientGroup": "VERDURAS-HORTALIZAS",
+                "nutrients": {
+                  "carbohydrates": 45,
+                  "proteins": 10,
+                  "lipids": 30
+                },
+                "pricePerKg": 1.5
+              },
+              "amountInGrams": 200
+            },
+            {
+              "ingredient": {
+                "name": "RED PEPPER",
+                "location": "CHINA",
+                "ingredientGroup": "VERDURAS-HORTALIZAS",
+                "nutrients": {
+                  "carbohydrates": 6.4,
+                  "proteins": 1,
+                  "lipids": 0.4
+                },
+                "pricePerKg": 2.7
+              },
+              "amountInGrams": 30
+            },
+            {
+              "ingredient": {
+                "name": "GREEN PEPPER",
+                "location": "CHINA",
+                "ingredientGroup": "VERDURAS-HORTALIZAS",
+                "nutrients": {
+                  "carbohydrates": 3.7,
+                  "proteins": 0.7,
+                  "lipids": 0.2
+                },
+                "pricePerKg": 2.65
+              },
+              "amountInGrams": 40
+            }
+          ],
+          "dishPrice": 33.370000000000005
+        },
+        {
+          "name": "NATILLA",
+          "dishType": "DESSERT",
+          "ingredients": [
+            {
+              "ingredient": {
+                "name": "MILK",
+                "location": "IRELAND",
+                "ingredientGroup": "LACTEOS",
+                "nutrients": {
+                  "carbohydrates": 4.7,
+                  "proteins": 3.1,
+                  "lipids": 3.5
+                },
+                "pricePerKg": 7
+              },
+              "amountInGrams": 100
+            },
+            {
+              "ingredient": {
+                "name": "LEMON",
+                "location": "PORTUGAL",
+                "ingredientGroup": "FRUTAS",
+                "nutrients": {
+                  "carbohydrates": 12.7,
+                  "proteins": 0.1,
+                  "lipids": 0.06
+                },
+                "pricePerKg": 8
+              },
+              "amountInGrams": 80
+            }
+          ],
+          "dishPrice": 13.400000000000002
+        },
+        {
+          "name": "TIRAMISÚ",
+          "dishType": "DESSERT",
+          "ingredients": [
+            {
+              "ingredient": {
+                "name": "CHEESE",
+                "location": "IRELAND",
+                "ingredientGroup": "LACTEOS",
+                "nutrients": {
+                  "carbohydrates": 0,
+                  "proteins": 27.6,
+                  "lipids": 39.6
+                },
+                "pricePerKg": 3.15
+              },
+              "amountInGrams": 500
+            },
+            {
+              "ingredient": {
+                "name": "EGG",
+                "location": "SPAIN",
+                "ingredientGroup": "CARNES-HUEVOS-LEGUMBRES",
+                "nutrients": {
+                  "carbohydrates": 5,
+                  "proteins": 50,
+                  "lipids": 25
+                },
+                "pricePerKg": 5
+              },
+              "amountInGrams": 100
+            },
+            {
+              "ingredient": {
+                "name": "COFFEE",
+                "location": "BRAZIL",
+                "ingredientGroup": "VERDURAS-HORTALIZAS",
+                "nutrients": {
+                  "carbohydrates": 0,
+                  "proteins": 0.1,
+                  "lipids": 0
+                },
+                "pricePerKg": 2
+              },
+              "amountInGrams": 350
+            },
+            {
+              "ingredient": {
+                "name": "CORNMEAL",
+                "location": "RUSSIA",
+                "ingredientGroup": "CEREALES",
+                "nutrients": {
+                  "carbohydrates": 76,
+                  "proteins": 8.7,
+                  "lipids": 2.7
+                },
+                "pricePerKg": 5
+              },
+              "amountInGrams": 100
+            },
+            {
+              "ingredient": {
+                "name": "COCOA",
+                "location": "IVORY COAST",
+                "ingredientGroup": "VERDURAS-HORTALIZAS",
+                "nutrients": {
+                  "carbohydrates": 9.9,
+                  "proteins": 25,
+                  "lipids": 10
+                },
+                "pricePerKg": 1.5
+              },
+              "amountInGrams": 30
+            }
+          ],
+          "dishPrice": 33.2
+        },
+        {
+          "name": "FLAN",
+          "dishType": "DESSERT",
+          "ingredients": [
+            {
+              "ingredient": {
+                "name": "MILK",
+                "location": "IRELAND",
+                "ingredientGroup": "LACTEOS",
+                "nutrients": {
+                  "carbohydrates": 4.7,
+                  "proteins": 3.1,
+                  "lipids": 3.5
+                },
+                "pricePerKg": 7
+              },
+              "amountInGrams": 100
+            },
+            {
+              "ingredient": {
+                "name": "EGG",
+                "location": "SPAIN",
+                "ingredientGroup": "CARNES-HUEVOS-LEGUMBRES",
+                "nutrients": {
+                  "carbohydrates": 5,
+                  "proteins": 50,
+                  "lipids": 25
+                },
+                "pricePerKg": 5
+              },
+              "amountInGrams": 160
+            },
+            {
+              "ingredient": {
+                "name": "LEMON",
+                "location": "PORTUGAL",
+                "ingredientGroup": "FRUTAS",
+                "nutrients": {
+                  "carbohydrates": 12.7,
+                  "proteins": 0.1,
+                  "lipids": 0.06
+                },
+                "pricePerKg": 8
+              },
+              "amountInGrams": 10
+            },
+            {
+              "ingredient": {
+                "name": "CINNAMON",
+                "location": "SRI LANKA",
+                "ingredientGroup": "VERDURAS-HORTALIZAS",
+                "nutrients": {
+                  "carbohydrates": 1.89,
+                  "proteins": 0.09,
+                  "lipids": 0.07
+                },
+                "pricePerKg": 1.5
+              },
+              "amountInGrams": 20
+            }
+          ],
+          "dishPrice": 16.1
+        },
+        {
+          "name": "BANANA SPLIT",
+          "dishType": "DESSERT",
+          "ingredients": [
+            {
+              "ingredient": {
+                "name": "MILK",
+                "location": "IRELAND",
+                "ingredientGroup": "LACTEOS",
+                "nutrients": {
+                  "carbohydrates": 4.7,
+                  "proteins": 3.1,
+                  "lipids": 3.5
+                },
+                "pricePerKg": 7
+              },
+              "amountInGrams": 400
+            },
+            {
+              "ingredient": {
+                "name": "BANANA",
+                "location": "INDIA",
+                "ingredientGroup": "FRUTAS",
+                "nutrients": {
+                  "carbohydrates": 20,
+                  "proteins": 1.2,
+                  "lipids": 0.3
+                },
+                "pricePerKg": 3
+              },
+              "amountInGrams": 80
+            },
+            {
+              "ingredient": {
+                "name": "STRAWBERRY",
+                "location": "CHINA",
+                "ingredientGroup": "FRUTAS",
+                "nutrients": {
+                  "carbohydrates": 7,
+                  "proteins": 0.7,
+                  "lipids": 0.5
+                },
+                "pricePerKg": 2.5
+              },
+              "amountInGrams": 60
+            },
+            {
+              "ingredient": {
+                "name": "WHIPPED CREAM",
+                "location": "NETHERLANDS",
+                "ingredientGroup": "LACTEOS",
+                "nutrients": {
+                  "carbohydrates": 10.1,
+                  "proteins": 2.1,
+                  "lipids": 31.4
+                },
+                "pricePerKg": 3.5
+              },
+              "amountInGrams": 175
+            }
+          ],
+          "dishPrice": 38.025000000000006
+        },
+        {
+          "name": "TARTA DE QUESO",
+          "dishType": "DESSERT",
+          "ingredients": [
+            {
+              "ingredient": {
+                "name": "BUTTER",
+                "location": "FRANCE",
+                "ingredientGroup": "LACTEOS",
+                "nutrients": {
+                  "carbohydrates": 99,
+                  "proteins": 0.6,
+                  "lipids": 83
+                },
+                "pricePerKg": 2.15
+              },
+              "amountInGrams": 100
+            },
+            {
+              "ingredient": {
+                "name": "CHEESE",
+                "location": "IRELAND",
+                "ingredientGroup": "LACTEOS",
+                "nutrients": {
+                  "carbohydrates": 0,
+                  "proteins": 27.6,
+                  "lipids": 39.6
+                },
+                "pricePerKg": 3.15
+              },
+              "amountInGrams": 500
+            },
+            {
+              "ingredient": {
+                "name": "LIQUID CREAM",
+                "location": "NEW ZELAND",
+                "ingredientGroup": "LACTEOS",
+                "nutrients": {
+                  "carbohydrates": 3.4,
+                  "proteins": 2.5,
+                  "lipids": 20
+                },
+                "pricePerKg": 6
+              },
+              "amountInGrams": 400
+            },
+            {
+              "ingredient": {
+                "name": "STRAWBERRY",
+                "location": "CHINA",
+                "ingredientGroup": "FRUTAS",
+                "nutrients": {
+                  "carbohydrates": 7,
+                  "proteins": 0.7,
+                  "lipids": 0.5
+                },
+                "pricePerKg": 2.5
+              },
+              "amountInGrams": 200
+            }
+          ],
+          "dishPrice": 46.9
+        }
+      ],
+      "name": "Carta Especial"
+    }
+  ]
 }

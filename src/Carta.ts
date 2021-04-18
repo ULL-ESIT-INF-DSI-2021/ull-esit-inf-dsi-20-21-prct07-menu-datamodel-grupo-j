@@ -15,10 +15,10 @@ export class Carta {
      * @param dishes
      * @function generateCarta() Genera una carta
      */
-    constructor(localMenus: Menu[] = [], dishes: Dish[] = []) {
+    constructor(localMenus: Menu[] = [], dishes: Dish[] = [], name: string = "") {
         this.localMenus = localMenus;
         this.dishes = dishes;
-        this.name = "";
+        this.name = name;
         this.generateCarta();
     }
 

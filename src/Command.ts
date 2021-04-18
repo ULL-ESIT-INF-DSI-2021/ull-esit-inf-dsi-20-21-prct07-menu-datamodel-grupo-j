@@ -44,7 +44,7 @@ export class Command {
     }
 
     /**
-     * Método encargado de borrar de la comanda todos los platos y los menus
+     * @function clear, método encargado de borrar de la comanda todos los platos y los menus
      */
     clear(){
         this.menus.forEach(element => {
@@ -137,6 +137,11 @@ export class Command {
         }
     }
 
+    /**
+     * @function findMenuByName, función que busca un menú
+     * @param menu, recibe un menú
+     * @return retorna un menú y sino lo encuentra lo indica
+     */
     findMenuByName(menu: string){
         const deletion: number = this.menus.findIndex(element => element.getName() === menu);
         if(deletion !== -1) {
@@ -147,13 +152,18 @@ export class Command {
         }
     }
 
+    /**
+     * @function findDishByName, función que busca un plato
+     * @param menu, recibe un menú
+     * @return retorna un plato y sino lo encuentra lo indica
+     */
     findDishByName(menu: string){
         const deletion: number = this.dishes.findIndex(element => element.getName() === menu);
         if(deletion !== -1) {
             return this.dishes [deletion];
         }
         else {
-            console.log("El menú no está en la carta");
+            console.log("El plato no está en la carta");
         }
     }
 }

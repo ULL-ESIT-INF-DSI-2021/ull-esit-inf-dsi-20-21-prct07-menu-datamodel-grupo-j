@@ -2,6 +2,8 @@
 
 ## Práctica 7. Modelo de datos de un sistema que permite el diseño de menús
 
+
+
 ### Grupo J
 
 ### Autores:
@@ -231,6 +233,9 @@ Y también tendrá los siguientes métodos:
   * findMenuByName(menu: string) // Busca un menú
   * findDishByName(menu: string) // Busca un plato
 ```
+El método que resalta de esta clase es `printCommand`:
+
+* printCommand. Comprueba si el cliente a seleccionado un menú predefinido o no. Si eligió un menú predefinido, muestra el nombre del menú seleccionado, su precio y los platos que lo componen. En caso contrario muestra la colección de platos al cliente para que los seleccione y confeccione su menú personalizado.
 
 ### ---------------------------------------------------------------------------------------------------------------
 

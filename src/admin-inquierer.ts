@@ -9,6 +9,9 @@ import {Command} from './Command'
 import {JSONcarta} from './JSONcarta'
 import * as data from './data'
 
+/**
+ * Opciones a las que podrá acceder el administrador al iniciar el programa
+ */
 enum adminOptions {
     addIngredient = "Add ingredient",
     addDish       = "Add dish",
@@ -20,8 +23,14 @@ enum adminOptions {
     deleteCarta      = "Delete Carta",
 };
 
+/**
+ * Inicialización de la base de datos, usando los elementos previamente registrados en texto plano
+ */
 let db = new JSONcarta(data.ingredientArray, data.dishesArray, data.menuArray);
 
+/**
+ * Funcion principal de la interfaz de administración. Utiliza inquirer para seleccionar una de las funciones del programa, y llama al método correspondiente.
+ */
 async function mainPrompt(): Promise<void>{
     console.clear();
     
@@ -35,13 +44,17 @@ async function mainPrompt(): Promise<void>{
             case adminOptions.addIngredient:            generateNewIngredient();        break;
             case adminOptions.addDish:                  generateNewDish();              break;
             case adminOptions.addMenu:                  generateNewMenu();              break;
-            case adminOptions.addCarta:                 //db.addNewCarta();             break;
+            case adminOptions.addCarta:                 generateNewCarta();            break;
             case adminOptions.deleteIngredient:         //db.deleteIngredient();        break;
             case adminOptions.deleteDish:               //db.deleteDish();              break;
             case adminOptions.deleteMenu:               //db.deleteMenu();              break;
             case adminOptions.deleteCarta:              //db.deleteCarta();             break;
     }
 }
+
+/**
+ * Genera un nuevo ingrediente mediante los input del usuario.
+ */
 async function generateNewIngredient() {
     const nameSelection = await inquirer.prompt( {
         type: "input",
@@ -92,6 +105,9 @@ async function generateNewIngredient() {
     db.addNewIngredient(newIng);
 }
 
+/**
+ * Genera un nuevo plato mediante los input del usuario y el listado de ingredientes
+ */
 async function generateNewDish() {
     const nameSelection = await inquirer.prompt( {
         type: "input",
@@ -139,6 +155,9 @@ async function generateNewDish() {
     db.addNewDish(dsh);
 }
 
+/**
+ * Genera un nuevo manu mediante los input del usuario y el listado de platos
+ */
 async function generateNewMenu() {
     const nameSelection = await inquirer.prompt( {
         type: "input",
@@ -158,10 +177,8 @@ async function generateNewMenu() {
             message: "What dish do you want to add?",
             choices: dsArr
         });
-        //const usering: Ingredient = data.ingredientArray[data.ingredientArray.findIndex(element => element.getName() === ingSelection["ingsel"])];
         const userdish: Dish = data.dishesArray[data.dishesArray.findIndex(element => element.getName() === ingSelection["ingsel"])];
         _ds.push(userdish);
-        //_ing.push({ingredient: usering, amountInGrams: amtSelection["amtinput"]})
         const cont = await inquirer.prompt({
             type: "list",
             name: "contsel",
@@ -174,6 +191,66 @@ async function generateNewMenu() {
     let menutmp: Menu = new Menu(_name, 0, _ds);
 
     db.addNewMenu(menutmp);
+}
+
+/**
+ * Genera un nuevo manu mediante los input del usuario y el listado de platos
+ */
+ async function generateNewCarta() {
+    const nameSelection = await inquirer.prompt( {
+        type: "input",
+        name: "nameinput",
+        message: "Carta Name: "
+    });
+    let continueAdding: boolean = true;
+    let dsArr: string[] = [];
+    let mnArr: string[] = [];
+    let _ds: Dish[] = [];
+    let _mn: Menu[] = [];
+    data.dishesArray.forEach(ing => {
+        dsArr.push(ing.getName());
+    });
+    data.menuArray.forEach(ing => {
+        mnArr.push(ing.getName());
+    });
+    while(continueAdding) {
+        const ingSelection = await inquirer.prompt({
+            type: "list",
+            name: "ingsel",
+            message: "What dish do you want to add?",
+            choices: dsArr
+        });
+        const userdish: Dish = data.dishesArray[data.dishesArray.findIndex(element => element.getName() === ingSelection["ingsel"])];
+        _ds.push(userdish);
+        const cont = await inquirer.prompt({
+            type: "list",
+            name: "contsel",
+            message: "Add other dish?",
+            choices: ["Yes", "No"]
+        }); continueAdding = (cont["contsel"] === "Yes");
+    }
+    continueAdding = true;
+    while(continueAdding) {
+        const menSelection = await inquirer.prompt({
+            type: "list",
+            name: "mensel",
+            message: "What menu do you want to add?",
+            choices: mnArr
+        });
+        const usermenu: Menu = data.menuArray[data.menuArray.findIndex(element => element.getName() === menSelection["mensel"])];
+        _mn.push(usermenu);
+        const contm = await inquirer.prompt({
+            type: "list",
+            name: "contselm",
+            message: "Add other menu?",
+            choices: ["Yes", "No"]
+        }); continueAdding = (contm["contselm"] === "Yes");
+    }
+    let _name: string = nameSelection["nameinput"];
+
+    let cartatmp: Carta = new Carta(_mn, _ds, _name);
+
+    db.addNewCarta(cartatmp);
 }
 
 mainPrompt();
